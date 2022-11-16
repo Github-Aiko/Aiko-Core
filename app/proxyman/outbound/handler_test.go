@@ -4,15 +4,15 @@ import (
 	"context"
 	"testing"
 
-	"github.com/xtls/xray-core/app/policy"
-	. "github.com/xtls/xray-core/app/proxyman/outbound"
-	"github.com/xtls/xray-core/app/stats"
-	"github.com/xtls/xray-core/common/net"
-	"github.com/xtls/xray-core/common/serial"
-	core "github.com/xtls/xray-core/core"
-	"github.com/xtls/xray-core/features/outbound"
-	"github.com/xtls/xray-core/proxy/freedom"
-	"github.com/xtls/xray-core/transport/internet/stat"
+	"github.com/Github-Aiko/Aiko-Core/app/policy"
+	. "github.com/Github-Aiko/Aiko-Core/app/proxyman/outbound"
+	"github.com/Github-Aiko/Aiko-Core/app/stats"
+	"github.com/Github-Aiko/Aiko-Core/common/net"
+	"github.com/Github-Aiko/Aiko-Core/common/serial"
+	core "github.com/Github-Aiko/Aiko-Core/core"
+	"github.com/Github-Aiko/Aiko-Core/features/outbound"
+	"github.com/Github-Aiko/Aiko-Core/proxy/freedom"
+	"github.com/Github-Aiko/Aiko-Core/transport/internet/stat"
 )
 
 func TestInterfaces(t *testing.T) {

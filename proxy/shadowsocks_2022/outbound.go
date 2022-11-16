@@ -6,6 +6,12 @@ import (
 	"runtime"
 	"time"
 
+	"github.com/Github-Aiko/Aiko-Core/common"
+	"github.com/Github-Aiko/Aiko-Core/common/buf"
+	"github.com/Github-Aiko/Aiko-Core/common/net"
+	"github.com/Github-Aiko/Aiko-Core/common/session"
+	"github.com/Github-Aiko/Aiko-Core/transport"
+	"github.com/Github-Aiko/Aiko-Core/transport/internet"
 	"github.com/sagernet/sing-shadowsocks"
 	"github.com/sagernet/sing-shadowsocks/shadowaead_2022"
 	C "github.com/sagernet/sing/common"
@@ -14,12 +20,6 @@ import (
 	M "github.com/sagernet/sing/common/metadata"
 	N "github.com/sagernet/sing/common/network"
 	"github.com/sagernet/sing/common/uot"
-	"github.com/xtls/xray-core/common"
-	"github.com/xtls/xray-core/common/buf"
-	"github.com/xtls/xray-core/common/net"
-	"github.com/xtls/xray-core/common/session"
-	"github.com/xtls/xray-core/transport"
-	"github.com/xtls/xray-core/transport/internet"
 )
 
 func init() {

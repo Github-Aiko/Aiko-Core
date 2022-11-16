@@ -4,10 +4,10 @@ import (
 	"context"
 	"os"
 
+	"github.com/Github-Aiko/Aiko-Core/common/net"
+	"github.com/Github-Aiko/Aiko-Core/transport/internet"
+	"github.com/Github-Aiko/Aiko-Core/transport/internet/stat"
 	"github.com/sagernet/sing/common/uot"
-	"github.com/xtls/xray-core/common/net"
-	"github.com/xtls/xray-core/transport/internet"
-	"github.com/xtls/xray-core/transport/internet/stat"
 )
 
 func (h *Handler) getUoTConnection(ctx context.Context, dest net.Destination) (stat.Connection, error) {

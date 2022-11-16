@@ -3,10 +3,10 @@ package conf_test
 import (
 	"testing"
 
-	"github.com/xtls/xray-core/common/protocol"
-	"github.com/xtls/xray-core/common/serial"
-	. "github.com/xtls/xray-core/infra/conf"
-	"github.com/xtls/xray-core/proxy/mtproto"
+	"github.com/Github-Aiko/Aiko-Core/common/protocol"
+	"github.com/Github-Aiko/Aiko-Core/common/serial"
+	. "github.com/Github-Aiko/Aiko-Core/infra/conf"
+	"github.com/Github-Aiko/Aiko-Core/proxy/mtproto"
 )
 
 func TestMTProtoServerConfig(t *testing.T) {

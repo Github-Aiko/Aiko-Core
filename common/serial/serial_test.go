@@ -4,10 +4,10 @@ import (
 	"bytes"
 	"testing"
 
+	"github.com/Github-Aiko/Aiko-Core/common"
+	"github.com/Github-Aiko/Aiko-Core/common/buf"
+	"github.com/Github-Aiko/Aiko-Core/common/serial"
 	"github.com/google/go-cmp/cmp"
-	"github.com/xtls/xray-core/common"
-	"github.com/xtls/xray-core/common/buf"
-	"github.com/xtls/xray-core/common/serial"
 )
 
 func TestUint16Serial(t *testing.T) {

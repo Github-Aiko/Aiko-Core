@@ -3,17 +3,17 @@ package loopback
 import (
 	"context"
 
-	"github.com/xtls/xray-core/common"
-	"github.com/xtls/xray-core/common/buf"
-	"github.com/xtls/xray-core/common/net"
-	"github.com/xtls/xray-core/common/net/cnc"
-	"github.com/xtls/xray-core/common/retry"
-	"github.com/xtls/xray-core/common/session"
-	"github.com/xtls/xray-core/common/task"
-	"github.com/xtls/xray-core/core"
-	"github.com/xtls/xray-core/features/routing"
-	"github.com/xtls/xray-core/transport"
-	"github.com/xtls/xray-core/transport/internet"
+	"github.com/Github-Aiko/Aiko-Core/common"
+	"github.com/Github-Aiko/Aiko-Core/common/buf"
+	"github.com/Github-Aiko/Aiko-Core/common/net"
+	"github.com/Github-Aiko/Aiko-Core/common/net/cnc"
+	"github.com/Github-Aiko/Aiko-Core/common/retry"
+	"github.com/Github-Aiko/Aiko-Core/common/session"
+	"github.com/Github-Aiko/Aiko-Core/common/task"
+	"github.com/Github-Aiko/Aiko-Core/core"
+	"github.com/Github-Aiko/Aiko-Core/features/routing"
+	"github.com/Github-Aiko/Aiko-Core/transport"
+	"github.com/Github-Aiko/Aiko-Core/transport/internet"
 )
 
 type Loopback struct {

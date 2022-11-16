@@ -9,12 +9,12 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/xtls/xray-core/common"
-	"github.com/xtls/xray-core/common/dice"
-	"github.com/xtls/xray-core/common/protocol"
-	"github.com/xtls/xray-core/common/serial"
-	"github.com/xtls/xray-core/common/task"
-	"github.com/xtls/xray-core/proxy/vmess/aead"
+	"github.com/Github-Aiko/Aiko-Core/common"
+	"github.com/Github-Aiko/Aiko-Core/common/dice"
+	"github.com/Github-Aiko/Aiko-Core/common/protocol"
+	"github.com/Github-Aiko/Aiko-Core/common/serial"
+	"github.com/Github-Aiko/Aiko-Core/common/task"
+	"github.com/Github-Aiko/Aiko-Core/proxy/vmess/aead"
 )
 
 const (
@@ -252,7 +252,9 @@ func (v *TimedUserValidator) BurnTaintFuse(userHash []byte) error {
 	return ErrNotFound
 }
 
-/* ShouldShowLegacyWarn will return whether a Legacy Warning should be shown
+/*
+	ShouldShowLegacyWarn will return whether a Legacy Warning should be shown
+
 Not guaranteed to only return true once for every inbound, but it is okay.
 */
 func (v *TimedUserValidator) ShouldShowLegacyWarn() bool {

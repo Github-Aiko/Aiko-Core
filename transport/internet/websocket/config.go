@@ -3,8 +3,8 @@ package websocket
 import (
 	"net/http"
 
-	"github.com/xtls/xray-core/common"
-	"github.com/xtls/xray-core/transport/internet"
+	"github.com/Github-Aiko/Aiko-Core/common"
+	"github.com/Github-Aiko/Aiko-Core/transport/internet"
 )
 
 const protocolName = "websocket"

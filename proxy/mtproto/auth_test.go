@@ -5,9 +5,9 @@ import (
 	"crypto/rand"
 	"testing"
 
+	"github.com/Github-Aiko/Aiko-Core/common"
+	. "github.com/Github-Aiko/Aiko-Core/proxy/mtproto"
 	"github.com/google/go-cmp/cmp"
-	"github.com/xtls/xray-core/common"
-	. "github.com/xtls/xray-core/proxy/mtproto"
 )
 
 func TestInverse(t *testing.T) {

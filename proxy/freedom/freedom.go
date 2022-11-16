@@ -1,26 +1,26 @@
 package freedom
 
-//go:generate go run github.com/xtls/xray-core/common/errors/errorgen
+//go:generate go run github.com/Github-Aiko/Aiko-Core/common/errors/errorgen
 
 import (
 	"context"
 	"time"
 
-	"github.com/xtls/xray-core/common"
-	"github.com/xtls/xray-core/common/buf"
-	"github.com/xtls/xray-core/common/dice"
-	"github.com/xtls/xray-core/common/net"
-	"github.com/xtls/xray-core/common/retry"
-	"github.com/xtls/xray-core/common/session"
-	"github.com/xtls/xray-core/common/signal"
-	"github.com/xtls/xray-core/common/task"
-	"github.com/xtls/xray-core/core"
-	"github.com/xtls/xray-core/features/dns"
-	"github.com/xtls/xray-core/features/policy"
-	"github.com/xtls/xray-core/features/stats"
-	"github.com/xtls/xray-core/transport"
-	"github.com/xtls/xray-core/transport/internet"
-	"github.com/xtls/xray-core/transport/internet/stat"
+	"github.com/Github-Aiko/Aiko-Core/common"
+	"github.com/Github-Aiko/Aiko-Core/common/buf"
+	"github.com/Github-Aiko/Aiko-Core/common/dice"
+	"github.com/Github-Aiko/Aiko-Core/common/net"
+	"github.com/Github-Aiko/Aiko-Core/common/retry"
+	"github.com/Github-Aiko/Aiko-Core/common/session"
+	"github.com/Github-Aiko/Aiko-Core/common/signal"
+	"github.com/Github-Aiko/Aiko-Core/common/task"
+	"github.com/Github-Aiko/Aiko-Core/core"
+	"github.com/Github-Aiko/Aiko-Core/features/dns"
+	"github.com/Github-Aiko/Aiko-Core/features/policy"
+	"github.com/Github-Aiko/Aiko-Core/features/stats"
+	"github.com/Github-Aiko/Aiko-Core/transport"
+	"github.com/Github-Aiko/Aiko-Core/transport/internet"
+	"github.com/Github-Aiko/Aiko-Core/transport/internet/stat"
 )
 
 func init() {

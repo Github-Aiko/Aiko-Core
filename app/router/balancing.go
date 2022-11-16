@@ -3,9 +3,9 @@ package router
 import (
 	"context"
 
-	"github.com/xtls/xray-core/common/dice"
-	"github.com/xtls/xray-core/features/extension"
-	"github.com/xtls/xray-core/features/outbound"
+	"github.com/Github-Aiko/Aiko-Core/common/dice"
+	"github.com/Github-Aiko/Aiko-Core/features/extension"
+	"github.com/Github-Aiko/Aiko-Core/features/outbound"
 )
 
 type BalancingStrategy interface {

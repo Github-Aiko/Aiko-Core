@@ -1,9 +1,9 @@
 package conf
 
 import (
+	"github.com/Github-Aiko/Aiko-Core/common/net"
+	"github.com/Github-Aiko/Aiko-Core/proxy/dns"
 	"github.com/golang/protobuf/proto"
-	"github.com/xtls/xray-core/common/net"
-	"github.com/xtls/xray-core/proxy/dns"
 )
 
 type DNSOutboundConfig struct {

@@ -3,10 +3,10 @@ package encoding
 import (
 	"io"
 
+	"github.com/Github-Aiko/Aiko-Core/common/buf"
+	"github.com/Github-Aiko/Aiko-Core/common/protocol"
+	"github.com/Github-Aiko/Aiko-Core/proxy/vless"
 	"github.com/golang/protobuf/proto"
-	"github.com/xtls/xray-core/common/buf"
-	"github.com/xtls/xray-core/common/protocol"
-	"github.com/xtls/xray-core/proxy/vless"
 )
 
 func EncodeHeaderAddons(buffer *buf.Buffer, addons *Addons) error {

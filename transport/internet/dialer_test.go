@@ -4,11 +4,11 @@ import (
 	"context"
 	"testing"
 
+	"github.com/Github-Aiko/Aiko-Core/common"
+	"github.com/Github-Aiko/Aiko-Core/common/net"
+	"github.com/Github-Aiko/Aiko-Core/testing/servers/tcp"
+	. "github.com/Github-Aiko/Aiko-Core/transport/internet"
 	"github.com/google/go-cmp/cmp"
-	"github.com/xtls/xray-core/common"
-	"github.com/xtls/xray-core/common/net"
-	"github.com/xtls/xray-core/testing/servers/tcp"
-	. "github.com/xtls/xray-core/transport/internet"
 )
 
 func TestDialWithLocalAddr(t *testing.T) {

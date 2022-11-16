@@ -4,8 +4,8 @@ import (
 	"net"
 	"testing"
 
+	. "github.com/Github-Aiko/Aiko-Core/common/net"
 	"github.com/google/go-cmp/cmp"
-	. "github.com/xtls/xray-core/common/net"
 )
 
 func TestAddressProperty(t *testing.T) {

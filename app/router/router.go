@@ -1,16 +1,16 @@
 package router
 
-//go:generate go run github.com/xtls/xray-core/common/errors/errorgen
+//go:generate go run github.com/Github-Aiko/Aiko-Core/common/errors/errorgen
 
 import (
 	"context"
 
-	"github.com/xtls/xray-core/common"
-	"github.com/xtls/xray-core/core"
-	"github.com/xtls/xray-core/features/dns"
-	"github.com/xtls/xray-core/features/outbound"
-	"github.com/xtls/xray-core/features/routing"
-	routing_dns "github.com/xtls/xray-core/features/routing/dns"
+	"github.com/Github-Aiko/Aiko-Core/common"
+	"github.com/Github-Aiko/Aiko-Core/core"
+	"github.com/Github-Aiko/Aiko-Core/features/dns"
+	"github.com/Github-Aiko/Aiko-Core/features/outbound"
+	"github.com/Github-Aiko/Aiko-Core/features/routing"
+	routing_dns "github.com/Github-Aiko/Aiko-Core/features/routing/dns"
 )
 
 // Router is an implementation of routing.Router.

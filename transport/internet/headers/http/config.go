@@ -3,7 +3,7 @@ package http
 import (
 	"strings"
 
-	"github.com/xtls/xray-core/common/dice"
+	"github.com/Github-Aiko/Aiko-Core/common/dice"
 )
 
 func pickString(arr []string) string {

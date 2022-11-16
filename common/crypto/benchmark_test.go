@@ -4,7 +4,7 @@ import (
 	"crypto/cipher"
 	"testing"
 
-	. "github.com/xtls/xray-core/common/crypto"
+	. "github.com/Github-Aiko/Aiko-Core/common/crypto"
 )
 
 const benchSize = 1024 * 1024

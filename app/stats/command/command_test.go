@@ -4,11 +4,11 @@ import (
 	"context"
 	"testing"
 
+	"github.com/Github-Aiko/Aiko-Core/app/stats"
+	. "github.com/Github-Aiko/Aiko-Core/app/stats/command"
+	"github.com/Github-Aiko/Aiko-Core/common"
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
-	"github.com/xtls/xray-core/app/stats"
-	. "github.com/xtls/xray-core/app/stats/command"
-	"github.com/xtls/xray-core/common"
 )
 
 func TestGetStats(t *testing.T) {

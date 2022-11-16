@@ -8,12 +8,12 @@ package proxy
 import (
 	"context"
 
-	"github.com/xtls/xray-core/common/net"
-	"github.com/xtls/xray-core/common/protocol"
-	"github.com/xtls/xray-core/features/routing"
-	"github.com/xtls/xray-core/transport"
-	"github.com/xtls/xray-core/transport/internet"
-	"github.com/xtls/xray-core/transport/internet/stat"
+	"github.com/Github-Aiko/Aiko-Core/common/net"
+	"github.com/Github-Aiko/Aiko-Core/common/protocol"
+	"github.com/Github-Aiko/Aiko-Core/features/routing"
+	"github.com/Github-Aiko/Aiko-Core/transport"
+	"github.com/Github-Aiko/Aiko-Core/transport/internet"
+	"github.com/Github-Aiko/Aiko-Core/transport/internet/stat"
 )
 
 // An Inbound processes inbound connections.

@@ -10,17 +10,17 @@ import (
 	"testing"
 	"time"
 
+	"github.com/Github-Aiko/Aiko-Core/app/proxyman"
+	"github.com/Github-Aiko/Aiko-Core/common"
+	"github.com/Github-Aiko/Aiko-Core/common/buf"
+	"github.com/Github-Aiko/Aiko-Core/common/net"
+	"github.com/Github-Aiko/Aiko-Core/common/serial"
+	"github.com/Github-Aiko/Aiko-Core/core"
+	"github.com/Github-Aiko/Aiko-Core/proxy/freedom"
+	v2http "github.com/Github-Aiko/Aiko-Core/proxy/http"
+	v2httptest "github.com/Github-Aiko/Aiko-Core/testing/servers/http"
+	"github.com/Github-Aiko/Aiko-Core/testing/servers/tcp"
 	"github.com/google/go-cmp/cmp"
-	"github.com/xtls/xray-core/app/proxyman"
-	"github.com/xtls/xray-core/common"
-	"github.com/xtls/xray-core/common/buf"
-	"github.com/xtls/xray-core/common/net"
-	"github.com/xtls/xray-core/common/serial"
-	"github.com/xtls/xray-core/core"
-	"github.com/xtls/xray-core/proxy/freedom"
-	v2http "github.com/xtls/xray-core/proxy/http"
-	v2httptest "github.com/xtls/xray-core/testing/servers/http"
-	"github.com/xtls/xray-core/testing/servers/tcp"
 )
 
 func TestHttpConformance(t *testing.T) {

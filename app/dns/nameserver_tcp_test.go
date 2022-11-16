@@ -6,11 +6,11 @@ import (
 	"testing"
 	"time"
 
+	. "github.com/Github-Aiko/Aiko-Core/app/dns"
+	"github.com/Github-Aiko/Aiko-Core/common"
+	"github.com/Github-Aiko/Aiko-Core/common/net"
+	dns_feature "github.com/Github-Aiko/Aiko-Core/features/dns"
 	"github.com/google/go-cmp/cmp"
-	. "github.com/xtls/xray-core/app/dns"
-	"github.com/xtls/xray-core/common"
-	"github.com/xtls/xray-core/common/net"
-	dns_feature "github.com/xtls/xray-core/features/dns"
 )
 
 func TestTCPLocalNameServer(t *testing.T) {

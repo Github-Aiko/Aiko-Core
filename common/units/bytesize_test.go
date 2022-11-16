@@ -3,7 +3,7 @@ package units_test
 import (
 	"testing"
 
-	"github.com/xtls/xray-core/common/units"
+	"github.com/Github-Aiko/Aiko-Core/common/units"
 )
 
 func TestByteSizes(t *testing.T) {

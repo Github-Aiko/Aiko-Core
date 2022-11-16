@@ -1,6 +1,6 @@
 package encoding
 
-//go:generate go run github.com/xtls/xray-core/common/errors/errorgen
+//go:generate go run github.com/Github-Aiko/Aiko-Core/common/errors/errorgen
 
 import (
 	"bytes"
@@ -14,17 +14,17 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/xtls/xray-core/common/buf"
-	"github.com/xtls/xray-core/common/errors"
-	"github.com/xtls/xray-core/common/net"
-	"github.com/xtls/xray-core/common/protocol"
-	"github.com/xtls/xray-core/common/session"
-	"github.com/xtls/xray-core/common/signal"
-	"github.com/xtls/xray-core/features/stats"
-	"github.com/xtls/xray-core/proxy/vless"
-	"github.com/xtls/xray-core/transport/internet/stat"
-	"github.com/xtls/xray-core/transport/internet/tls"
-	"github.com/xtls/xray-core/transport/internet/xtls"
+	"github.com/Github-Aiko/Aiko-Core/common/buf"
+	"github.com/Github-Aiko/Aiko-Core/common/errors"
+	"github.com/Github-Aiko/Aiko-Core/common/net"
+	"github.com/Github-Aiko/Aiko-Core/common/protocol"
+	"github.com/Github-Aiko/Aiko-Core/common/session"
+	"github.com/Github-Aiko/Aiko-Core/common/signal"
+	"github.com/Github-Aiko/Aiko-Core/features/stats"
+	"github.com/Github-Aiko/Aiko-Core/proxy/vless"
+	"github.com/Github-Aiko/Aiko-Core/transport/internet/stat"
+	"github.com/Github-Aiko/Aiko-Core/transport/internet/tls"
+	"github.com/Github-Aiko/Aiko-Core/transport/internet/xtls"
 )
 
 const (
@@ -409,12 +409,12 @@ func XtlsFilterTls(buffer buf.MultiBuffer, numberOfPacketToFilter *int, enableXt
 				if b.Len() >= int32(total) && total >= 74 {
 					if bytes.Contains(b.BytesTo(int32(total)), tls13SupportedVersions) {
 						sessionIdLen := int32(b.Byte(43))
-						cipherSuite := b.BytesRange(43 + sessionIdLen + 1, 43 + sessionIdLen + 3)
-						cipherNum := uint16(cipherSuite[0]) << 8 | uint16(cipherSuite[1])
+						cipherSuite := b.BytesRange(43+sessionIdLen+1, 43+sessionIdLen+3)
+						cipherNum := uint16(cipherSuite[0])<<8 | uint16(cipherSuite[1])
 						v, ok := Tls13CipherSuiteDic[cipherNum]
 						if !ok {
 							v = "Unknown cipher!"
-						} else if (v != "TLS_AES_128_CCM_8_SHA256") {
+						} else if v != "TLS_AES_128_CCM_8_SHA256" {
 							*enableXtls = true
 						}
 						newError("XtlsFilterTls13 found tls 1.3! ", buffer.Len(), " ", v).WriteToLog(session.ExportIDToError(ctx))
@@ -569,9 +569,9 @@ func XtlsUnpadding(ctx context.Context, buffer buf.MultiBuffer, userUUID []byte,
 }
 
 var Tls13CipherSuiteDic = map[uint16]string{
-	0x1301 : "TLS_AES_128_GCM_SHA256",
-	0x1302 : "TLS_AES_256_GCM_SHA384",
-	0x1303 : "TLS_CHACHA20_POLY1305_SHA256",
-	0x1304 : "TLS_AES_128_CCM_SHA256",
-	0x1305 : "TLS_AES_128_CCM_8_SHA256",
+	0x1301: "TLS_AES_128_GCM_SHA256",
+	0x1302: "TLS_AES_256_GCM_SHA384",
+	0x1303: "TLS_CHACHA20_POLY1305_SHA256",
+	0x1304: "TLS_AES_128_CCM_SHA256",
+	0x1305: "TLS_AES_128_CCM_8_SHA256",
 }

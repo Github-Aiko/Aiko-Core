@@ -1,6 +1,6 @@
 package blackhole
 
-import "github.com/xtls/xray-core/common/errors"
+import "github.com/Github-Aiko/Aiko-Core/common/errors"
 
 type errPathObjHolder struct{}
 

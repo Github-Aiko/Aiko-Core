@@ -9,16 +9,16 @@ import (
 	"sync"
 	"time"
 
+	"github.com/Github-Aiko/Aiko-Core/common"
+	v2net "github.com/Github-Aiko/Aiko-Core/common/net"
+	"github.com/Github-Aiko/Aiko-Core/common/session"
+	"github.com/Github-Aiko/Aiko-Core/common/signal/done"
+	"github.com/Github-Aiko/Aiko-Core/common/task"
+	"github.com/Github-Aiko/Aiko-Core/core"
+	"github.com/Github-Aiko/Aiko-Core/features/extension"
+	"github.com/Github-Aiko/Aiko-Core/features/outbound"
+	"github.com/Github-Aiko/Aiko-Core/transport/internet/tagged"
 	"github.com/golang/protobuf/proto"
-	"github.com/xtls/xray-core/common"
-	v2net "github.com/xtls/xray-core/common/net"
-	"github.com/xtls/xray-core/common/session"
-	"github.com/xtls/xray-core/common/signal/done"
-	"github.com/xtls/xray-core/common/task"
-	"github.com/xtls/xray-core/core"
-	"github.com/xtls/xray-core/features/extension"
-	"github.com/xtls/xray-core/features/outbound"
-	"github.com/xtls/xray-core/transport/internet/tagged"
 )
 
 type Observer struct {

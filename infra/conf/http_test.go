@@ -3,8 +3,8 @@ package conf_test
 import (
 	"testing"
 
-	. "github.com/xtls/xray-core/infra/conf"
-	"github.com/xtls/xray-core/proxy/http"
+	. "github.com/Github-Aiko/Aiko-Core/infra/conf"
+	"github.com/Github-Aiko/Aiko-Core/proxy/http"
 )
 
 func TestHTTPServerConfig(t *testing.T) {

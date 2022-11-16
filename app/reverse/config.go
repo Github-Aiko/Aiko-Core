@@ -4,7 +4,7 @@ import (
 	"crypto/rand"
 	"io"
 
-	"github.com/xtls/xray-core/common/dice"
+	"github.com/Github-Aiko/Aiko-Core/common/dice"
 )
 
 func (c *Control) FillInRandom() {

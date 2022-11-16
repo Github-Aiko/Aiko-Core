@@ -3,10 +3,10 @@ package api
 import (
 	"fmt"
 
-	handlerService "github.com/xtls/xray-core/app/proxyman/command"
-	"github.com/xtls/xray-core/infra/conf"
-	"github.com/xtls/xray-core/infra/conf/serial"
-	"github.com/xtls/xray-core/main/commands/base"
+	handlerService "github.com/Github-Aiko/Aiko-Core/app/proxyman/command"
+	"github.com/Github-Aiko/Aiko-Core/infra/conf"
+	"github.com/Github-Aiko/Aiko-Core/infra/conf/serial"
+	"github.com/Github-Aiko/Aiko-Core/main/commands/base"
 )
 
 var cmdAddOutbounds = &base.Command{

@@ -5,10 +5,10 @@ import (
 	"testing"
 	"time"
 
+	"github.com/Github-Aiko/Aiko-Core/common"
+	"github.com/Github-Aiko/Aiko-Core/common/protocol/tls/cert"
+	. "github.com/Github-Aiko/Aiko-Core/transport/internet/xtls"
 	xtls "github.com/xtls/go"
-	"github.com/xtls/xray-core/common"
-	"github.com/xtls/xray-core/common/protocol/tls/cert"
-	. "github.com/xtls/xray-core/transport/internet/xtls"
 )
 
 func TestCertificateIssuing(t *testing.T) {

@@ -13,10 +13,10 @@ import (
 	"strings"
 	"syscall"
 
-	"github.com/xtls/xray-core/common/cmdarg"
-	"github.com/xtls/xray-core/common/platform"
-	"github.com/xtls/xray-core/core"
-	"github.com/xtls/xray-core/main/commands/base"
+	"github.com/Github-Aiko/Aiko-Core/common/cmdarg"
+	"github.com/Github-Aiko/Aiko-Core/common/platform"
+	"github.com/Github-Aiko/Aiko-Core/core"
+	"github.com/Github-Aiko/Aiko-Core/main/commands/base"
 )
 
 var cmdRun = &base.Command{

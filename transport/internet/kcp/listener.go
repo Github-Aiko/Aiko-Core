@@ -6,15 +6,15 @@ import (
 	gotls "crypto/tls"
 	"sync"
 
+	"github.com/Github-Aiko/Aiko-Core/common"
+	"github.com/Github-Aiko/Aiko-Core/common/buf"
+	"github.com/Github-Aiko/Aiko-Core/common/net"
+	"github.com/Github-Aiko/Aiko-Core/transport/internet"
+	"github.com/Github-Aiko/Aiko-Core/transport/internet/stat"
+	"github.com/Github-Aiko/Aiko-Core/transport/internet/tls"
+	"github.com/Github-Aiko/Aiko-Core/transport/internet/udp"
+	"github.com/Github-Aiko/Aiko-Core/transport/internet/xtls"
 	goxtls "github.com/xtls/go"
-	"github.com/xtls/xray-core/common"
-	"github.com/xtls/xray-core/common/buf"
-	"github.com/xtls/xray-core/common/net"
-	"github.com/xtls/xray-core/transport/internet"
-	"github.com/xtls/xray-core/transport/internet/stat"
-	"github.com/xtls/xray-core/transport/internet/tls"
-	"github.com/xtls/xray-core/transport/internet/udp"
-	"github.com/xtls/xray-core/transport/internet/xtls"
 )
 
 type ConnectionID struct {

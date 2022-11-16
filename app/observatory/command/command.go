@@ -6,10 +6,10 @@ package command
 import (
 	"context"
 
-	"github.com/xtls/xray-core/app/observatory"
-	"github.com/xtls/xray-core/common"
-	core "github.com/xtls/xray-core/core"
-	"github.com/xtls/xray-core/features/extension"
+	"github.com/Github-Aiko/Aiko-Core/app/observatory"
+	"github.com/Github-Aiko/Aiko-Core/common"
+	core "github.com/Github-Aiko/Aiko-Core/core"
+	"github.com/Github-Aiko/Aiko-Core/features/extension"
 	"google.golang.org/grpc"
 )
 
