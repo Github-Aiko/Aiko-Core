@@ -30,7 +30,7 @@ type ServerConfig struct {
 	Key     string        `protobuf:"bytes,2,opt,name=key,proto3" json:"key,omitempty"`
 	Email   string        `protobuf:"bytes,3,opt,name=email,proto3" json:"email,omitempty"`
 	Level   int32         `protobuf:"varint,4,opt,name=level,proto3" json:"level,omitempty"`
-	Network []net.Network `protobuf:"varint,5,rep,packed,name=network,proto3,enum=xray.common.net.Network" json:"network,omitempty"`
+	Network []net.Network `protobuf:"varint,5,rep,packed,name=network,proto3,enum=Aiko.common.net.Network" json:"network,omitempty"`
 }
 
 func (x *ServerConfig) Reset() {
@@ -108,7 +108,7 @@ type MultiUserServerConfig struct {
 	Method  string        `protobuf:"bytes,1,opt,name=method,proto3" json:"method,omitempty"`
 	Key     string        `protobuf:"bytes,2,opt,name=key,proto3" json:"key,omitempty"`
 	Users   []*User       `protobuf:"bytes,3,rep,name=users,proto3" json:"users,omitempty"`
-	Network []net.Network `protobuf:"varint,4,rep,packed,name=network,proto3,enum=xray.common.net.Network" json:"network,omitempty"`
+	Network []net.Network `protobuf:"varint,4,rep,packed,name=network,proto3,enum=Aiko.common.net.Network" json:"network,omitempty"`
 }
 
 func (x *MultiUserServerConfig) Reset() {
@@ -258,7 +258,7 @@ type RelayServerConfig struct {
 	Method       string              `protobuf:"bytes,1,opt,name=method,proto3" json:"method,omitempty"`
 	Key          string              `protobuf:"bytes,2,opt,name=key,proto3" json:"key,omitempty"`
 	Destinations []*RelayDestination `protobuf:"bytes,3,rep,name=destinations,proto3" json:"destinations,omitempty"`
-	Network      []net.Network       `protobuf:"varint,4,rep,packed,name=network,proto3,enum=xray.common.net.Network" json:"network,omitempty"`
+	Network      []net.Network       `protobuf:"varint,4,rep,packed,name=network,proto3,enum=Aiko.common.net.Network" json:"network,omitempty"`
 }
 
 func (x *RelayServerConfig) Reset() {
@@ -556,23 +556,23 @@ func file_proxy_shadowsocks_2022_config_proto_rawDescGZIP() []byte {
 
 var file_proxy_shadowsocks_2022_config_proto_msgTypes = make([]protoimpl.MessageInfo, 6)
 var file_proxy_shadowsocks_2022_config_proto_goTypes = []interface{}{
-	(*ServerConfig)(nil),          // 0: xray.proxy.shadowsocks_2022.ServerConfig
-	(*MultiUserServerConfig)(nil), // 1: xray.proxy.shadowsocks_2022.MultiUserServerConfig
-	(*RelayDestination)(nil),      // 2: xray.proxy.shadowsocks_2022.RelayDestination
-	(*RelayServerConfig)(nil),     // 3: xray.proxy.shadowsocks_2022.RelayServerConfig
-	(*User)(nil),                  // 4: xray.proxy.shadowsocks_2022.User
-	(*ClientConfig)(nil),          // 5: xray.proxy.shadowsocks_2022.ClientConfig
-	(net.Network)(0),              // 6: xray.common.net.Network
-	(*net.IPOrDomain)(nil),        // 7: xray.common.net.IPOrDomain
+	(*ServerConfig)(nil),          // 0: Aiko.proxy.shadowsocks_2022.ServerConfig
+	(*MultiUserServerConfig)(nil), // 1: Aiko.proxy.shadowsocks_2022.MultiUserServerConfig
+	(*RelayDestination)(nil),      // 2: Aiko.proxy.shadowsocks_2022.RelayDestination
+	(*RelayServerConfig)(nil),     // 3: Aiko.proxy.shadowsocks_2022.RelayServerConfig
+	(*User)(nil),                  // 4: Aiko.proxy.shadowsocks_2022.User
+	(*ClientConfig)(nil),          // 5: Aiko.proxy.shadowsocks_2022.ClientConfig
+	(net.Network)(0),              // 6: Aiko.common.net.Network
+	(*net.IPOrDomain)(nil),        // 7: Aiko.common.net.IPOrDomain
 }
 var file_proxy_shadowsocks_2022_config_proto_depIdxs = []int32{
-	6, // 0: xray.proxy.shadowsocks_2022.ServerConfig.network:type_name -> xray.common.net.Network
-	4, // 1: xray.proxy.shadowsocks_2022.MultiUserServerConfig.users:type_name -> xray.proxy.shadowsocks_2022.User
-	6, // 2: xray.proxy.shadowsocks_2022.MultiUserServerConfig.network:type_name -> xray.common.net.Network
-	7, // 3: xray.proxy.shadowsocks_2022.RelayDestination.address:type_name -> xray.common.net.IPOrDomain
-	2, // 4: xray.proxy.shadowsocks_2022.RelayServerConfig.destinations:type_name -> xray.proxy.shadowsocks_2022.RelayDestination
-	6, // 5: xray.proxy.shadowsocks_2022.RelayServerConfig.network:type_name -> xray.common.net.Network
-	7, // 6: xray.proxy.shadowsocks_2022.ClientConfig.address:type_name -> xray.common.net.IPOrDomain
+	6, // 0: Aiko.proxy.shadowsocks_2022.ServerConfig.network:type_name -> Aiko.common.net.Network
+	4, // 1: Aiko.proxy.shadowsocks_2022.MultiUserServerConfig.users:type_name -> Aiko.proxy.shadowsocks_2022.User
+	6, // 2: Aiko.proxy.shadowsocks_2022.MultiUserServerConfig.network:type_name -> Aiko.common.net.Network
+	7, // 3: Aiko.proxy.shadowsocks_2022.RelayDestination.address:type_name -> Aiko.common.net.IPOrDomain
+	2, // 4: Aiko.proxy.shadowsocks_2022.RelayServerConfig.destinations:type_name -> Aiko.proxy.shadowsocks_2022.RelayDestination
+	6, // 5: Aiko.proxy.shadowsocks_2022.RelayServerConfig.network:type_name -> Aiko.common.net.Network
+	7, // 6: Aiko.proxy.shadowsocks_2022.ClientConfig.address:type_name -> Aiko.common.net.IPOrDomain
 	7, // [7:7] is the sub-list for method output_type
 	7, // [7:7] is the sub-list for method input_type
 	7, // [7:7] is the sub-list for extension type_name

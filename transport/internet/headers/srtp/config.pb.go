@@ -153,7 +153,7 @@ func file_transport_internet_headers_srtp_config_proto_rawDescGZIP() []byte {
 
 var file_transport_internet_headers_srtp_config_proto_msgTypes = make([]protoimpl.MessageInfo, 1)
 var file_transport_internet_headers_srtp_config_proto_goTypes = []interface{}{
-	(*Config)(nil), // 0: xray.transport.internet.headers.srtp.Config
+	(*Config)(nil), // 0: Aiko.transport.internet.headers.srtp.Config
 }
 var file_transport_internet_headers_srtp_config_proto_depIdxs = []int32{
 	0, // [0:0] is the sub-list for method output_type

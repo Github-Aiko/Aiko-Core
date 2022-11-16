@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-package xray.proxy.shadowsocks;
-option csharp_namespace = "Xray.Proxy.Shadowsocks";
+package Aiko.proxy.shadowsocks;
+option csharp_namespace = "Aiko.Proxy.Shadowsocks";
 option go_package = "github.com/Github-Aiko/Aiko-Core/proxy/shadowsocks";
-option java_package = "com.xray.proxy.shadowsocks";
+option java_package = "com.Aiko.proxy.shadowsocks";
 option java_multiple_files = true;
 
 import "common/net/network.proto";
@@ -27,10 +27,10 @@ enum CipherType {
 }
 
 message ServerConfig {
-  repeated xray.common.protocol.User users = 1;
-  repeated xray.common.net.Network network = 2;
+  repeated Aiko.common.protocol.User users = 1;
+  repeated Aiko.common.net.Network network = 2;
 }
 
 message ClientConfig {
-  repeated xray.common.protocol.ServerEndpoint server = 1;
+  repeated Aiko.common.protocol.ServerEndpoint server = 1;
 }

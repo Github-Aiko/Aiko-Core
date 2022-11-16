@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-package xray.app.reverse;
-option csharp_namespace = "Xray.Proxy.Reverse";
+package Aiko.app.reverse;
+option csharp_namespace = "Aiko.Proxy.Reverse";
 option go_package = "github.com/Github-Aiko/Aiko-Core/app/reverse";
-option java_package = "com.xray.proxy.reverse";
+option java_package = "com.Aiko.proxy.reverse";
 option java_multiple_files = true;
 
 message Control {

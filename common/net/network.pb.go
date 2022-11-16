@@ -82,7 +82,7 @@ type NetworkList struct {
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 
-	Network []Network `protobuf:"varint,1,rep,packed,name=network,proto3,enum=xray.common.net.Network" json:"network,omitempty"`
+	Network []Network `protobuf:"varint,1,rep,packed,name=network,proto3,enum=Aiko.common.net.Network" json:"network,omitempty"`
 }
 
 func (x *NetworkList) Reset() {
@@ -161,11 +161,11 @@ func file_common_net_network_proto_rawDescGZIP() []byte {
 var file_common_net_network_proto_enumTypes = make([]protoimpl.EnumInfo, 1)
 var file_common_net_network_proto_msgTypes = make([]protoimpl.MessageInfo, 1)
 var file_common_net_network_proto_goTypes = []interface{}{
-	(Network)(0),        // 0: xray.common.net.Network
-	(*NetworkList)(nil), // 1: xray.common.net.NetworkList
+	(Network)(0),        // 0: Aiko.common.net.Network
+	(*NetworkList)(nil), // 1: Aiko.common.net.NetworkList
 }
 var file_common_net_network_proto_depIdxs = []int32{
-	0, // 0: xray.common.net.NetworkList.network:type_name -> xray.common.net.Network
+	0, // 0: Aiko.common.net.NetworkList.network:type_name -> Aiko.common.net.Network
 	1, // [1:1] is the sub-list for method output_type
 	1, // [1:1] is the sub-list for method input_type
 	1, // [1:1] is the sub-list for extension type_name

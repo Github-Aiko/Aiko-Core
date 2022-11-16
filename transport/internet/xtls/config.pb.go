@@ -78,7 +78,7 @@ type Certificate struct {
 	Certificate []byte `protobuf:"bytes,1,opt,name=certificate,proto3" json:"certificate,omitempty"`
 	// TLS key in x509 format.
 	Key          []byte            `protobuf:"bytes,2,opt,name=key,proto3" json:"key,omitempty"`
-	Usage        Certificate_Usage `protobuf:"varint,3,opt,name=usage,proto3,enum=xray.transport.internet.xtls.Certificate_Usage" json:"usage,omitempty"`
+	Usage        Certificate_Usage `protobuf:"varint,3,opt,name=usage,proto3,enum=Aiko.transport.internet.xtls.Certificate_Usage" json:"usage,omitempty"`
 	OcspStapling uint64            `protobuf:"varint,4,opt,name=ocsp_stapling,json=ocspStapling,proto3" json:"ocsp_stapling,omitempty"`
 	// TLS certificate path
 	CertificatePath string `protobuf:"bytes,5,opt,name=certificate_path,json=certificatePath,proto3" json:"certificate_path,omitempty"`
@@ -411,13 +411,13 @@ func file_transport_internet_xtls_config_proto_rawDescGZIP() []byte {
 var file_transport_internet_xtls_config_proto_enumTypes = make([]protoimpl.EnumInfo, 1)
 var file_transport_internet_xtls_config_proto_msgTypes = make([]protoimpl.MessageInfo, 2)
 var file_transport_internet_xtls_config_proto_goTypes = []interface{}{
-	(Certificate_Usage)(0), // 0: xray.transport.internet.xtls.Certificate.Usage
-	(*Certificate)(nil),    // 1: xray.transport.internet.xtls.Certificate
-	(*Config)(nil),         // 2: xray.transport.internet.xtls.Config
+	(Certificate_Usage)(0), // 0: Aiko.transport.internet.xtls.Certificate.Usage
+	(*Certificate)(nil),    // 1: Aiko.transport.internet.xtls.Certificate
+	(*Config)(nil),         // 2: Aiko.transport.internet.xtls.Config
 }
 var file_transport_internet_xtls_config_proto_depIdxs = []int32{
-	0, // 0: xray.transport.internet.xtls.Certificate.usage:type_name -> xray.transport.internet.xtls.Certificate.Usage
-	1, // 1: xray.transport.internet.xtls.Config.certificate:type_name -> xray.transport.internet.xtls.Certificate
+	0, // 0: Aiko.transport.internet.xtls.Certificate.usage:type_name -> Aiko.transport.internet.xtls.Certificate.Usage
+	1, // 1: Aiko.transport.internet.xtls.Config.certificate:type_name -> Aiko.transport.internet.xtls.Certificate
 	2, // [2:2] is the sub-list for method output_type
 	2, // [2:2] is the sub-list for method input_type
 	2, // [2:2] is the sub-list for extension type_name

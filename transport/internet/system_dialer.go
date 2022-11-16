@@ -172,7 +172,7 @@ func (v *SimpleSystemDialer) Dial(ctx context.Context, src net.Address, dest net
 // UseAlternativeSystemDialer replaces the current system dialer with a given one.
 // Caller must ensure there is no race condition.
 //
-// xray:api:stable
+// Aiko:api:stable
 func UseAlternativeSystemDialer(dialer SystemDialer) {
 	if dialer == nil {
 		dialer = &DefaultSystemDialer{}
@@ -184,7 +184,7 @@ func UseAlternativeSystemDialer(dialer SystemDialer) {
 // The controller can be used to operate on file descriptors before they are put into use.
 // It only works when effective dialer is the default dialer.
 //
-// xray:api:beta
+// Aiko:api:beta
 func RegisterDialerController(ctl func(network, address string, fd uintptr) error) error {
 	if ctl == nil {
 		return newError("nil listener controller")

@@ -22,7 +22,7 @@ const (
 )
 
 // Global transport settings. This affects all type of connections that go
-// through Xray. Deprecated. Use each settings in StreamConfig.
+// through Aiko. Deprecated. Use each settings in StreamConfig.
 //
 // Deprecated: Do not use.
 type Config struct {
@@ -110,11 +110,11 @@ func file_transport_global_config_proto_rawDescGZIP() []byte {
 
 var file_transport_global_config_proto_msgTypes = make([]protoimpl.MessageInfo, 1)
 var file_transport_global_config_proto_goTypes = []interface{}{
-	(*Config)(nil),                   // 0: xray.transport.Config
-	(*internet.TransportConfig)(nil), // 1: xray.transport.internet.TransportConfig
+	(*Config)(nil),                   // 0: Aiko.transport.Config
+	(*internet.TransportConfig)(nil), // 1: Aiko.transport.internet.TransportConfig
 }
 var file_transport_global_config_proto_depIdxs = []int32{
-	1, // 0: xray.transport.Config.transport_settings:type_name -> xray.transport.internet.TransportConfig
+	1, // 0: Aiko.transport.Config.transport_settings:type_name -> Aiko.transport.internet.TransportConfig
 	1, // [1:1] is the sub-list for method output_type
 	1, // [1:1] is the sub-list for method input_type
 	1, // [1:1] is the sub-list for extension type_name

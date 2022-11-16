@@ -29,7 +29,7 @@ import (
 	"github.com/google/go-cmp/cmp"
 )
 
-func TestXrayConfig(t *testing.T) {
+func TestAikoConfig(t *testing.T) {
 	createParser := func() func(string) (proto.Message, error) {
 		return func(s string) (proto.Message, error) {
 			config := new(Config)
@@ -48,9 +48,9 @@ func TestXrayConfig(t *testing.T) {
 					"settings": {}
 				},
 				"log": {
-					"access": "/var/log/xray/access.log",
+					"access": "/var/log/Aiko/access.log",
 					"loglevel": "error",
-					"error": "/var/log/xray/error.log"
+					"error": "/var/log/Aiko/error.log"
 				},
 				"inbound": {
 					"streamSettings": {
@@ -140,10 +140,10 @@ func TestXrayConfig(t *testing.T) {
 				App: []*serial.TypedMessage{
 					serial.ToTypedMessage(&log.Config{
 						ErrorLogType:  log.LogType_File,
-						ErrorLogPath:  "/var/log/xray/error.log",
+						ErrorLogPath:  "/var/log/Aiko/error.log",
 						ErrorLogLevel: clog.Severity_Error,
 						AccessLogType: log.LogType_File,
-						AccessLogPath: "/var/log/xray/access.log",
+						AccessLogPath: "/var/log/Aiko/access.log",
 					}),
 					serial.ToTypedMessage(&dispatcher.Config{}),
 					serial.ToTypedMessage(&proxyman.InboundConfig{}),
@@ -250,7 +250,7 @@ func TestXrayConfig(t *testing.T) {
 										}),
 									},
 								},
-								SecurityType: "xray.transport.internet.tls.Config",
+								SecurityType: "Aiko.transport.internet.tls.Config",
 								SecuritySettings: []*serial.TypedMessage{
 									serial.ToTypedMessage(&tls.Config{
 										NextProtocol: []string{"h2"},
@@ -305,7 +305,7 @@ func TestXrayConfig(t *testing.T) {
 										}),
 									},
 								},
-								SecurityType: "xray.transport.internet.tls.Config",
+								SecurityType: "Aiko.transport.internet.tls.Config",
 								SecuritySettings: []*serial.TypedMessage{
 									serial.ToTypedMessage(&tls.Config{
 										NextProtocol: []string{"h2"},

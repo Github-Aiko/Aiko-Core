@@ -198,15 +198,15 @@ func file_app_observatory_command_command_proto_rawDescGZIP() []byte {
 
 var file_app_observatory_command_command_proto_msgTypes = make([]protoimpl.MessageInfo, 3)
 var file_app_observatory_command_command_proto_goTypes = []interface{}{
-	(*GetOutboundStatusRequest)(nil),      // 0: xray.core.app.observatory.command.GetOutboundStatusRequest
-	(*GetOutboundStatusResponse)(nil),     // 1: xray.core.app.observatory.command.GetOutboundStatusResponse
-	(*Config)(nil),                        // 2: xray.core.app.observatory.command.Config
-	(*observatory.ObservationResult)(nil), // 3: xray.core.app.observatory.ObservationResult
+	(*GetOutboundStatusRequest)(nil),      // 0: Aiko.core.app.observatory.command.GetOutboundStatusRequest
+	(*GetOutboundStatusResponse)(nil),     // 1: Aiko.core.app.observatory.command.GetOutboundStatusResponse
+	(*Config)(nil),                        // 2: Aiko.core.app.observatory.command.Config
+	(*observatory.ObservationResult)(nil), // 3: Aiko.core.app.observatory.ObservationResult
 }
 var file_app_observatory_command_command_proto_depIdxs = []int32{
-	3, // 0: xray.core.app.observatory.command.GetOutboundStatusResponse.status:type_name -> xray.core.app.observatory.ObservationResult
-	0, // 1: xray.core.app.observatory.command.ObservatoryService.GetOutboundStatus:input_type -> xray.core.app.observatory.command.GetOutboundStatusRequest
-	1, // 2: xray.core.app.observatory.command.ObservatoryService.GetOutboundStatus:output_type -> xray.core.app.observatory.command.GetOutboundStatusResponse
+	3, // 0: Aiko.core.app.observatory.command.GetOutboundStatusResponse.status:type_name -> Aiko.core.app.observatory.ObservationResult
+	0, // 1: Aiko.core.app.observatory.command.ObservatoryService.GetOutboundStatus:input_type -> Aiko.core.app.observatory.command.GetOutboundStatusRequest
+	1, // 2: Aiko.core.app.observatory.command.ObservatoryService.GetOutboundStatus:output_type -> Aiko.core.app.observatory.command.GetOutboundStatusResponse
 	2, // [2:3] is the sub-list for method output_type
 	1, // [1:2] is the sub-list for method input_type
 	1, // [1:1] is the sub-list for extension type_name

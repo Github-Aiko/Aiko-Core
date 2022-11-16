@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-package xray.transport.internet;
-option csharp_namespace = "Xray.Transport.Internet";
+package Aiko.transport.internet;
+option csharp_namespace = "Aiko.Transport.Internet";
 option go_package = "github.com/Github-Aiko/Aiko-Core/transport/internet";
-option java_package = "com.xray.transport.internet";
+option java_package = "com.Aiko.transport.internet";
 option java_multiple_files = true;
 
 import "common/serial/typed_message.proto";
@@ -33,7 +33,7 @@ message TransportConfig {
   string protocol_name = 3;
 
   // Specific settings. Must be of the transports.
-  xray.common.serial.TypedMessage settings = 2;
+  Aiko.common.serial.TypedMessage settings = 2;
 }
 
 message StreamConfig {
@@ -49,7 +49,7 @@ message StreamConfig {
   string security_type = 3;
 
   // Settings for transport security. For now the only choice is TLS.
-  repeated xray.common.serial.TypedMessage security_settings = 4;
+  repeated Aiko.common.serial.TypedMessage security_settings = 4;
 
   SocketConfig socket_settings = 6;
 }

@@ -35,7 +35,7 @@ func NewObservatoryServiceClient(cc grpc.ClientConnInterface) ObservatoryService
 
 func (c *observatoryServiceClient) GetOutboundStatus(ctx context.Context, in *GetOutboundStatusRequest, opts ...grpc.CallOption) (*GetOutboundStatusResponse, error) {
 	out := new(GetOutboundStatusResponse)
-	err := c.cc.Invoke(ctx, "/xray.core.app.observatory.command.ObservatoryService/GetOutboundStatus", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/Aiko.core.app.observatory.command.ObservatoryService/GetOutboundStatus", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -80,7 +80,7 @@ func _ObservatoryService_GetOutboundStatus_Handler(srv interface{}, ctx context.
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/xray.core.app.observatory.command.ObservatoryService/GetOutboundStatus",
+		FullMethod: "/Aiko.core.app.observatory.command.ObservatoryService/GetOutboundStatus",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(ObservatoryServiceServer).GetOutboundStatus(ctx, req.(*GetOutboundStatusRequest))
@@ -92,7 +92,7 @@ func _ObservatoryService_GetOutboundStatus_Handler(srv interface{}, ctx context.
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
 var ObservatoryService_ServiceDesc = grpc.ServiceDesc{
-	ServiceName: "xray.core.app.observatory.command.ObservatoryService",
+	ServiceName: "Aiko.core.app.observatory.command.ObservatoryService",
 	HandlerType: (*ObservatoryServiceServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{

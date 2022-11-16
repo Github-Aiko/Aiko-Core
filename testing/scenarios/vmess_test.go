@@ -363,7 +363,7 @@ func TestVMessGCMReadv(t *testing.T) {
 		},
 	}
 
-	const envName = "XRAY_BUF_READV"
+	const envName = "Aiko_BUF_READV"
 	common.Must(os.Setenv(envName, "enable"))
 	defer os.Unsetenv(envName)
 

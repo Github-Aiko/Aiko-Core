@@ -1,23 +1,23 @@
 syntax = "proto3";
 
-package xray.proxy.dokodemo;
-option csharp_namespace = "Xray.Proxy.Dokodemo";
+package Aiko.proxy.dokodemo;
+option csharp_namespace = "Aiko.Proxy.Dokodemo";
 option go_package = "github.com/Github-Aiko/Aiko-Core/proxy/dokodemo";
-option java_package = "com.xray.proxy.dokodemo";
+option java_package = "com.Aiko.proxy.dokodemo";
 option java_multiple_files = true;
 
 import "common/net/address.proto";
 import "common/net/network.proto";
 
 message Config {
-  xray.common.net.IPOrDomain address = 1;
+  Aiko.common.net.IPOrDomain address = 1;
   uint32 port = 2;
 
   // List of networks that the Dokodemo accepts.
   // Deprecated. Use networks.
-  xray.common.net.NetworkList network_list = 3 [deprecated = true];
+  Aiko.common.net.NetworkList network_list = 3 [deprecated = true];
   // List of networks that the Dokodemo accepts.
-  repeated xray.common.net.Network networks = 7;
+  repeated Aiko.common.net.Network networks = 7;
 
   uint32 timeout = 4 [deprecated = true];
   bool follow_redirect = 5;

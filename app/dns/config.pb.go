@@ -236,7 +236,7 @@ type Config struct {
 	Tag string `protobuf:"bytes,6,opt,name=tag,proto3" json:"tag,omitempty"`
 	// DisableCache disables DNS cache
 	DisableCache           bool          `protobuf:"varint,8,opt,name=disableCache,proto3" json:"disableCache,omitempty"`
-	QueryStrategy          QueryStrategy `protobuf:"varint,9,opt,name=query_strategy,json=queryStrategy,proto3,enum=xray.app.dns.QueryStrategy" json:"query_strategy,omitempty"`
+	QueryStrategy          QueryStrategy `protobuf:"varint,9,opt,name=query_strategy,json=queryStrategy,proto3,enum=Aiko.app.dns.QueryStrategy" json:"query_strategy,omitempty"`
 	DisableFallback        bool          `protobuf:"varint,10,opt,name=disableFallback,proto3" json:"disableFallback,omitempty"`
 	DisableFallbackIfMatch bool          `protobuf:"varint,11,opt,name=disableFallbackIfMatch,proto3" json:"disableFallbackIfMatch,omitempty"`
 }
@@ -350,7 +350,7 @@ type NameServer_PriorityDomain struct {
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 
-	Type   DomainMatchingType `protobuf:"varint,1,opt,name=type,proto3,enum=xray.app.dns.DomainMatchingType" json:"type,omitempty"`
+	Type   DomainMatchingType `protobuf:"varint,1,opt,name=type,proto3,enum=Aiko.app.dns.DomainMatchingType" json:"type,omitempty"`
 	Domain string             `protobuf:"bytes,2,opt,name=domain,proto3" json:"domain,omitempty"`
 }
 
@@ -460,11 +460,11 @@ type Config_HostMapping struct {
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 
-	Type   DomainMatchingType `protobuf:"varint,1,opt,name=type,proto3,enum=xray.app.dns.DomainMatchingType" json:"type,omitempty"`
+	Type   DomainMatchingType `protobuf:"varint,1,opt,name=type,proto3,enum=Aiko.app.dns.DomainMatchingType" json:"type,omitempty"`
 	Domain string             `protobuf:"bytes,2,opt,name=domain,proto3" json:"domain,omitempty"`
 	Ip     [][]byte           `protobuf:"bytes,3,rep,name=ip,proto3" json:"ip,omitempty"`
 	// ProxiedDomain indicates the mapped domain has the same IP address on this
-	// domain. Xray will use this domain for IP queries.
+	// domain. Aiko will use this domain for IP queries.
 	ProxiedDomain string `protobuf:"bytes,4,opt,name=proxied_domain,json=proxiedDomain,proto3" json:"proxied_domain,omitempty"`
 }
 
@@ -647,31 +647,31 @@ func file_app_dns_config_proto_rawDescGZIP() []byte {
 var file_app_dns_config_proto_enumTypes = make([]protoimpl.EnumInfo, 2)
 var file_app_dns_config_proto_msgTypes = make([]protoimpl.MessageInfo, 6)
 var file_app_dns_config_proto_goTypes = []interface{}{
-	(DomainMatchingType)(0),           // 0: xray.app.dns.DomainMatchingType
-	(QueryStrategy)(0),                // 1: xray.app.dns.QueryStrategy
-	(*NameServer)(nil),                // 2: xray.app.dns.NameServer
-	(*Config)(nil),                    // 3: xray.app.dns.Config
-	(*NameServer_PriorityDomain)(nil), // 4: xray.app.dns.NameServer.PriorityDomain
-	(*NameServer_OriginalRule)(nil),   // 5: xray.app.dns.NameServer.OriginalRule
-	nil,                               // 6: xray.app.dns.Config.HostsEntry
-	(*Config_HostMapping)(nil),        // 7: xray.app.dns.Config.HostMapping
-	(*net.Endpoint)(nil),              // 8: xray.common.net.Endpoint
-	(*router.GeoIP)(nil),              // 9: xray.app.router.GeoIP
-	(*net.IPOrDomain)(nil),            // 10: xray.common.net.IPOrDomain
+	(DomainMatchingType)(0),           // 0: Aiko.app.dns.DomainMatchingType
+	(QueryStrategy)(0),                // 1: Aiko.app.dns.QueryStrategy
+	(*NameServer)(nil),                // 2: Aiko.app.dns.NameServer
+	(*Config)(nil),                    // 3: Aiko.app.dns.Config
+	(*NameServer_PriorityDomain)(nil), // 4: Aiko.app.dns.NameServer.PriorityDomain
+	(*NameServer_OriginalRule)(nil),   // 5: Aiko.app.dns.NameServer.OriginalRule
+	nil,                               // 6: Aiko.app.dns.Config.HostsEntry
+	(*Config_HostMapping)(nil),        // 7: Aiko.app.dns.Config.HostMapping
+	(*net.Endpoint)(nil),              // 8: Aiko.common.net.Endpoint
+	(*router.GeoIP)(nil),              // 9: Aiko.app.router.GeoIP
+	(*net.IPOrDomain)(nil),            // 10: Aiko.common.net.IPOrDomain
 }
 var file_app_dns_config_proto_depIdxs = []int32{
-	8,  // 0: xray.app.dns.NameServer.address:type_name -> xray.common.net.Endpoint
-	4,  // 1: xray.app.dns.NameServer.prioritized_domain:type_name -> xray.app.dns.NameServer.PriorityDomain
-	9,  // 2: xray.app.dns.NameServer.geoip:type_name -> xray.app.router.GeoIP
-	5,  // 3: xray.app.dns.NameServer.original_rules:type_name -> xray.app.dns.NameServer.OriginalRule
-	8,  // 4: xray.app.dns.Config.NameServers:type_name -> xray.common.net.Endpoint
-	2,  // 5: xray.app.dns.Config.name_server:type_name -> xray.app.dns.NameServer
-	6,  // 6: xray.app.dns.Config.Hosts:type_name -> xray.app.dns.Config.HostsEntry
-	7,  // 7: xray.app.dns.Config.static_hosts:type_name -> xray.app.dns.Config.HostMapping
-	1,  // 8: xray.app.dns.Config.query_strategy:type_name -> xray.app.dns.QueryStrategy
-	0,  // 9: xray.app.dns.NameServer.PriorityDomain.type:type_name -> xray.app.dns.DomainMatchingType
-	10, // 10: xray.app.dns.Config.HostsEntry.value:type_name -> xray.common.net.IPOrDomain
-	0,  // 11: xray.app.dns.Config.HostMapping.type:type_name -> xray.app.dns.DomainMatchingType
+	8,  // 0: Aiko.app.dns.NameServer.address:type_name -> Aiko.common.net.Endpoint
+	4,  // 1: Aiko.app.dns.NameServer.prioritized_domain:type_name -> Aiko.app.dns.NameServer.PriorityDomain
+	9,  // 2: Aiko.app.dns.NameServer.geoip:type_name -> Aiko.app.router.GeoIP
+	5,  // 3: Aiko.app.dns.NameServer.original_rules:type_name -> Aiko.app.dns.NameServer.OriginalRule
+	8,  // 4: Aiko.app.dns.Config.NameServers:type_name -> Aiko.common.net.Endpoint
+	2,  // 5: Aiko.app.dns.Config.name_server:type_name -> Aiko.app.dns.NameServer
+	6,  // 6: Aiko.app.dns.Config.Hosts:type_name -> Aiko.app.dns.Config.HostsEntry
+	7,  // 7: Aiko.app.dns.Config.static_hosts:type_name -> Aiko.app.dns.Config.HostMapping
+	1,  // 8: Aiko.app.dns.Config.query_strategy:type_name -> Aiko.app.dns.QueryStrategy
+	0,  // 9: Aiko.app.dns.NameServer.PriorityDomain.type:type_name -> Aiko.app.dns.DomainMatchingType
+	10, // 10: Aiko.app.dns.Config.HostsEntry.value:type_name -> Aiko.common.net.IPOrDomain
+	0,  // 11: Aiko.app.dns.Config.HostMapping.type:type_name -> Aiko.app.dns.DomainMatchingType
 	12, // [12:12] is the sub-list for method output_type
 	12, // [12:12] is the sub-list for method input_type
 	12, // [12:12] is the sub-list for extension type_name

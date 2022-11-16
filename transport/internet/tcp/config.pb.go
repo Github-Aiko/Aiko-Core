@@ -119,11 +119,11 @@ func file_transport_internet_tcp_config_proto_rawDescGZIP() []byte {
 
 var file_transport_internet_tcp_config_proto_msgTypes = make([]protoimpl.MessageInfo, 1)
 var file_transport_internet_tcp_config_proto_goTypes = []interface{}{
-	(*Config)(nil),              // 0: xray.transport.internet.tcp.Config
-	(*serial.TypedMessage)(nil), // 1: xray.common.serial.TypedMessage
+	(*Config)(nil),              // 0: Aiko.transport.internet.tcp.Config
+	(*serial.TypedMessage)(nil), // 1: Aiko.common.serial.TypedMessage
 }
 var file_transport_internet_tcp_config_proto_depIdxs = []int32{
-	1, // 0: xray.transport.internet.tcp.Config.header_settings:type_name -> xray.common.serial.TypedMessage
+	1, // 0: Aiko.transport.internet.tcp.Config.header_settings:type_name -> Aiko.common.serial.TypedMessage
 	1, // [1:1] is the sub-list for method output_type
 	1, // [1:1] is the sub-list for method input_type
 	1, // [1:1] is the sub-list for extension type_name

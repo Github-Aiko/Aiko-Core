@@ -1,19 +1,19 @@
 syntax = "proto3";
 
-package xray.app.router.command;
-option csharp_namespace = "Xray.App.Router.Command";
+package Aiko.app.router.command;
+option csharp_namespace = "Aiko.App.Router.Command";
 option go_package = "github.com/Github-Aiko/Aiko-Core/app/router/command";
-option java_package = "com.xray.app.router.command";
+option java_package = "com.Aiko.app.router.command";
 option java_multiple_files = true;
 
 import "common/net/network.proto";
 
 // RoutingContext is the context with information relative to routing process.
-// It conforms to the structure of xray.features.routing.Context and
-// xray.features.routing.Route.
+// It conforms to the structure of Aiko.features.routing.Context and
+// Aiko.features.routing.Route.
 message RoutingContext {
   string InboundTag = 1;
-  xray.common.net.Network Network = 2;
+  Aiko.common.net.Network Network = 2;
   repeated bytes SourceIPs = 3;
   repeated bytes TargetIPs = 4;
   uint32 SourcePort = 5;
@@ -27,7 +27,7 @@ message RoutingContext {
 }
 
 // SubscribeRoutingStatsRequest subscribes to routing statistics channel if
-// opened by xray-core.
+// opened by Aiko-core.
 // * FieldSelectors selects a subset of fields in routing statistics to return.
 // Valid selectors:
 //  - inbound: Selects connection's inbound tag.

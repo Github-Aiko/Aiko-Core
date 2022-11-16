@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-package xray.proxy.vless.encoding;
-option csharp_namespace = "Xray.Proxy.Vless.Encoding";
+package Aiko.proxy.vless.encoding;
+option csharp_namespace = "Aiko.Proxy.Vless.Encoding";
 option go_package = "github.com/Github-Aiko/Aiko-Core/proxy/vless/encoding";
-option java_package = "com.xray.proxy.vless.encoding";
+option java_package = "com.Aiko.proxy.vless.encoding";
 option java_multiple_files = true;
 
 message Addons {

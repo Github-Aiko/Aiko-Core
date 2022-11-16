@@ -218,7 +218,7 @@ func init() {
 
 	const defaultFlagValue = "NOT_DEFINED_AT_ALL"
 
-	xtlsShow := platform.NewEnvFlag("xray.trojan.xtls.show").GetValue(func() string { return defaultFlagValue })
+	xtlsShow := platform.NewEnvFlag("Aiko.trojan.xtls.show").GetValue(func() string { return defaultFlagValue })
 	if xtlsShow == "true" {
 		xtls_show = true
 	}

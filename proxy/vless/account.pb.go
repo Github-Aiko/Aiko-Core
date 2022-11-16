@@ -119,7 +119,7 @@ func file_proxy_vless_account_proto_rawDescGZIP() []byte {
 
 var file_proxy_vless_account_proto_msgTypes = make([]protoimpl.MessageInfo, 1)
 var file_proxy_vless_account_proto_goTypes = []interface{}{
-	(*Account)(nil), // 0: xray.proxy.vless.Account
+	(*Account)(nil), // 0: Aiko.proxy.vless.Account
 }
 var file_proxy_vless_account_proto_depIdxs = []int32{
 	0, // [0:0] is the sub-list for method output_type

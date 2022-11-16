@@ -14,7 +14,7 @@ import (
 	"google.golang.org/grpc"
 )
 
-// Commander is a Xray feature that provides gRPC methods to external clients.
+// Commander is a Aiko feature that provides gRPC methods to external clients.
 type Commander struct {
 	sync.Mutex
 	server   *grpc.Server

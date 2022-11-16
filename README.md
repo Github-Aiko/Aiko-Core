@@ -1,6 +1,6 @@
 # Project X
 
-[Project X](https://github.com/XTLS) originates from XTLS protocol, provides a set of network tools such as [Xray-core](https://github.com/Github-Aiko/Aiko-Core).
+[Project X](https://github.com/XTLS) originates from XTLS protocol, provides a set of network tools such as [Aiko-core](https://github.com/Github-Aiko/Aiko-Core).
 
 ## License
 
@@ -9,29 +9,29 @@
 ## Installation
 
 - Linux Script
-  - [Xray-install](https://github.com/XTLS/Xray-install)
-  - [Xray-script](https://github.com/kirin10000/Xray-script)
+  - [Aiko-install](https://github.com/XTLS/Aiko-install)
+  - [Aiko-script](https://github.com/kirin10000/Aiko-script)
 - Docker
-  - [teddysun/xray](https://hub.docker.com/r/teddysun/xray)
+  - [teddysun/Aiko](https://hub.docker.com/r/teddysun/Aiko)
 - One Click
   - [ProxySU](https://github.com/proxysu/ProxySU)
   - [v2ray-agent](https://github.com/mack-a/v2ray-agent)
-  - [Xray-yes](https://github.com/jiuqi9997/Xray-yes)
-  - [Xray_onekey](https://github.com/wulabing/Xray_onekey)
+  - [Aiko-yes](https://github.com/jiuqi9997/Aiko-yes)
+  - [Aiko_onekey](https://github.com/wulabing/Aiko_onekey)
 - Magisk
-  - [Xray4Magisk](https://github.com/CerteKim/Xray4Magisk)
-  - [Xray_For_Magisk](https://github.com/E7KMbb/Xray_For_Magisk)
+  - [Aiko4Magisk](https://github.com/CerteKim/Aiko4Magisk)
+  - [Aiko_For_Magisk](https://github.com/E7KMbb/Aiko_For_Magisk)
 - Homebrew
-  - `brew install xray`
-  - [(Tap) Repository 0](https://github.com/N4FA/homebrew-xray)
-  - [(Tap) Repository 1](https://github.com/xiruizhao/homebrew-xray)
+  - `brew install Aiko`
+  - [(Tap) Repository 0](https://github.com/N4FA/homebrew-Aiko)
+  - [(Tap) Repository 1](https://github.com/xiruizhao/homebrew-Aiko)
 
 ## Contributing
 [Code Of Conduct](https://github.com/Github-Aiko/Aiko-Core/blob/main/CODE_OF_CONDUCT.md)
 
 ## Usage
 
-[Xray-examples](https://github.com/XTLS/Xray-examples) / [VLESS-TCP-XTLS-WHATEVER](https://github.com/XTLS/Xray-examples/tree/main/VLESS-TCP-XTLS-WHATEVER)
+[Aiko-examples](https://github.com/XTLS/Aiko-examples) / [VLESS-TCP-XTLS-WHATEVER](https://github.com/XTLS/Aiko-examples/tree/main/VLESS-TCP-XTLS-WHATEVER)
 
 ## GUI Clients
 
@@ -39,7 +39,7 @@
   - [PassWall](https://github.com/xiaorouji/openwrt-passwall)
   - [Hello World](https://github.com/jerrykuku/luci-app-vssr)
   - [ShadowSocksR Plus+](https://github.com/fw876/helloworld)
-  - [luci-app-xray](https://github.com/yichya/luci-app-xray) ([openwrt-xray](https://github.com/yichya/openwrt-xray))
+  - [luci-app-Aiko](https://github.com/yichya/luci-app-Aiko) ([openwrt-Aiko](https://github.com/yichya/openwrt-Aiko))
 - Windows
   - [v2rayN](https://github.com/2dust/v2rayN)
   - [Qv2ray](https://github.com/Qv2ray/Qv2ray) (This project had been archived and currently inactive)
@@ -79,18 +79,18 @@ This repo relies on the following third-party projects:
 ### Windows
 
 ```bash
-go build -o xray.exe -trimpath -ldflags "-s -w -buildid=" ./main
+go build -o Aiko.exe -trimpath -ldflags "-s -w -buildid=" ./main
 ```
 
 ### Linux / macOS
 
 ```bash
-go build -o xray -trimpath -ldflags "-s -w -buildid=" ./main
+go build -o Aiko -trimpath -ldflags "-s -w -buildid=" ./main
 ```
 
 ## Telegram
 
-[Project X](https://t.me/projectXray)
+[Project X](https://t.me/projectAiko)
 
 [Project X Channel](https://t.me/projectXtls)
 

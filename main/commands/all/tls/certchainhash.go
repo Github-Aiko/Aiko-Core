@@ -13,7 +13,7 @@ var cmdCertChainHash = &base.Command{
 	UsageLine: "{{.Exec}} certChainHash",
 	Short:     "Calculate TLS certificates hash.",
 	Long: `
-	xray tls certChainHash --cert <cert.pem>
+	Aiko tls certChainHash --cert <cert.pem>
 	Calculate TLS certificate chain hash.
 	`,
 }

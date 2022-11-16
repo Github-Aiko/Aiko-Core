@@ -11,7 +11,7 @@ import (
 	"github.com/Github-Aiko/Aiko-Core/common/uuid"
 )
 
-func BuildXray() error {
+func BuildAiko() error {
 	genTestBinaryPath()
 	if _, err := os.Stat(testBinaryPath); err == nil {
 		return nil
@@ -21,10 +21,10 @@ func BuildXray() error {
 	return cmd.Run()
 }
 
-func RunXrayProtobuf(config []byte) *exec.Cmd {
+func RunAikoProtobuf(config []byte) *exec.Cmd {
 	genTestBinaryPath()
 
-	covDir := os.Getenv("XRAY_COV")
+	covDir := os.Getenv("Aiko_COV")
 	os.MkdirAll(covDir, os.ModeDir)
 	randomID := uuid.New()
 	profile := randomID.String() + ".out"

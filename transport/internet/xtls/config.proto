@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-package xray.transport.internet.xtls;
-option csharp_namespace = "Xray.Transport.Internet.Xtls";
+package Aiko.transport.internet.xtls;
+option csharp_namespace = "Aiko.Transport.Internet.Xtls";
 option go_package = "github.com/Github-Aiko/Aiko-Core/transport/internet/xtls";
-option java_package = "com.xray.transport.internet.xtls";
+option java_package = "com.Aiko.transport.internet.xtls";
 option java_multiple_files = true;
 
 message Certificate {

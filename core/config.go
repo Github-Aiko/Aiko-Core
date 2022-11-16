@@ -11,14 +11,14 @@ import (
 	"github.com/golang/protobuf/proto"
 )
 
-// ConfigFormat is a configurable format of Xray config file.
+// ConfigFormat is a configurable format of Aiko config file.
 type ConfigFormat struct {
 	Name      string
 	Extension []string
 	Loader    ConfigLoader
 }
 
-// ConfigLoader is a utility to load Xray config from external source.
+// ConfigLoader is a utility to load Aiko config from external source.
 type ConfigLoader func(input interface{}) (*Config, error)
 
 // ConfigBuilder is a builder to build core.Config from filenames and formats

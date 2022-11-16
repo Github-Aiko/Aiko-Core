@@ -124,7 +124,7 @@ func (o *Observer) probe(outbound string) ProbeResult {
 		DialContext: func(ctx context.Context, network string, addr string) (net.Conn, error) {
 			var connection net.Conn
 			taskErr := task.Run(ctx, func() error {
-				// MUST use Xray's built in context system
+				// MUST use Aiko's built in context system
 				dest, err := v2net.ParseDestination(network + ":" + addr)
 				if err != nil {
 					return newError("cannot understand address").Base(err)

@@ -194,13 +194,13 @@ func file_proxy_mtproto_config_proto_rawDescGZIP() []byte {
 
 var file_proxy_mtproto_config_proto_msgTypes = make([]protoimpl.MessageInfo, 3)
 var file_proxy_mtproto_config_proto_goTypes = []interface{}{
-	(*Account)(nil),       // 0: xray.proxy.mtproto.Account
-	(*ServerConfig)(nil),  // 1: xray.proxy.mtproto.ServerConfig
-	(*ClientConfig)(nil),  // 2: xray.proxy.mtproto.ClientConfig
-	(*protocol.User)(nil), // 3: xray.common.protocol.User
+	(*Account)(nil),       // 0: Aiko.proxy.mtproto.Account
+	(*ServerConfig)(nil),  // 1: Aiko.proxy.mtproto.ServerConfig
+	(*ClientConfig)(nil),  // 2: Aiko.proxy.mtproto.ClientConfig
+	(*protocol.User)(nil), // 3: Aiko.common.protocol.User
 }
 var file_proxy_mtproto_config_proto_depIdxs = []int32{
-	3, // 0: xray.proxy.mtproto.ServerConfig.user:type_name -> xray.common.protocol.User
+	3, // 0: Aiko.proxy.mtproto.ServerConfig.user:type_name -> Aiko.common.protocol.User
 	1, // [1:1] is the sub-list for method output_type
 	1, // [1:1] is the sub-list for method input_type
 	1, // [1:1] is the sub-list for extension type_name

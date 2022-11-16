@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-package xray.app.log;
-option csharp_namespace = "Xray.App.Log";
+package Aiko.app.log;
+option csharp_namespace = "Aiko.App.Log";
 option go_package = "github.com/Github-Aiko/Aiko-Core/app/log";
-option java_package = "com.xray.app.log";
+option java_package = "com.Aiko.app.log";
 option java_multiple_files = true;
 
 import "common/log/log.proto";
@@ -17,7 +17,7 @@ enum LogType {
 
 message Config {
   LogType error_log_type = 1;
-  xray.common.log.Severity error_log_level = 2;
+  Aiko.common.log.Severity error_log_level = 2;
   string error_log_path = 3;
 
   LogType access_log_type = 4;

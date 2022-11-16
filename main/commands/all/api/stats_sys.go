@@ -10,7 +10,7 @@ var cmdSysStats = &base.Command{
 	UsageLine:   "{{.Exec}} api statssys [--server=127.0.0.1:8080]",
 	Short:       "Get system statistics",
 	Long: `
-Get system statistics from Xray.
+Get system statistics from Aiko.
 Arguments:
 	-s, -server 
 		The API server address. Default 127.0.0.1:8080

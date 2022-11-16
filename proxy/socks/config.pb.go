@@ -182,7 +182,7 @@ type ServerConfig struct {
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 
-	AuthType   AuthType          `protobuf:"varint,1,opt,name=auth_type,json=authType,proto3,enum=xray.proxy.socks.AuthType" json:"auth_type,omitempty"`
+	AuthType   AuthType          `protobuf:"varint,1,opt,name=auth_type,json=authType,proto3,enum=Aiko.proxy.socks.AuthType" json:"auth_type,omitempty"`
 	Accounts   map[string]string `protobuf:"bytes,2,rep,name=accounts,proto3" json:"accounts,omitempty" protobuf_key:"bytes,1,opt,name=key,proto3" protobuf_val:"bytes,2,opt,name=value,proto3"`
 	Address    *net.IPOrDomain   `protobuf:"bytes,3,opt,name=address,proto3" json:"address,omitempty"`
 	UdpEnabled bool              `protobuf:"varint,4,opt,name=udp_enabled,json=udpEnabled,proto3" json:"udp_enabled,omitempty"`
@@ -274,7 +274,7 @@ type ClientConfig struct {
 
 	// Sever is a list of Socks server addresses.
 	Server  []*protocol.ServerEndpoint `protobuf:"bytes,1,rep,name=server,proto3" json:"server,omitempty"`
-	Version Version                    `protobuf:"varint,2,opt,name=version,proto3,enum=xray.proxy.socks.Version" json:"version,omitempty"`
+	Version Version                    `protobuf:"varint,2,opt,name=version,proto3,enum=Aiko.proxy.socks.Version" json:"version,omitempty"`
 }
 
 func (x *ClientConfig) Reset() {
@@ -396,21 +396,21 @@ func file_proxy_socks_config_proto_rawDescGZIP() []byte {
 var file_proxy_socks_config_proto_enumTypes = make([]protoimpl.EnumInfo, 2)
 var file_proxy_socks_config_proto_msgTypes = make([]protoimpl.MessageInfo, 4)
 var file_proxy_socks_config_proto_goTypes = []interface{}{
-	(AuthType)(0),                   // 0: xray.proxy.socks.AuthType
-	(Version)(0),                    // 1: xray.proxy.socks.Version
-	(*Account)(nil),                 // 2: xray.proxy.socks.Account
-	(*ServerConfig)(nil),            // 3: xray.proxy.socks.ServerConfig
-	(*ClientConfig)(nil),            // 4: xray.proxy.socks.ClientConfig
-	nil,                             // 5: xray.proxy.socks.ServerConfig.AccountsEntry
-	(*net.IPOrDomain)(nil),          // 6: xray.common.net.IPOrDomain
-	(*protocol.ServerEndpoint)(nil), // 7: xray.common.protocol.ServerEndpoint
+	(AuthType)(0),                   // 0: Aiko.proxy.socks.AuthType
+	(Version)(0),                    // 1: Aiko.proxy.socks.Version
+	(*Account)(nil),                 // 2: Aiko.proxy.socks.Account
+	(*ServerConfig)(nil),            // 3: Aiko.proxy.socks.ServerConfig
+	(*ClientConfig)(nil),            // 4: Aiko.proxy.socks.ClientConfig
+	nil,                             // 5: Aiko.proxy.socks.ServerConfig.AccountsEntry
+	(*net.IPOrDomain)(nil),          // 6: Aiko.common.net.IPOrDomain
+	(*protocol.ServerEndpoint)(nil), // 7: Aiko.common.protocol.ServerEndpoint
 }
 var file_proxy_socks_config_proto_depIdxs = []int32{
-	0, // 0: xray.proxy.socks.ServerConfig.auth_type:type_name -> xray.proxy.socks.AuthType
-	5, // 1: xray.proxy.socks.ServerConfig.accounts:type_name -> xray.proxy.socks.ServerConfig.AccountsEntry
-	6, // 2: xray.proxy.socks.ServerConfig.address:type_name -> xray.common.net.IPOrDomain
-	7, // 3: xray.proxy.socks.ClientConfig.server:type_name -> xray.common.protocol.ServerEndpoint
-	1, // 4: xray.proxy.socks.ClientConfig.version:type_name -> xray.proxy.socks.Version
+	0, // 0: Aiko.proxy.socks.ServerConfig.auth_type:type_name -> Aiko.proxy.socks.AuthType
+	5, // 1: Aiko.proxy.socks.ServerConfig.accounts:type_name -> Aiko.proxy.socks.ServerConfig.AccountsEntry
+	6, // 2: Aiko.proxy.socks.ServerConfig.address:type_name -> Aiko.common.net.IPOrDomain
+	7, // 3: Aiko.proxy.socks.ClientConfig.server:type_name -> Aiko.common.protocol.ServerEndpoint
+	1, // 4: Aiko.proxy.socks.ClientConfig.version:type_name -> Aiko.proxy.socks.Version
 	5, // [5:5] is the sub-list for method output_type
 	5, // [5:5] is the sub-list for method input_type
 	5, // [5:5] is the sub-list for extension type_name

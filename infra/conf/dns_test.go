@@ -25,7 +25,7 @@ func init() {
 	}
 
 	geositeFilePath := filepath.Join(wd, "geosite.dat")
-	os.Setenv("xray.location.asset", wd)
+	os.Setenv("Aiko.location.asset", wd)
 	geositeFile, err := os.OpenFile(geositeFilePath, os.O_CREATE|os.O_WRONLY, 0o600)
 	common.Must(err)
 	defer geositeFile.Close()
@@ -50,7 +50,7 @@ func TestDNSConfigParsing(t *testing.T) {
 	geositePath := platform.GetAssetLocation("geosite.dat")
 	defer func() {
 		os.Remove(geositePath)
-		os.Unsetenv("xray.location.asset")
+		os.Unsetenv("Aiko.location.asset")
 	}()
 
 	parserCreator := func() func(string) (proto.Message, error) {

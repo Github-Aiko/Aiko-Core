@@ -35,7 +35,7 @@ func NewLoggerServiceClient(cc grpc.ClientConnInterface) LoggerServiceClient {
 
 func (c *loggerServiceClient) RestartLogger(ctx context.Context, in *RestartLoggerRequest, opts ...grpc.CallOption) (*RestartLoggerResponse, error) {
 	out := new(RestartLoggerResponse)
-	err := c.cc.Invoke(ctx, "/xray.app.log.command.LoggerService/RestartLogger", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/Aiko.app.log.command.LoggerService/RestartLogger", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -80,7 +80,7 @@ func _LoggerService_RestartLogger_Handler(srv interface{}, ctx context.Context, 
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/xray.app.log.command.LoggerService/RestartLogger",
+		FullMethod: "/Aiko.app.log.command.LoggerService/RestartLogger",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(LoggerServiceServer).RestartLogger(ctx, req.(*RestartLoggerRequest))
@@ -92,7 +92,7 @@ func _LoggerService_RestartLogger_Handler(srv interface{}, ctx context.Context, 
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
 var LoggerService_ServiceDesc = grpc.ServiceDesc{
-	ServiceName: "xray.app.log.command.LoggerService",
+	ServiceName: "Aiko.app.log.command.LoggerService",
 	HandlerType: (*LoggerServiceServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{

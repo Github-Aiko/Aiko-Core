@@ -19,7 +19,7 @@ import (
 	"github.com/Github-Aiko/Aiko-Core/transport/internet"
 )
 
-// Server is an instance of Xray. At any time, there must be at most one Server instance running.
+// Server is an instance of Aiko. At any time, there must be at most one Server instance running.
 type Server interface {
 	common.Runnable
 }
@@ -86,7 +86,7 @@ func (r *resolution) resolve(allFeatures []features.Feature) (bool, error) {
 	return true, err
 }
 
-// Instance combines all functionalities in Xray.
+// Instance combines all functionalities in Aiko.
 type Instance struct {
 	access             sync.Mutex
 	features           []features.Feature
@@ -155,9 +155,9 @@ func RequireFeatures(ctx context.Context, callback interface{}) error {
 	return v.RequireFeatures(callback)
 }
 
-// New returns a new Xray instance based on given configuration.
+// New returns a new Aiko instance based on given configuration.
 // The instance is not started at this point.
-// To ensure Xray instance works properly, the config must contain one Dispatcher, one InboundHandlerManager and one OutboundHandlerManager. Other features are optional.
+// To ensure Aiko instance works properly, the config must contain one Dispatcher, one InboundHandlerManager and one OutboundHandlerManager. Other features are optional.
 func New(config *Config) (*Instance, error) {
 	server := &Instance{ctx: context.Background()}
 
@@ -181,7 +181,7 @@ func NewWithContext(ctx context.Context, config *Config) (*Instance, error) {
 }
 
 func initInstanceWithConfig(config *Config, server *Instance) (bool, error) {
-	server.ctx = context.WithValue(server.ctx, "cone", os.Getenv("XRAY_CONE_DISABLED") != "true")
+	server.ctx = context.WithValue(server.ctx, "cone", os.Getenv("Aiko_CONE_DISABLED") != "true")
 
 	if config.Transport != nil {
 		features.PrintDeprecatedFeatureWarning("global transport settings")
@@ -251,7 +251,7 @@ func (s *Instance) Type() interface{} {
 	return ServerType()
 }
 
-// Close shutdown the Xray instance.
+// Close shutdown the Aiko instance.
 func (s *Instance) Close() error {
 	s.access.Lock()
 	defer s.access.Unlock()
@@ -334,10 +334,10 @@ func (s *Instance) GetFeature(featureType interface{}) features.Feature {
 	return getFeature(s.features, reflect.TypeOf(featureType))
 }
 
-// Start starts the Xray instance, including all registered features. When Start returns error, the state of the instance is unknown.
-// A Xray instance can be started only once. Upon closing, the instance is not guaranteed to start again.
+// Start starts the Aiko instance, including all registered features. When Start returns error, the state of the instance is unknown.
+// A Aiko instance can be started only once. Upon closing, the instance is not guaranteed to start again.
 //
-// xray:api:stable
+// Aiko:api:stable
 func (s *Instance) Start() error {
 	s.access.Lock()
 	defer s.access.Unlock()
@@ -349,7 +349,7 @@ func (s *Instance) Start() error {
 		}
 	}
 
-	newError("Xray ", Version(), " started").AtWarning().WriteToLog()
+	newError("Aiko ", Version(), " started").AtWarning().WriteToLog()
 
 	return nil
 }

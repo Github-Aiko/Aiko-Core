@@ -566,24 +566,24 @@ func file_app_stats_command_command_proto_rawDescGZIP() []byte {
 
 var file_app_stats_command_command_proto_msgTypes = make([]protoimpl.MessageInfo, 8)
 var file_app_stats_command_command_proto_goTypes = []interface{}{
-	(*GetStatsRequest)(nil),    // 0: xray.app.stats.command.GetStatsRequest
-	(*Stat)(nil),               // 1: xray.app.stats.command.Stat
-	(*GetStatsResponse)(nil),   // 2: xray.app.stats.command.GetStatsResponse
-	(*QueryStatsRequest)(nil),  // 3: xray.app.stats.command.QueryStatsRequest
-	(*QueryStatsResponse)(nil), // 4: xray.app.stats.command.QueryStatsResponse
-	(*SysStatsRequest)(nil),    // 5: xray.app.stats.command.SysStatsRequest
-	(*SysStatsResponse)(nil),   // 6: xray.app.stats.command.SysStatsResponse
-	(*Config)(nil),             // 7: xray.app.stats.command.Config
+	(*GetStatsRequest)(nil),    // 0: Aiko.app.stats.command.GetStatsRequest
+	(*Stat)(nil),               // 1: Aiko.app.stats.command.Stat
+	(*GetStatsResponse)(nil),   // 2: Aiko.app.stats.command.GetStatsResponse
+	(*QueryStatsRequest)(nil),  // 3: Aiko.app.stats.command.QueryStatsRequest
+	(*QueryStatsResponse)(nil), // 4: Aiko.app.stats.command.QueryStatsResponse
+	(*SysStatsRequest)(nil),    // 5: Aiko.app.stats.command.SysStatsRequest
+	(*SysStatsResponse)(nil),   // 6: Aiko.app.stats.command.SysStatsResponse
+	(*Config)(nil),             // 7: Aiko.app.stats.command.Config
 }
 var file_app_stats_command_command_proto_depIdxs = []int32{
-	1, // 0: xray.app.stats.command.GetStatsResponse.stat:type_name -> xray.app.stats.command.Stat
-	1, // 1: xray.app.stats.command.QueryStatsResponse.stat:type_name -> xray.app.stats.command.Stat
-	0, // 2: xray.app.stats.command.StatsService.GetStats:input_type -> xray.app.stats.command.GetStatsRequest
-	3, // 3: xray.app.stats.command.StatsService.QueryStats:input_type -> xray.app.stats.command.QueryStatsRequest
-	5, // 4: xray.app.stats.command.StatsService.GetSysStats:input_type -> xray.app.stats.command.SysStatsRequest
-	2, // 5: xray.app.stats.command.StatsService.GetStats:output_type -> xray.app.stats.command.GetStatsResponse
-	4, // 6: xray.app.stats.command.StatsService.QueryStats:output_type -> xray.app.stats.command.QueryStatsResponse
-	6, // 7: xray.app.stats.command.StatsService.GetSysStats:output_type -> xray.app.stats.command.SysStatsResponse
+	1, // 0: Aiko.app.stats.command.GetStatsResponse.stat:type_name -> Aiko.app.stats.command.Stat
+	1, // 1: Aiko.app.stats.command.QueryStatsResponse.stat:type_name -> Aiko.app.stats.command.Stat
+	0, // 2: Aiko.app.stats.command.StatsService.GetStats:input_type -> Aiko.app.stats.command.GetStatsRequest
+	3, // 3: Aiko.app.stats.command.StatsService.QueryStats:input_type -> Aiko.app.stats.command.QueryStatsRequest
+	5, // 4: Aiko.app.stats.command.StatsService.GetSysStats:input_type -> Aiko.app.stats.command.SysStatsRequest
+	2, // 5: Aiko.app.stats.command.StatsService.GetStats:output_type -> Aiko.app.stats.command.GetStatsResponse
+	4, // 6: Aiko.app.stats.command.StatsService.QueryStats:output_type -> Aiko.app.stats.command.QueryStatsResponse
+	6, // 7: Aiko.app.stats.command.StatsService.GetSysStats:output_type -> Aiko.app.stats.command.SysStatsResponse
 	5, // [5:8] is the sub-list for method output_type
 	2, // [2:5] is the sub-list for method input_type
 	2, // [2:2] is the sub-list for extension type_name

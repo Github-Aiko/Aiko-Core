@@ -15,14 +15,14 @@ func LineSeparator() string {
 }
 
 func GetToolLocation(file string) string {
-	const name = "xray.location.tool"
+	const name = "Aiko.location.tool"
 	toolPath := EnvFlag{Name: name, AltName: NormalizeEnvName(name)}.GetValue(getExecutableDir)
 	return filepath.Join(toolPath, file+".exe")
 }
 
 // GetAssetLocation searches for `file` in the excutable dir
 func GetAssetLocation(file string) string {
-	const name = "xray.location.asset"
+	const name = "Aiko.location.asset"
 	assetPath := NewEnvFlag(name).GetValue(getExecutableDir)
 	return filepath.Join(assetPath, file)
 }

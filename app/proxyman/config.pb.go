@@ -164,7 +164,7 @@ type AllocationStrategy struct {
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 
-	Type AllocationStrategy_Type `protobuf:"varint,1,opt,name=type,proto3,enum=xray.app.proxyman.AllocationStrategy_Type" json:"type,omitempty"`
+	Type AllocationStrategy_Type `protobuf:"varint,1,opt,name=type,proto3,enum=Aiko.app.proxyman.AllocationStrategy_Type" json:"type,omitempty"`
 	// Number of handlers (ports) running in parallel.
 	// Default value is 3 if unset.
 	Concurrency *AllocationStrategy_AllocationStrategyConcurrency `protobuf:"bytes,2,opt,name=concurrency,proto3" json:"concurrency,omitempty"`
@@ -327,7 +327,7 @@ type ReceiverConfig struct {
 	// Deprecated. Use sniffing_settings.
 	//
 	// Deprecated: Do not use.
-	DomainOverride   []KnownProtocols `protobuf:"varint,7,rep,packed,name=domain_override,json=domainOverride,proto3,enum=xray.app.proxyman.KnownProtocols" json:"domain_override,omitempty"`
+	DomainOverride   []KnownProtocols `protobuf:"varint,7,rep,packed,name=domain_override,json=domainOverride,proto3,enum=Aiko.app.proxyman.KnownProtocols" json:"domain_override,omitempty"`
 	SniffingSettings *SniffingConfig  `protobuf:"bytes,8,opt,name=sniffing_settings,json=sniffingSettings,proto3" json:"sniffing_settings,omitempty"`
 }
 
@@ -888,40 +888,40 @@ func file_app_proxyman_config_proto_rawDescGZIP() []byte {
 var file_app_proxyman_config_proto_enumTypes = make([]protoimpl.EnumInfo, 2)
 var file_app_proxyman_config_proto_msgTypes = make([]protoimpl.MessageInfo, 10)
 var file_app_proxyman_config_proto_goTypes = []interface{}{
-	(KnownProtocols)(0),                                      // 0: xray.app.proxyman.KnownProtocols
-	(AllocationStrategy_Type)(0),                             // 1: xray.app.proxyman.AllocationStrategy.Type
-	(*InboundConfig)(nil),                                    // 2: xray.app.proxyman.InboundConfig
-	(*AllocationStrategy)(nil),                               // 3: xray.app.proxyman.AllocationStrategy
-	(*SniffingConfig)(nil),                                   // 4: xray.app.proxyman.SniffingConfig
-	(*ReceiverConfig)(nil),                                   // 5: xray.app.proxyman.ReceiverConfig
-	(*InboundHandlerConfig)(nil),                             // 6: xray.app.proxyman.InboundHandlerConfig
-	(*OutboundConfig)(nil),                                   // 7: xray.app.proxyman.OutboundConfig
-	(*SenderConfig)(nil),                                     // 8: xray.app.proxyman.SenderConfig
-	(*MultiplexingConfig)(nil),                               // 9: xray.app.proxyman.MultiplexingConfig
-	(*AllocationStrategy_AllocationStrategyConcurrency)(nil), // 10: xray.app.proxyman.AllocationStrategy.AllocationStrategyConcurrency
-	(*AllocationStrategy_AllocationStrategyRefresh)(nil),     // 11: xray.app.proxyman.AllocationStrategy.AllocationStrategyRefresh
-	(*net.PortList)(nil),                                     // 12: xray.common.net.PortList
-	(*net.IPOrDomain)(nil),                                   // 13: xray.common.net.IPOrDomain
-	(*internet.StreamConfig)(nil),                            // 14: xray.transport.internet.StreamConfig
-	(*serial.TypedMessage)(nil),                              // 15: xray.common.serial.TypedMessage
-	(*internet.ProxyConfig)(nil),                             // 16: xray.transport.internet.ProxyConfig
+	(KnownProtocols)(0),                                      // 0: Aiko.app.proxyman.KnownProtocols
+	(AllocationStrategy_Type)(0),                             // 1: Aiko.app.proxyman.AllocationStrategy.Type
+	(*InboundConfig)(nil),                                    // 2: Aiko.app.proxyman.InboundConfig
+	(*AllocationStrategy)(nil),                               // 3: Aiko.app.proxyman.AllocationStrategy
+	(*SniffingConfig)(nil),                                   // 4: Aiko.app.proxyman.SniffingConfig
+	(*ReceiverConfig)(nil),                                   // 5: Aiko.app.proxyman.ReceiverConfig
+	(*InboundHandlerConfig)(nil),                             // 6: Aiko.app.proxyman.InboundHandlerConfig
+	(*OutboundConfig)(nil),                                   // 7: Aiko.app.proxyman.OutboundConfig
+	(*SenderConfig)(nil),                                     // 8: Aiko.app.proxyman.SenderConfig
+	(*MultiplexingConfig)(nil),                               // 9: Aiko.app.proxyman.MultiplexingConfig
+	(*AllocationStrategy_AllocationStrategyConcurrency)(nil), // 10: Aiko.app.proxyman.AllocationStrategy.AllocationStrategyConcurrency
+	(*AllocationStrategy_AllocationStrategyRefresh)(nil),     // 11: Aiko.app.proxyman.AllocationStrategy.AllocationStrategyRefresh
+	(*net.PortList)(nil),                                     // 12: Aiko.common.net.PortList
+	(*net.IPOrDomain)(nil),                                   // 13: Aiko.common.net.IPOrDomain
+	(*internet.StreamConfig)(nil),                            // 14: Aiko.transport.internet.StreamConfig
+	(*serial.TypedMessage)(nil),                              // 15: Aiko.common.serial.TypedMessage
+	(*internet.ProxyConfig)(nil),                             // 16: Aiko.transport.internet.ProxyConfig
 }
 var file_app_proxyman_config_proto_depIdxs = []int32{
-	1,  // 0: xray.app.proxyman.AllocationStrategy.type:type_name -> xray.app.proxyman.AllocationStrategy.Type
-	10, // 1: xray.app.proxyman.AllocationStrategy.concurrency:type_name -> xray.app.proxyman.AllocationStrategy.AllocationStrategyConcurrency
-	11, // 2: xray.app.proxyman.AllocationStrategy.refresh:type_name -> xray.app.proxyman.AllocationStrategy.AllocationStrategyRefresh
-	12, // 3: xray.app.proxyman.ReceiverConfig.port_list:type_name -> xray.common.net.PortList
-	13, // 4: xray.app.proxyman.ReceiverConfig.listen:type_name -> xray.common.net.IPOrDomain
-	3,  // 5: xray.app.proxyman.ReceiverConfig.allocation_strategy:type_name -> xray.app.proxyman.AllocationStrategy
-	14, // 6: xray.app.proxyman.ReceiverConfig.stream_settings:type_name -> xray.transport.internet.StreamConfig
-	0,  // 7: xray.app.proxyman.ReceiverConfig.domain_override:type_name -> xray.app.proxyman.KnownProtocols
-	4,  // 8: xray.app.proxyman.ReceiverConfig.sniffing_settings:type_name -> xray.app.proxyman.SniffingConfig
-	15, // 9: xray.app.proxyman.InboundHandlerConfig.receiver_settings:type_name -> xray.common.serial.TypedMessage
-	15, // 10: xray.app.proxyman.InboundHandlerConfig.proxy_settings:type_name -> xray.common.serial.TypedMessage
-	13, // 11: xray.app.proxyman.SenderConfig.via:type_name -> xray.common.net.IPOrDomain
-	14, // 12: xray.app.proxyman.SenderConfig.stream_settings:type_name -> xray.transport.internet.StreamConfig
-	16, // 13: xray.app.proxyman.SenderConfig.proxy_settings:type_name -> xray.transport.internet.ProxyConfig
-	9,  // 14: xray.app.proxyman.SenderConfig.multiplex_settings:type_name -> xray.app.proxyman.MultiplexingConfig
+	1,  // 0: Aiko.app.proxyman.AllocationStrategy.type:type_name -> Aiko.app.proxyman.AllocationStrategy.Type
+	10, // 1: Aiko.app.proxyman.AllocationStrategy.concurrency:type_name -> Aiko.app.proxyman.AllocationStrategy.AllocationStrategyConcurrency
+	11, // 2: Aiko.app.proxyman.AllocationStrategy.refresh:type_name -> Aiko.app.proxyman.AllocationStrategy.AllocationStrategyRefresh
+	12, // 3: Aiko.app.proxyman.ReceiverConfig.port_list:type_name -> Aiko.common.net.PortList
+	13, // 4: Aiko.app.proxyman.ReceiverConfig.listen:type_name -> Aiko.common.net.IPOrDomain
+	3,  // 5: Aiko.app.proxyman.ReceiverConfig.allocation_strategy:type_name -> Aiko.app.proxyman.AllocationStrategy
+	14, // 6: Aiko.app.proxyman.ReceiverConfig.stream_settings:type_name -> Aiko.transport.internet.StreamConfig
+	0,  // 7: Aiko.app.proxyman.ReceiverConfig.domain_override:type_name -> Aiko.app.proxyman.KnownProtocols
+	4,  // 8: Aiko.app.proxyman.ReceiverConfig.sniffing_settings:type_name -> Aiko.app.proxyman.SniffingConfig
+	15, // 9: Aiko.app.proxyman.InboundHandlerConfig.receiver_settings:type_name -> Aiko.common.serial.TypedMessage
+	15, // 10: Aiko.app.proxyman.InboundHandlerConfig.proxy_settings:type_name -> Aiko.common.serial.TypedMessage
+	13, // 11: Aiko.app.proxyman.SenderConfig.via:type_name -> Aiko.common.net.IPOrDomain
+	14, // 12: Aiko.app.proxyman.SenderConfig.stream_settings:type_name -> Aiko.transport.internet.StreamConfig
+	16, // 13: Aiko.app.proxyman.SenderConfig.proxy_settings:type_name -> Aiko.transport.internet.ProxyConfig
+	9,  // 14: Aiko.app.proxyman.SenderConfig.multiplex_settings:type_name -> Aiko.app.proxyman.MultiplexingConfig
 	15, // [15:15] is the sub-list for method output_type
 	15, // [15:15] is the sub-list for method input_type
 	15, // [15:15] is the sub-list for extension type_name

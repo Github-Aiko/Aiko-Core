@@ -130,13 +130,13 @@ func file_transport_internet_quic_config_proto_rawDescGZIP() []byte {
 
 var file_transport_internet_quic_config_proto_msgTypes = make([]protoimpl.MessageInfo, 1)
 var file_transport_internet_quic_config_proto_goTypes = []interface{}{
-	(*Config)(nil),                  // 0: xray.transport.internet.quic.Config
-	(*protocol.SecurityConfig)(nil), // 1: xray.common.protocol.SecurityConfig
-	(*serial.TypedMessage)(nil),     // 2: xray.common.serial.TypedMessage
+	(*Config)(nil),                  // 0: Aiko.transport.internet.quic.Config
+	(*protocol.SecurityConfig)(nil), // 1: Aiko.common.protocol.SecurityConfig
+	(*serial.TypedMessage)(nil),     // 2: Aiko.common.serial.TypedMessage
 }
 var file_transport_internet_quic_config_proto_depIdxs = []int32{
-	1, // 0: xray.transport.internet.quic.Config.security:type_name -> xray.common.protocol.SecurityConfig
-	2, // 1: xray.transport.internet.quic.Config.header:type_name -> xray.common.serial.TypedMessage
+	1, // 0: Aiko.transport.internet.quic.Config.security:type_name -> Aiko.common.protocol.SecurityConfig
+	2, // 1: Aiko.transport.internet.quic.Config.header:type_name -> Aiko.common.serial.TypedMessage
 	2, // [2:2] is the sub-list for method output_type
 	2, // [2:2] is the sub-list for method input_type
 	2, // [2:2] is the sub-list for extension type_name

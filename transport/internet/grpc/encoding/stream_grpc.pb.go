@@ -35,7 +35,7 @@ func NewGRPCServiceClient(cc grpc.ClientConnInterface) GRPCServiceClient {
 }
 
 func (c *gRPCServiceClient) Tun(ctx context.Context, opts ...grpc.CallOption) (GRPCService_TunClient, error) {
-	stream, err := c.cc.NewStream(ctx, &GRPCService_ServiceDesc.Streams[0], "/xray.transport.internet.grpc.encoding.GRPCService/Tun", opts...)
+	stream, err := c.cc.NewStream(ctx, &GRPCService_ServiceDesc.Streams[0], "/Aiko.transport.internet.grpc.encoding.GRPCService/Tun", opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -66,7 +66,7 @@ func (x *gRPCServiceTunClient) Recv() (*Hunk, error) {
 }
 
 func (c *gRPCServiceClient) TunMulti(ctx context.Context, opts ...grpc.CallOption) (GRPCService_TunMultiClient, error) {
-	stream, err := c.cc.NewStream(ctx, &GRPCService_ServiceDesc.Streams[1], "/xray.transport.internet.grpc.encoding.GRPCService/TunMulti", opts...)
+	stream, err := c.cc.NewStream(ctx, &GRPCService_ServiceDesc.Streams[1], "/Aiko.transport.internet.grpc.encoding.GRPCService/TunMulti", opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -184,7 +184,7 @@ func (x *gRPCServiceTunMultiServer) Recv() (*MultiHunk, error) {
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
 var GRPCService_ServiceDesc = grpc.ServiceDesc{
-	ServiceName: "xray.transport.internet.grpc.encoding.GRPCService",
+	ServiceName: "Aiko.transport.internet.grpc.encoding.GRPCService",
 	HandlerType: (*GRPCServiceServer)(nil),
 	Methods:     []grpc.MethodDesc{},
 	Streams: []grpc.StreamDesc{

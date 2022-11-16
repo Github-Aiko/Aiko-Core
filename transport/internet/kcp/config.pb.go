@@ -605,26 +605,26 @@ func file_transport_internet_kcp_config_proto_rawDescGZIP() []byte {
 
 var file_transport_internet_kcp_config_proto_msgTypes = make([]protoimpl.MessageInfo, 9)
 var file_transport_internet_kcp_config_proto_goTypes = []interface{}{
-	(*MTU)(nil),                 // 0: xray.transport.internet.kcp.MTU
-	(*TTI)(nil),                 // 1: xray.transport.internet.kcp.TTI
-	(*UplinkCapacity)(nil),      // 2: xray.transport.internet.kcp.UplinkCapacity
-	(*DownlinkCapacity)(nil),    // 3: xray.transport.internet.kcp.DownlinkCapacity
-	(*WriteBuffer)(nil),         // 4: xray.transport.internet.kcp.WriteBuffer
-	(*ReadBuffer)(nil),          // 5: xray.transport.internet.kcp.ReadBuffer
-	(*ConnectionReuse)(nil),     // 6: xray.transport.internet.kcp.ConnectionReuse
-	(*EncryptionSeed)(nil),      // 7: xray.transport.internet.kcp.EncryptionSeed
-	(*Config)(nil),              // 8: xray.transport.internet.kcp.Config
-	(*serial.TypedMessage)(nil), // 9: xray.common.serial.TypedMessage
+	(*MTU)(nil),                 // 0: Aiko.transport.internet.kcp.MTU
+	(*TTI)(nil),                 // 1: Aiko.transport.internet.kcp.TTI
+	(*UplinkCapacity)(nil),      // 2: Aiko.transport.internet.kcp.UplinkCapacity
+	(*DownlinkCapacity)(nil),    // 3: Aiko.transport.internet.kcp.DownlinkCapacity
+	(*WriteBuffer)(nil),         // 4: Aiko.transport.internet.kcp.WriteBuffer
+	(*ReadBuffer)(nil),          // 5: Aiko.transport.internet.kcp.ReadBuffer
+	(*ConnectionReuse)(nil),     // 6: Aiko.transport.internet.kcp.ConnectionReuse
+	(*EncryptionSeed)(nil),      // 7: Aiko.transport.internet.kcp.EncryptionSeed
+	(*Config)(nil),              // 8: Aiko.transport.internet.kcp.Config
+	(*serial.TypedMessage)(nil), // 9: Aiko.common.serial.TypedMessage
 }
 var file_transport_internet_kcp_config_proto_depIdxs = []int32{
-	0, // 0: xray.transport.internet.kcp.Config.mtu:type_name -> xray.transport.internet.kcp.MTU
-	1, // 1: xray.transport.internet.kcp.Config.tti:type_name -> xray.transport.internet.kcp.TTI
-	2, // 2: xray.transport.internet.kcp.Config.uplink_capacity:type_name -> xray.transport.internet.kcp.UplinkCapacity
-	3, // 3: xray.transport.internet.kcp.Config.downlink_capacity:type_name -> xray.transport.internet.kcp.DownlinkCapacity
-	4, // 4: xray.transport.internet.kcp.Config.write_buffer:type_name -> xray.transport.internet.kcp.WriteBuffer
-	5, // 5: xray.transport.internet.kcp.Config.read_buffer:type_name -> xray.transport.internet.kcp.ReadBuffer
-	9, // 6: xray.transport.internet.kcp.Config.header_config:type_name -> xray.common.serial.TypedMessage
-	7, // 7: xray.transport.internet.kcp.Config.seed:type_name -> xray.transport.internet.kcp.EncryptionSeed
+	0, // 0: Aiko.transport.internet.kcp.Config.mtu:type_name -> Aiko.transport.internet.kcp.MTU
+	1, // 1: Aiko.transport.internet.kcp.Config.tti:type_name -> Aiko.transport.internet.kcp.TTI
+	2, // 2: Aiko.transport.internet.kcp.Config.uplink_capacity:type_name -> Aiko.transport.internet.kcp.UplinkCapacity
+	3, // 3: Aiko.transport.internet.kcp.Config.downlink_capacity:type_name -> Aiko.transport.internet.kcp.DownlinkCapacity
+	4, // 4: Aiko.transport.internet.kcp.Config.write_buffer:type_name -> Aiko.transport.internet.kcp.WriteBuffer
+	5, // 5: Aiko.transport.internet.kcp.Config.read_buffer:type_name -> Aiko.transport.internet.kcp.ReadBuffer
+	9, // 6: Aiko.transport.internet.kcp.Config.header_config:type_name -> Aiko.common.serial.TypedMessage
+	7, // 7: Aiko.transport.internet.kcp.Config.seed:type_name -> Aiko.transport.internet.kcp.EncryptionSeed
 	8, // [8:8] is the sub-list for method output_type
 	8, // [8:8] is the sub-list for method input_type
 	8, // [8:8] is the sub-list for extension type_name

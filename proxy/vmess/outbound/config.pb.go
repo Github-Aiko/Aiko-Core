@@ -106,11 +106,11 @@ func file_proxy_vmess_outbound_config_proto_rawDescGZIP() []byte {
 
 var file_proxy_vmess_outbound_config_proto_msgTypes = make([]protoimpl.MessageInfo, 1)
 var file_proxy_vmess_outbound_config_proto_goTypes = []interface{}{
-	(*Config)(nil),                  // 0: xray.proxy.vmess.outbound.Config
-	(*protocol.ServerEndpoint)(nil), // 1: xray.common.protocol.ServerEndpoint
+	(*Config)(nil),                  // 0: Aiko.proxy.vmess.outbound.Config
+	(*protocol.ServerEndpoint)(nil), // 1: Aiko.common.protocol.ServerEndpoint
 }
 var file_proxy_vmess_outbound_config_proto_depIdxs = []int32{
-	1, // 0: xray.proxy.vmess.outbound.Config.Receiver:type_name -> xray.common.protocol.ServerEndpoint
+	1, // 0: Aiko.proxy.vmess.outbound.Config.Receiver:type_name -> Aiko.common.protocol.ServerEndpoint
 	1, // [1:1] is the sub-list for method output_type
 	1, // [1:1] is the sub-list for method input_type
 	1, // [1:1] is the sub-list for extension type_name

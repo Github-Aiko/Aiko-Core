@@ -11,7 +11,7 @@ import (
 	"strings"
 )
 
-var directory = flag.String("pwd", "", "Working directory of Xray vformat.")
+var directory = flag.String("pwd", "", "Working directory of Aiko vformat.")
 
 // envFile returns the name of the Go environment configuration file.
 // Copy from https://github.com/golang/go/blob/c4f2a9788a7be04daf931ac54382fbe2cb754938/src/cmd/go/internal/cfg/cfg.go#L150-L166

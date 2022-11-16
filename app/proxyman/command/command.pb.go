@@ -807,44 +807,44 @@ func file_app_proxyman_command_command_proto_rawDescGZIP() []byte {
 
 var file_app_proxyman_command_command_proto_msgTypes = make([]protoimpl.MessageInfo, 15)
 var file_app_proxyman_command_command_proto_goTypes = []interface{}{
-	(*AddUserOperation)(nil),           // 0: xray.app.proxyman.command.AddUserOperation
-	(*RemoveUserOperation)(nil),        // 1: xray.app.proxyman.command.RemoveUserOperation
-	(*AddInboundRequest)(nil),          // 2: xray.app.proxyman.command.AddInboundRequest
-	(*AddInboundResponse)(nil),         // 3: xray.app.proxyman.command.AddInboundResponse
-	(*RemoveInboundRequest)(nil),       // 4: xray.app.proxyman.command.RemoveInboundRequest
-	(*RemoveInboundResponse)(nil),      // 5: xray.app.proxyman.command.RemoveInboundResponse
-	(*AlterInboundRequest)(nil),        // 6: xray.app.proxyman.command.AlterInboundRequest
-	(*AlterInboundResponse)(nil),       // 7: xray.app.proxyman.command.AlterInboundResponse
-	(*AddOutboundRequest)(nil),         // 8: xray.app.proxyman.command.AddOutboundRequest
-	(*AddOutboundResponse)(nil),        // 9: xray.app.proxyman.command.AddOutboundResponse
-	(*RemoveOutboundRequest)(nil),      // 10: xray.app.proxyman.command.RemoveOutboundRequest
-	(*RemoveOutboundResponse)(nil),     // 11: xray.app.proxyman.command.RemoveOutboundResponse
-	(*AlterOutboundRequest)(nil),       // 12: xray.app.proxyman.command.AlterOutboundRequest
-	(*AlterOutboundResponse)(nil),      // 13: xray.app.proxyman.command.AlterOutboundResponse
-	(*Config)(nil),                     // 14: xray.app.proxyman.command.Config
-	(*protocol.User)(nil),              // 15: xray.common.protocol.User
-	(*core.InboundHandlerConfig)(nil),  // 16: xray.core.InboundHandlerConfig
-	(*serial.TypedMessage)(nil),        // 17: xray.common.serial.TypedMessage
-	(*core.OutboundHandlerConfig)(nil), // 18: xray.core.OutboundHandlerConfig
+	(*AddUserOperation)(nil),           // 0: Aiko.app.proxyman.command.AddUserOperation
+	(*RemoveUserOperation)(nil),        // 1: Aiko.app.proxyman.command.RemoveUserOperation
+	(*AddInboundRequest)(nil),          // 2: Aiko.app.proxyman.command.AddInboundRequest
+	(*AddInboundResponse)(nil),         // 3: Aiko.app.proxyman.command.AddInboundResponse
+	(*RemoveInboundRequest)(nil),       // 4: Aiko.app.proxyman.command.RemoveInboundRequest
+	(*RemoveInboundResponse)(nil),      // 5: Aiko.app.proxyman.command.RemoveInboundResponse
+	(*AlterInboundRequest)(nil),        // 6: Aiko.app.proxyman.command.AlterInboundRequest
+	(*AlterInboundResponse)(nil),       // 7: Aiko.app.proxyman.command.AlterInboundResponse
+	(*AddOutboundRequest)(nil),         // 8: Aiko.app.proxyman.command.AddOutboundRequest
+	(*AddOutboundResponse)(nil),        // 9: Aiko.app.proxyman.command.AddOutboundResponse
+	(*RemoveOutboundRequest)(nil),      // 10: Aiko.app.proxyman.command.RemoveOutboundRequest
+	(*RemoveOutboundResponse)(nil),     // 11: Aiko.app.proxyman.command.RemoveOutboundResponse
+	(*AlterOutboundRequest)(nil),       // 12: Aiko.app.proxyman.command.AlterOutboundRequest
+	(*AlterOutboundResponse)(nil),      // 13: Aiko.app.proxyman.command.AlterOutboundResponse
+	(*Config)(nil),                     // 14: Aiko.app.proxyman.command.Config
+	(*protocol.User)(nil),              // 15: Aiko.common.protocol.User
+	(*core.InboundHandlerConfig)(nil),  // 16: Aiko.core.InboundHandlerConfig
+	(*serial.TypedMessage)(nil),        // 17: Aiko.common.serial.TypedMessage
+	(*core.OutboundHandlerConfig)(nil), // 18: Aiko.core.OutboundHandlerConfig
 }
 var file_app_proxyman_command_command_proto_depIdxs = []int32{
-	15, // 0: xray.app.proxyman.command.AddUserOperation.user:type_name -> xray.common.protocol.User
-	16, // 1: xray.app.proxyman.command.AddInboundRequest.inbound:type_name -> xray.core.InboundHandlerConfig
-	17, // 2: xray.app.proxyman.command.AlterInboundRequest.operation:type_name -> xray.common.serial.TypedMessage
-	18, // 3: xray.app.proxyman.command.AddOutboundRequest.outbound:type_name -> xray.core.OutboundHandlerConfig
-	17, // 4: xray.app.proxyman.command.AlterOutboundRequest.operation:type_name -> xray.common.serial.TypedMessage
-	2,  // 5: xray.app.proxyman.command.HandlerService.AddInbound:input_type -> xray.app.proxyman.command.AddInboundRequest
-	4,  // 6: xray.app.proxyman.command.HandlerService.RemoveInbound:input_type -> xray.app.proxyman.command.RemoveInboundRequest
-	6,  // 7: xray.app.proxyman.command.HandlerService.AlterInbound:input_type -> xray.app.proxyman.command.AlterInboundRequest
-	8,  // 8: xray.app.proxyman.command.HandlerService.AddOutbound:input_type -> xray.app.proxyman.command.AddOutboundRequest
-	10, // 9: xray.app.proxyman.command.HandlerService.RemoveOutbound:input_type -> xray.app.proxyman.command.RemoveOutboundRequest
-	12, // 10: xray.app.proxyman.command.HandlerService.AlterOutbound:input_type -> xray.app.proxyman.command.AlterOutboundRequest
-	3,  // 11: xray.app.proxyman.command.HandlerService.AddInbound:output_type -> xray.app.proxyman.command.AddInboundResponse
-	5,  // 12: xray.app.proxyman.command.HandlerService.RemoveInbound:output_type -> xray.app.proxyman.command.RemoveInboundResponse
-	7,  // 13: xray.app.proxyman.command.HandlerService.AlterInbound:output_type -> xray.app.proxyman.command.AlterInboundResponse
-	9,  // 14: xray.app.proxyman.command.HandlerService.AddOutbound:output_type -> xray.app.proxyman.command.AddOutboundResponse
-	11, // 15: xray.app.proxyman.command.HandlerService.RemoveOutbound:output_type -> xray.app.proxyman.command.RemoveOutboundResponse
-	13, // 16: xray.app.proxyman.command.HandlerService.AlterOutbound:output_type -> xray.app.proxyman.command.AlterOutboundResponse
+	15, // 0: Aiko.app.proxyman.command.AddUserOperation.user:type_name -> Aiko.common.protocol.User
+	16, // 1: Aiko.app.proxyman.command.AddInboundRequest.inbound:type_name -> Aiko.core.InboundHandlerConfig
+	17, // 2: Aiko.app.proxyman.command.AlterInboundRequest.operation:type_name -> Aiko.common.serial.TypedMessage
+	18, // 3: Aiko.app.proxyman.command.AddOutboundRequest.outbound:type_name -> Aiko.core.OutboundHandlerConfig
+	17, // 4: Aiko.app.proxyman.command.AlterOutboundRequest.operation:type_name -> Aiko.common.serial.TypedMessage
+	2,  // 5: Aiko.app.proxyman.command.HandlerService.AddInbound:input_type -> Aiko.app.proxyman.command.AddInboundRequest
+	4,  // 6: Aiko.app.proxyman.command.HandlerService.RemoveInbound:input_type -> Aiko.app.proxyman.command.RemoveInboundRequest
+	6,  // 7: Aiko.app.proxyman.command.HandlerService.AlterInbound:input_type -> Aiko.app.proxyman.command.AlterInboundRequest
+	8,  // 8: Aiko.app.proxyman.command.HandlerService.AddOutbound:input_type -> Aiko.app.proxyman.command.AddOutboundRequest
+	10, // 9: Aiko.app.proxyman.command.HandlerService.RemoveOutbound:input_type -> Aiko.app.proxyman.command.RemoveOutboundRequest
+	12, // 10: Aiko.app.proxyman.command.HandlerService.AlterOutbound:input_type -> Aiko.app.proxyman.command.AlterOutboundRequest
+	3,  // 11: Aiko.app.proxyman.command.HandlerService.AddInbound:output_type -> Aiko.app.proxyman.command.AddInboundResponse
+	5,  // 12: Aiko.app.proxyman.command.HandlerService.RemoveInbound:output_type -> Aiko.app.proxyman.command.RemoveInboundResponse
+	7,  // 13: Aiko.app.proxyman.command.HandlerService.AlterInbound:output_type -> Aiko.app.proxyman.command.AlterInboundResponse
+	9,  // 14: Aiko.app.proxyman.command.HandlerService.AddOutbound:output_type -> Aiko.app.proxyman.command.AddOutboundResponse
+	11, // 15: Aiko.app.proxyman.command.HandlerService.RemoveOutbound:output_type -> Aiko.app.proxyman.command.RemoveOutboundResponse
+	13, // 16: Aiko.app.proxyman.command.HandlerService.AlterOutbound:output_type -> Aiko.app.proxyman.command.AlterOutboundResponse
 	11, // [11:17] is the sub-list for method output_type
 	5,  // [5:11] is the sub-list for method input_type
 	5,  // [5:5] is the sub-list for extension type_name

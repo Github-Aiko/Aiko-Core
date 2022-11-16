@@ -22,15 +22,15 @@ const (
 )
 
 // RoutingContext is the context with information relative to routing process.
-// It conforms to the structure of xray.features.routing.Context and
-// xray.features.routing.Route.
+// It conforms to the structure of Aiko.features.routing.Context and
+// Aiko.features.routing.Route.
 type RoutingContext struct {
 	state         protoimpl.MessageState
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 
 	InboundTag        string            `protobuf:"bytes,1,opt,name=InboundTag,proto3" json:"InboundTag,omitempty"`
-	Network           net.Network       `protobuf:"varint,2,opt,name=Network,proto3,enum=xray.common.net.Network" json:"Network,omitempty"`
+	Network           net.Network       `protobuf:"varint,2,opt,name=Network,proto3,enum=Aiko.common.net.Network" json:"Network,omitempty"`
 	SourceIPs         [][]byte          `protobuf:"bytes,3,rep,name=SourceIPs,proto3" json:"SourceIPs,omitempty"`
 	TargetIPs         [][]byte          `protobuf:"bytes,4,rep,name=TargetIPs,proto3" json:"TargetIPs,omitempty"`
 	SourcePort        uint32            `protobuf:"varint,5,opt,name=SourcePort,proto3" json:"SourcePort,omitempty"`
@@ -160,7 +160,7 @@ func (x *RoutingContext) GetOutboundTag() string {
 }
 
 // SubscribeRoutingStatsRequest subscribes to routing statistics channel if
-// opened by xray-core.
+// opened by Aiko-core.
 // * FieldSelectors selects a subset of fields in routing statistics to return.
 // Valid selectors:
 //   - inbound: Selects connection's inbound tag.
@@ -429,21 +429,21 @@ func file_app_router_command_command_proto_rawDescGZIP() []byte {
 
 var file_app_router_command_command_proto_msgTypes = make([]protoimpl.MessageInfo, 5)
 var file_app_router_command_command_proto_goTypes = []interface{}{
-	(*RoutingContext)(nil),               // 0: xray.app.router.command.RoutingContext
-	(*SubscribeRoutingStatsRequest)(nil), // 1: xray.app.router.command.SubscribeRoutingStatsRequest
-	(*TestRouteRequest)(nil),             // 2: xray.app.router.command.TestRouteRequest
-	(*Config)(nil),                       // 3: xray.app.router.command.Config
-	nil,                                  // 4: xray.app.router.command.RoutingContext.AttributesEntry
-	(net.Network)(0),                     // 5: xray.common.net.Network
+	(*RoutingContext)(nil),               // 0: Aiko.app.router.command.RoutingContext
+	(*SubscribeRoutingStatsRequest)(nil), // 1: Aiko.app.router.command.SubscribeRoutingStatsRequest
+	(*TestRouteRequest)(nil),             // 2: Aiko.app.router.command.TestRouteRequest
+	(*Config)(nil),                       // 3: Aiko.app.router.command.Config
+	nil,                                  // 4: Aiko.app.router.command.RoutingContext.AttributesEntry
+	(net.Network)(0),                     // 5: Aiko.common.net.Network
 }
 var file_app_router_command_command_proto_depIdxs = []int32{
-	5, // 0: xray.app.router.command.RoutingContext.Network:type_name -> xray.common.net.Network
-	4, // 1: xray.app.router.command.RoutingContext.Attributes:type_name -> xray.app.router.command.RoutingContext.AttributesEntry
-	0, // 2: xray.app.router.command.TestRouteRequest.RoutingContext:type_name -> xray.app.router.command.RoutingContext
-	1, // 3: xray.app.router.command.RoutingService.SubscribeRoutingStats:input_type -> xray.app.router.command.SubscribeRoutingStatsRequest
-	2, // 4: xray.app.router.command.RoutingService.TestRoute:input_type -> xray.app.router.command.TestRouteRequest
-	0, // 5: xray.app.router.command.RoutingService.SubscribeRoutingStats:output_type -> xray.app.router.command.RoutingContext
-	0, // 6: xray.app.router.command.RoutingService.TestRoute:output_type -> xray.app.router.command.RoutingContext
+	5, // 0: Aiko.app.router.command.RoutingContext.Network:type_name -> Aiko.common.net.Network
+	4, // 1: Aiko.app.router.command.RoutingContext.Attributes:type_name -> Aiko.app.router.command.RoutingContext.AttributesEntry
+	0, // 2: Aiko.app.router.command.TestRouteRequest.RoutingContext:type_name -> Aiko.app.router.command.RoutingContext
+	1, // 3: Aiko.app.router.command.RoutingService.SubscribeRoutingStats:input_type -> Aiko.app.router.command.SubscribeRoutingStatsRequest
+	2, // 4: Aiko.app.router.command.RoutingService.TestRoute:input_type -> Aiko.app.router.command.TestRouteRequest
+	0, // 5: Aiko.app.router.command.RoutingService.SubscribeRoutingStats:output_type -> Aiko.app.router.command.RoutingContext
+	0, // 6: Aiko.app.router.command.RoutingService.TestRoute:output_type -> Aiko.app.router.command.RoutingContext
 	5, // [5:7] is the sub-list for method output_type
 	3, // [3:5] is the sub-list for method input_type
 	3, // [3:3] is the sub-list for extension type_name

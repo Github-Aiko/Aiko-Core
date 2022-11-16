@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-package xray.app.commander;
-option csharp_namespace = "Xray.App.Commander";
+package Aiko.app.commander;
+option csharp_namespace = "Aiko.App.Commander";
 option go_package = "github.com/Github-Aiko/Aiko-Core/app/commander";
-option java_package = "com.xray.app.commander";
+option java_package = "com.Aiko.app.commander";
 option java_multiple_files = true;
 
 import "common/serial/typed_message.proto";
@@ -14,7 +14,7 @@ message Config {
   string tag = 1;
   // Services that supported by this server. All services must implement Service
   // interface.
-  repeated xray.common.serial.TypedMessage service = 2;
+  repeated Aiko.common.serial.TypedMessage service = 2;
 }
 
 // ReflectionConfig is the placeholder config for ReflectionService.

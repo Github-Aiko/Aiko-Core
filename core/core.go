@@ -1,6 +1,6 @@
-// Package core provides an entry point to use Xray core functionalities.
+// Package core provides an entry point to use Aiko core functionalities.
 //
-// Xray makes it possible to accept incoming network connections with certain
+// Aiko makes it possible to accept incoming network connections with certain
 // protocol, process the data, and send them through another connection with
 // the same or a difference protocol on demand.
 //
@@ -20,11 +20,11 @@ import (
 var (
 	version  = "1.6.4"
 	build    = "Custom"
-	codename = "Xray, Penetrates Everything."
+	codename = "Aiko, Penetrates Everything."
 	intro    = "A unified platform for anti-censorship."
 )
 
-// Version returns Xray's version as a string, in the form of "x.y.z" where x, y and z are numbers.
+// Version returns Aiko's version as a string, in the form of "x.y.z" where x, y and z are numbers.
 // ".z" part may be omitted in regular releases.
 func Version() string {
 	return version
@@ -33,7 +33,7 @@ func Version() string {
 // VersionStatement returns a list of strings representing the full version info.
 func VersionStatement() []string {
 	return []string{
-		serial.Concat("Xray ", Version(), " (", codename, ") ", build, " (", runtime.Version(), " ", runtime.GOOS, "/", runtime.GOARCH, ")"),
+		serial.Concat("Aiko ", Version(), " (", codename, ") ", build, " (", runtime.Version(), " ", runtime.GOOS, "/", runtime.GOARCH, ")"),
 		intro,
 	}
 }

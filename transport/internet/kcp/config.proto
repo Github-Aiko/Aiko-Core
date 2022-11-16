@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-package xray.transport.internet.kcp;
-option csharp_namespace = "Xray.Transport.Internet.Kcp";
+package Aiko.transport.internet.kcp;
+option csharp_namespace = "Aiko.Transport.Internet.Kcp";
 option go_package = "github.com/Github-Aiko/Aiko-Core/transport/internet/kcp";
-option java_package = "com.xray.transport.internet.kcp";
+option java_package = "com.Aiko.transport.internet.kcp";
 option java_multiple_files = true;
 
 import "common/serial/typed_message.proto";
@@ -55,7 +55,7 @@ message Config {
   bool congestion = 5;
   WriteBuffer write_buffer = 6;
   ReadBuffer read_buffer = 7;
-  xray.common.serial.TypedMessage header_config = 8;
+  Aiko.common.serial.TypedMessage header_config = 8;
   reserved 9;
   EncryptionSeed seed = 10;
 }

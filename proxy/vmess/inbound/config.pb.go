@@ -248,15 +248,15 @@ func file_proxy_vmess_inbound_config_proto_rawDescGZIP() []byte {
 
 var file_proxy_vmess_inbound_config_proto_msgTypes = make([]protoimpl.MessageInfo, 3)
 var file_proxy_vmess_inbound_config_proto_goTypes = []interface{}{
-	(*DetourConfig)(nil),  // 0: xray.proxy.vmess.inbound.DetourConfig
-	(*DefaultConfig)(nil), // 1: xray.proxy.vmess.inbound.DefaultConfig
-	(*Config)(nil),        // 2: xray.proxy.vmess.inbound.Config
-	(*protocol.User)(nil), // 3: xray.common.protocol.User
+	(*DetourConfig)(nil),  // 0: Aiko.proxy.vmess.inbound.DetourConfig
+	(*DefaultConfig)(nil), // 1: Aiko.proxy.vmess.inbound.DefaultConfig
+	(*Config)(nil),        // 2: Aiko.proxy.vmess.inbound.Config
+	(*protocol.User)(nil), // 3: Aiko.common.protocol.User
 }
 var file_proxy_vmess_inbound_config_proto_depIdxs = []int32{
-	3, // 0: xray.proxy.vmess.inbound.Config.user:type_name -> xray.common.protocol.User
-	1, // 1: xray.proxy.vmess.inbound.Config.default:type_name -> xray.proxy.vmess.inbound.DefaultConfig
-	0, // 2: xray.proxy.vmess.inbound.Config.detour:type_name -> xray.proxy.vmess.inbound.DetourConfig
+	3, // 0: Aiko.proxy.vmess.inbound.Config.user:type_name -> Aiko.common.protocol.User
+	1, // 1: Aiko.proxy.vmess.inbound.Config.default:type_name -> Aiko.proxy.vmess.inbound.DefaultConfig
+	0, // 2: Aiko.proxy.vmess.inbound.Config.detour:type_name -> Aiko.proxy.vmess.inbound.DetourConfig
 	3, // [3:3] is the sub-list for method output_type
 	3, // [3:3] is the sub-list for method input_type
 	3, // [3:3] is the sub-list for extension type_name

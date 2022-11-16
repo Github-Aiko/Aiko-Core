@@ -15,7 +15,7 @@ import (
 	"strings"
 )
 
-var directory = flag.String("pwd", "", "Working directory of Xray vprotogen.")
+var directory = flag.String("pwd", "", "Working directory of Aiko vprotogen.")
 
 // envFile returns the name of the Go environment configuration file.
 // Copy from https://github.com/golang/go/blob/c4f2a9788a7be04daf931ac54382fbe2cb754938/src/cmd/go/internal/cfg/cfg.go#L150-L166
@@ -101,7 +101,7 @@ Download %s v%s or later from https://github.com/protocolbuffers/protobuf/releas
 func getProjectProtocVersion(url string) (string, error) {
 	resp, err := http.Get(url)
 	if err != nil {
-		return "", fmt.Errorf("can not get the version of protobuf used in xray project")
+		return "", fmt.Errorf("can not get the version of protobuf used in Aiko project")
 	}
 	defer resp.Body.Close()
 	body, err := io.ReadAll(resp.Body)
@@ -197,7 +197,7 @@ func main() {
 You are using an old protobuf version, please update to v%s or later.
 Download it from https://github.com/protocolbuffers/protobuf/releases
 
-    * Protobuf version used in xray project: v%s
+    * Protobuf version used in Aiko project: v%s
     * Protobuf version you have installed: v%s
 
 `, targetedVersion, targetedVersion, installedVersion)

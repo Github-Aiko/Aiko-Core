@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-package xray.proxy.trojan;
-option csharp_namespace = "Xray.Proxy.Trojan";
+package Aiko.proxy.trojan;
+option csharp_namespace = "Aiko.Proxy.Trojan";
 option go_package = "github.com/Github-Aiko/Aiko-Core/proxy/trojan";
-option java_package = "com.xray.proxy.trojan";
+option java_package = "com.Aiko.proxy.trojan";
 option java_multiple_files = true;
 
 import "common/protocol/user.proto";
@@ -24,10 +24,10 @@ message Fallback {
 }
 
 message ClientConfig {
-  repeated xray.common.protocol.ServerEndpoint server = 1;
+  repeated Aiko.common.protocol.ServerEndpoint server = 1;
 }
 
 message ServerConfig {
-  repeated xray.common.protocol.User users = 1;
+  repeated Aiko.common.protocol.User users = 1;
   repeated Fallback fallbacks = 3;
 }

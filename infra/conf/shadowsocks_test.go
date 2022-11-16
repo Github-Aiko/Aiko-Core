@@ -19,14 +19,14 @@ func TestShadowsocksServerConfigParsing(t *testing.T) {
 		{
 			Input: `{
 				"method": "aes-256-GCM",
-				"password": "xray-password"
+				"password": "Aiko-password"
 			}`,
 			Parser: loadJSON(creator),
 			Output: &shadowsocks.ServerConfig{
 				Users: []*protocol.User{{
 					Account: serial.ToTypedMessage(&shadowsocks.Account{
 						CipherType: shadowsocks.CipherType_AES_256_GCM,
-						Password:   "xray-password",
+						Password:   "Aiko-password",
 					}),
 				}},
 				Network: []net.Network{net.Network_TCP},

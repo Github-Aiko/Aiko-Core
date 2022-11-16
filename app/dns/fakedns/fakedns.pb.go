@@ -160,11 +160,11 @@ func file_app_dns_fakedns_fakedns_proto_rawDescGZIP() []byte {
 
 var file_app_dns_fakedns_fakedns_proto_msgTypes = make([]protoimpl.MessageInfo, 2)
 var file_app_dns_fakedns_fakedns_proto_goTypes = []interface{}{
-	(*FakeDnsPool)(nil),      // 0: xray.app.dns.fakedns.FakeDnsPool
-	(*FakeDnsPoolMulti)(nil), // 1: xray.app.dns.fakedns.FakeDnsPoolMulti
+	(*FakeDnsPool)(nil),      // 0: Aiko.app.dns.fakedns.FakeDnsPool
+	(*FakeDnsPoolMulti)(nil), // 1: Aiko.app.dns.fakedns.FakeDnsPoolMulti
 }
 var file_app_dns_fakedns_fakedns_proto_depIdxs = []int32{
-	0, // 0: xray.app.dns.fakedns.FakeDnsPoolMulti.pools:type_name -> xray.app.dns.fakedns.FakeDnsPool
+	0, // 0: Aiko.app.dns.fakedns.FakeDnsPoolMulti.pools:type_name -> Aiko.app.dns.fakedns.FakeDnsPool
 	1, // [1:1] is the sub-list for method output_type
 	1, // [1:1] is the sub-list for method input_type
 	1, // [1:1] is the sub-list for extension type_name

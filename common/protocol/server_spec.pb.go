@@ -126,13 +126,13 @@ func file_common_protocol_server_spec_proto_rawDescGZIP() []byte {
 
 var file_common_protocol_server_spec_proto_msgTypes = make([]protoimpl.MessageInfo, 1)
 var file_common_protocol_server_spec_proto_goTypes = []interface{}{
-	(*ServerEndpoint)(nil), // 0: xray.common.protocol.ServerEndpoint
-	(*net.IPOrDomain)(nil), // 1: xray.common.net.IPOrDomain
-	(*User)(nil),           // 2: xray.common.protocol.User
+	(*ServerEndpoint)(nil), // 0: Aiko.common.protocol.ServerEndpoint
+	(*net.IPOrDomain)(nil), // 1: Aiko.common.net.IPOrDomain
+	(*User)(nil),           // 2: Aiko.common.protocol.User
 }
 var file_common_protocol_server_spec_proto_depIdxs = []int32{
-	1, // 0: xray.common.protocol.ServerEndpoint.address:type_name -> xray.common.net.IPOrDomain
-	2, // 1: xray.common.protocol.ServerEndpoint.user:type_name -> xray.common.protocol.User
+	1, // 0: Aiko.common.protocol.ServerEndpoint.address:type_name -> Aiko.common.net.IPOrDomain
+	2, // 1: Aiko.common.protocol.ServerEndpoint.user:type_name -> Aiko.common.protocol.User
 	2, // [2:2] is the sub-list for method output_type
 	2, // [2:2] is the sub-list for method input_type
 	2, // [2:2] is the sub-list for extension type_name

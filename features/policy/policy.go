@@ -53,7 +53,7 @@ type System struct {
 	Buffer Buffer
 }
 
-// Session is session based settings for controlling Xray requests. It contains various settings (or limits) that may differ for different users in the context.
+// Session is session based settings for controlling Aiko requests. It contains various settings (or limits) that may differ for different users in the context.
 type Session struct {
 	Timeouts Timeout // Timeout settings
 	Stats    Stats
@@ -62,20 +62,20 @@ type Session struct {
 
 // Manager is a feature that provides Policy for the given user by its id or level.
 //
-// xray:api:stable
+// Aiko:api:stable
 type Manager interface {
 	features.Feature
 
 	// ForLevel returns the Session policy for the given user level.
 	ForLevel(level uint32) Session
 
-	// ForSystem returns the System policy for Xray system.
+	// ForSystem returns the System policy for Aiko system.
 	ForSystem() System
 }
 
 // ManagerType returns the type of Manager interface. Can be used to implement common.HasType.
 //
-// xray:api:stable
+// Aiko:api:stable
 func ManagerType() interface{} {
 	return (*Manager)(nil)
 }
@@ -83,7 +83,7 @@ func ManagerType() interface{} {
 var defaultBufferSize int32
 
 func init() {
-	const key = "xray.ray.buffer.size"
+	const key = "Aiko.ray.buffer.size"
 	const defaultValue = -17
 	size := platform.EnvFlag{
 		Name:    key,

@@ -22,7 +22,7 @@ const (
 	_ = protoimpl.EnforceVersion(protoimpl.MaxVersion - 20)
 )
 
-// Config is the master config of Xray. Xray takes this config as input and
+// Config is the master config of Aiko. Aiko takes this config as input and
 // functions accordingly.
 type Config struct {
 	state         protoimpl.MessageState
@@ -34,7 +34,7 @@ type Config struct {
 	// Outbound handler configurations. Must have at least one item. The first
 	// item is used as default for routing.
 	Outbound []*OutboundHandlerConfig `protobuf:"bytes,2,rep,name=outbound,proto3" json:"outbound,omitempty"`
-	// App is for configurations of all features in Xray. A feature must
+	// App is for configurations of all features in Aiko. A feature must
 	// implement the Feature interface, and its config type must be registered
 	// through common.RegisterConfig.
 	App []*serial.TypedMessage `protobuf:"bytes,4,rep,name=app,proto3" json:"app,omitempty"`
@@ -45,7 +45,7 @@ type Config struct {
 	// Deprecated: Do not use.
 	Transport *global.Config `protobuf:"bytes,5,opt,name=transport,proto3" json:"transport,omitempty"`
 	// Configuration for extensions. The config may not work if corresponding
-	// extension is not loaded into Xray. Xray will ignore such config during
+	// extension is not loaded into Aiko. Aiko will ignore such config during
 	// initialization.
 	Extension []*serial.TypedMessage `protobuf:"bytes,6,rep,name=extension,proto3" json:"extension,omitempty"`
 }
@@ -348,22 +348,22 @@ func file_core_config_proto_rawDescGZIP() []byte {
 
 var file_core_config_proto_msgTypes = make([]protoimpl.MessageInfo, 3)
 var file_core_config_proto_goTypes = []interface{}{
-	(*Config)(nil),                // 0: xray.core.Config
-	(*InboundHandlerConfig)(nil),  // 1: xray.core.InboundHandlerConfig
-	(*OutboundHandlerConfig)(nil), // 2: xray.core.OutboundHandlerConfig
-	(*serial.TypedMessage)(nil),   // 3: xray.common.serial.TypedMessage
-	(*global.Config)(nil),         // 4: xray.transport.Config
+	(*Config)(nil),                // 0: Aiko.core.Config
+	(*InboundHandlerConfig)(nil),  // 1: Aiko.core.InboundHandlerConfig
+	(*OutboundHandlerConfig)(nil), // 2: Aiko.core.OutboundHandlerConfig
+	(*serial.TypedMessage)(nil),   // 3: Aiko.common.serial.TypedMessage
+	(*global.Config)(nil),         // 4: Aiko.transport.Config
 }
 var file_core_config_proto_depIdxs = []int32{
-	1, // 0: xray.core.Config.inbound:type_name -> xray.core.InboundHandlerConfig
-	2, // 1: xray.core.Config.outbound:type_name -> xray.core.OutboundHandlerConfig
-	3, // 2: xray.core.Config.app:type_name -> xray.common.serial.TypedMessage
-	4, // 3: xray.core.Config.transport:type_name -> xray.transport.Config
-	3, // 4: xray.core.Config.extension:type_name -> xray.common.serial.TypedMessage
-	3, // 5: xray.core.InboundHandlerConfig.receiver_settings:type_name -> xray.common.serial.TypedMessage
-	3, // 6: xray.core.InboundHandlerConfig.proxy_settings:type_name -> xray.common.serial.TypedMessage
-	3, // 7: xray.core.OutboundHandlerConfig.sender_settings:type_name -> xray.common.serial.TypedMessage
-	3, // 8: xray.core.OutboundHandlerConfig.proxy_settings:type_name -> xray.common.serial.TypedMessage
+	1, // 0: Aiko.core.Config.inbound:type_name -> Aiko.core.InboundHandlerConfig
+	2, // 1: Aiko.core.Config.outbound:type_name -> Aiko.core.OutboundHandlerConfig
+	3, // 2: Aiko.core.Config.app:type_name -> Aiko.common.serial.TypedMessage
+	4, // 3: Aiko.core.Config.transport:type_name -> Aiko.transport.Config
+	3, // 4: Aiko.core.Config.extension:type_name -> Aiko.common.serial.TypedMessage
+	3, // 5: Aiko.core.InboundHandlerConfig.receiver_settings:type_name -> Aiko.common.serial.TypedMessage
+	3, // 6: Aiko.core.InboundHandlerConfig.proxy_settings:type_name -> Aiko.common.serial.TypedMessage
+	3, // 7: Aiko.core.OutboundHandlerConfig.sender_settings:type_name -> Aiko.common.serial.TypedMessage
+	3, // 8: Aiko.core.OutboundHandlerConfig.proxy_settings:type_name -> Aiko.common.serial.TypedMessage
 	9, // [9:9] is the sub-list for method output_type
 	9, // [9:9] is the sub-list for method input_type
 	9, // [9:9] is the sub-list for extension type_name

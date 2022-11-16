@@ -9,9 +9,9 @@ import (
 )
 
 // Dispatcher is a feature that dispatches inbound requests to outbound handlers based on rules.
-// Dispatcher is required to be registered in a Xray instance to make Xray function properly.
+// Dispatcher is required to be registered in a Aiko instance to make Aiko function properly.
 //
-// xray:api:stable
+// Aiko:api:stable
 type Dispatcher interface {
 	features.Feature
 
@@ -22,7 +22,7 @@ type Dispatcher interface {
 
 // DispatcherType returns the type of Dispatcher interface. Can be used to implement common.HasType.
 //
-// xray:api:stable
+// Aiko:api:stable
 func DispatcherType() interface{} {
 	return (*Dispatcher)(nil)
 }

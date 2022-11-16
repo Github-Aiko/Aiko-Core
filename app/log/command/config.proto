@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-package xray.app.log.command;
-option csharp_namespace = "Xray.App.Log.Command";
+package Aiko.app.log.command;
+option csharp_namespace = "Aiko.App.Log.Command";
 option go_package = "github.com/Github-Aiko/Aiko-Core/app/log/command";
-option java_package = "com.xray.app.log.command";
+option java_package = "com.Aiko.app.log.command";
 option java_multiple_files = true;
 
 message Config {}

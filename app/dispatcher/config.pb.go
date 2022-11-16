@@ -140,11 +140,11 @@ func file_app_dispatcher_config_proto_rawDescGZIP() []byte {
 
 var file_app_dispatcher_config_proto_msgTypes = make([]protoimpl.MessageInfo, 2)
 var file_app_dispatcher_config_proto_goTypes = []interface{}{
-	(*SessionConfig)(nil), // 0: xray.app.dispatcher.SessionConfig
-	(*Config)(nil),        // 1: xray.app.dispatcher.Config
+	(*SessionConfig)(nil), // 0: Aiko.app.dispatcher.SessionConfig
+	(*Config)(nil),        // 1: Aiko.app.dispatcher.Config
 }
 var file_app_dispatcher_config_proto_depIdxs = []int32{
-	0, // 0: xray.app.dispatcher.Config.settings:type_name -> xray.app.dispatcher.SessionConfig
+	0, // 0: Aiko.app.dispatcher.Config.settings:type_name -> Aiko.app.dispatcher.SessionConfig
 	1, // [1:1] is the sub-list for method output_type
 	1, // [1:1] is the sub-list for method input_type
 	1, // [1:1] is the sub-list for extension type_name

@@ -1,15 +1,15 @@
 syntax = "proto3";
 
-package xray.proxy.freedom;
-option csharp_namespace = "Xray.Proxy.Freedom";
+package Aiko.proxy.freedom;
+option csharp_namespace = "Aiko.Proxy.Freedom";
 option go_package = "github.com/Github-Aiko/Aiko-Core/proxy/freedom";
-option java_package = "com.xray.proxy.freedom";
+option java_package = "com.Aiko.proxy.freedom";
 option java_multiple_files = true;
 
 import "common/protocol/server_spec.proto";
 
 message DestinationOverride {
-  xray.common.protocol.ServerEndpoint server = 1;
+  Aiko.common.protocol.ServerEndpoint server = 1;
 }
 
 message Config {

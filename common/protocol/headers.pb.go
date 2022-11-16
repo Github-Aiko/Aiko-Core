@@ -86,7 +86,7 @@ type SecurityConfig struct {
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 
-	Type SecurityType `protobuf:"varint,1,opt,name=type,proto3,enum=xray.common.protocol.SecurityType" json:"type,omitempty"`
+	Type SecurityType `protobuf:"varint,1,opt,name=type,proto3,enum=Aiko.common.protocol.SecurityType" json:"type,omitempty"`
 }
 
 func (x *SecurityConfig) Reset() {
@@ -170,11 +170,11 @@ func file_common_protocol_headers_proto_rawDescGZIP() []byte {
 var file_common_protocol_headers_proto_enumTypes = make([]protoimpl.EnumInfo, 1)
 var file_common_protocol_headers_proto_msgTypes = make([]protoimpl.MessageInfo, 1)
 var file_common_protocol_headers_proto_goTypes = []interface{}{
-	(SecurityType)(0),      // 0: xray.common.protocol.SecurityType
-	(*SecurityConfig)(nil), // 1: xray.common.protocol.SecurityConfig
+	(SecurityType)(0),      // 0: Aiko.common.protocol.SecurityType
+	(*SecurityConfig)(nil), // 1: Aiko.common.protocol.SecurityConfig
 }
 var file_common_protocol_headers_proto_depIdxs = []int32{
-	0, // 0: xray.common.protocol.SecurityConfig.type:type_name -> xray.common.protocol.SecurityType
+	0, // 0: Aiko.common.protocol.SecurityConfig.type:type_name -> Aiko.common.protocol.SecurityType
 	1, // [1:1] is the sub-list for method output_type
 	1, // [1:1] is the sub-list for method input_type
 	1, // [1:1] is the sub-list for extension type_name

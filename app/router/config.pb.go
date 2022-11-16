@@ -141,7 +141,7 @@ type Domain struct {
 	unknownFields protoimpl.UnknownFields
 
 	// Domain matching type.
-	Type Domain_Type `protobuf:"varint,1,opt,name=type,proto3,enum=xray.app.router.Domain_Type" json:"type,omitempty"`
+	Type Domain_Type `protobuf:"varint,1,opt,name=type,proto3,enum=Aiko.app.router.Domain_Type" json:"type,omitempty"`
 	// Domain value.
 	Value string `protobuf:"bytes,2,opt,name=value,proto3" json:"value,omitempty"`
 	// Attributes of this domain. May be used for filtering.
@@ -505,7 +505,7 @@ type RoutingRule struct {
 	// Deprecated: Do not use.
 	NetworkList *net.NetworkList `protobuf:"bytes,5,opt,name=network_list,json=networkList,proto3" json:"network_list,omitempty"`
 	// List of networks for matching.
-	Networks []net.Network `protobuf:"varint,13,rep,packed,name=networks,proto3,enum=xray.common.net.Network" json:"networks,omitempty"`
+	Networks []net.Network `protobuf:"varint,13,rep,packed,name=networks,proto3,enum=Aiko.common.net.Network" json:"networks,omitempty"`
 	// List of CIDRs for source IP address matching.
 	//
 	// Deprecated: Do not use.
@@ -770,7 +770,7 @@ type Config struct {
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 
-	DomainStrategy Config_DomainStrategy `protobuf:"varint,1,opt,name=domain_strategy,json=domainStrategy,proto3,enum=xray.app.router.Config_DomainStrategy" json:"domain_strategy,omitempty"`
+	DomainStrategy Config_DomainStrategy `protobuf:"varint,1,opt,name=domain_strategy,json=domainStrategy,proto3,enum=Aiko.app.router.Config_DomainStrategy" json:"domain_strategy,omitempty"`
 	Rule           []*RoutingRule        `protobuf:"bytes,2,rep,name=rule,proto3" json:"rule,omitempty"`
 	BalancingRule  []*BalancingRule      `protobuf:"bytes,3,rep,name=balancing_rule,json=balancingRule,proto3" json:"balancing_rule,omitempty"`
 }
@@ -1069,43 +1069,43 @@ func file_app_router_config_proto_rawDescGZIP() []byte {
 var file_app_router_config_proto_enumTypes = make([]protoimpl.EnumInfo, 2)
 var file_app_router_config_proto_msgTypes = make([]protoimpl.MessageInfo, 10)
 var file_app_router_config_proto_goTypes = []interface{}{
-	(Domain_Type)(0),           // 0: xray.app.router.Domain.Type
-	(Config_DomainStrategy)(0), // 1: xray.app.router.Config.DomainStrategy
-	(*Domain)(nil),             // 2: xray.app.router.Domain
-	(*CIDR)(nil),               // 3: xray.app.router.CIDR
-	(*GeoIP)(nil),              // 4: xray.app.router.GeoIP
-	(*GeoIPList)(nil),          // 5: xray.app.router.GeoIPList
-	(*GeoSite)(nil),            // 6: xray.app.router.GeoSite
-	(*GeoSiteList)(nil),        // 7: xray.app.router.GeoSiteList
-	(*RoutingRule)(nil),        // 8: xray.app.router.RoutingRule
-	(*BalancingRule)(nil),      // 9: xray.app.router.BalancingRule
-	(*Config)(nil),             // 10: xray.app.router.Config
-	(*Domain_Attribute)(nil),   // 11: xray.app.router.Domain.Attribute
-	(*net.PortRange)(nil),      // 12: xray.common.net.PortRange
-	(*net.PortList)(nil),       // 13: xray.common.net.PortList
-	(*net.NetworkList)(nil),    // 14: xray.common.net.NetworkList
-	(net.Network)(0),           // 15: xray.common.net.Network
+	(Domain_Type)(0),           // 0: Aiko.app.router.Domain.Type
+	(Config_DomainStrategy)(0), // 1: Aiko.app.router.Config.DomainStrategy
+	(*Domain)(nil),             // 2: Aiko.app.router.Domain
+	(*CIDR)(nil),               // 3: Aiko.app.router.CIDR
+	(*GeoIP)(nil),              // 4: Aiko.app.router.GeoIP
+	(*GeoIPList)(nil),          // 5: Aiko.app.router.GeoIPList
+	(*GeoSite)(nil),            // 6: Aiko.app.router.GeoSite
+	(*GeoSiteList)(nil),        // 7: Aiko.app.router.GeoSiteList
+	(*RoutingRule)(nil),        // 8: Aiko.app.router.RoutingRule
+	(*BalancingRule)(nil),      // 9: Aiko.app.router.BalancingRule
+	(*Config)(nil),             // 10: Aiko.app.router.Config
+	(*Domain_Attribute)(nil),   // 11: Aiko.app.router.Domain.Attribute
+	(*net.PortRange)(nil),      // 12: Aiko.common.net.PortRange
+	(*net.PortList)(nil),       // 13: Aiko.common.net.PortList
+	(*net.NetworkList)(nil),    // 14: Aiko.common.net.NetworkList
+	(net.Network)(0),           // 15: Aiko.common.net.Network
 }
 var file_app_router_config_proto_depIdxs = []int32{
-	0,  // 0: xray.app.router.Domain.type:type_name -> xray.app.router.Domain.Type
-	11, // 1: xray.app.router.Domain.attribute:type_name -> xray.app.router.Domain.Attribute
-	3,  // 2: xray.app.router.GeoIP.cidr:type_name -> xray.app.router.CIDR
-	4,  // 3: xray.app.router.GeoIPList.entry:type_name -> xray.app.router.GeoIP
-	2,  // 4: xray.app.router.GeoSite.domain:type_name -> xray.app.router.Domain
-	6,  // 5: xray.app.router.GeoSiteList.entry:type_name -> xray.app.router.GeoSite
-	2,  // 6: xray.app.router.RoutingRule.domain:type_name -> xray.app.router.Domain
-	3,  // 7: xray.app.router.RoutingRule.cidr:type_name -> xray.app.router.CIDR
-	4,  // 8: xray.app.router.RoutingRule.geoip:type_name -> xray.app.router.GeoIP
-	12, // 9: xray.app.router.RoutingRule.port_range:type_name -> xray.common.net.PortRange
-	13, // 10: xray.app.router.RoutingRule.port_list:type_name -> xray.common.net.PortList
-	14, // 11: xray.app.router.RoutingRule.network_list:type_name -> xray.common.net.NetworkList
-	15, // 12: xray.app.router.RoutingRule.networks:type_name -> xray.common.net.Network
-	3,  // 13: xray.app.router.RoutingRule.source_cidr:type_name -> xray.app.router.CIDR
-	4,  // 14: xray.app.router.RoutingRule.source_geoip:type_name -> xray.app.router.GeoIP
-	13, // 15: xray.app.router.RoutingRule.source_port_list:type_name -> xray.common.net.PortList
-	1,  // 16: xray.app.router.Config.domain_strategy:type_name -> xray.app.router.Config.DomainStrategy
-	8,  // 17: xray.app.router.Config.rule:type_name -> xray.app.router.RoutingRule
-	9,  // 18: xray.app.router.Config.balancing_rule:type_name -> xray.app.router.BalancingRule
+	0,  // 0: Aiko.app.router.Domain.type:type_name -> Aiko.app.router.Domain.Type
+	11, // 1: Aiko.app.router.Domain.attribute:type_name -> Aiko.app.router.Domain.Attribute
+	3,  // 2: Aiko.app.router.GeoIP.cidr:type_name -> Aiko.app.router.CIDR
+	4,  // 3: Aiko.app.router.GeoIPList.entry:type_name -> Aiko.app.router.GeoIP
+	2,  // 4: Aiko.app.router.GeoSite.domain:type_name -> Aiko.app.router.Domain
+	6,  // 5: Aiko.app.router.GeoSiteList.entry:type_name -> Aiko.app.router.GeoSite
+	2,  // 6: Aiko.app.router.RoutingRule.domain:type_name -> Aiko.app.router.Domain
+	3,  // 7: Aiko.app.router.RoutingRule.cidr:type_name -> Aiko.app.router.CIDR
+	4,  // 8: Aiko.app.router.RoutingRule.geoip:type_name -> Aiko.app.router.GeoIP
+	12, // 9: Aiko.app.router.RoutingRule.port_range:type_name -> Aiko.common.net.PortRange
+	13, // 10: Aiko.app.router.RoutingRule.port_list:type_name -> Aiko.common.net.PortList
+	14, // 11: Aiko.app.router.RoutingRule.network_list:type_name -> Aiko.common.net.NetworkList
+	15, // 12: Aiko.app.router.RoutingRule.networks:type_name -> Aiko.common.net.Network
+	3,  // 13: Aiko.app.router.RoutingRule.source_cidr:type_name -> Aiko.app.router.CIDR
+	4,  // 14: Aiko.app.router.RoutingRule.source_geoip:type_name -> Aiko.app.router.GeoIP
+	13, // 15: Aiko.app.router.RoutingRule.source_port_list:type_name -> Aiko.common.net.PortList
+	1,  // 16: Aiko.app.router.Config.domain_strategy:type_name -> Aiko.app.router.Config.DomainStrategy
+	8,  // 17: Aiko.app.router.Config.rule:type_name -> Aiko.app.router.RoutingRule
+	9,  // 18: Aiko.app.router.Config.balancing_rule:type_name -> Aiko.app.router.BalancingRule
 	19, // [19:19] is the sub-list for method output_type
 	19, // [19:19] is the sub-list for method input_type
 	19, // [19:19] is the sub-list for extension type_name

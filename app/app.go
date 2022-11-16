@@ -1,2 +1,2 @@
-// Package app contains feature implementations of Xray. The features may be enabled during runtime.
+// Package app contains feature implementations of Aiko. The features may be enabled during runtime.
 package app

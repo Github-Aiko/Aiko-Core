@@ -99,7 +99,7 @@ func file_app_metrics_config_proto_rawDescGZIP() []byte {
 
 var file_app_metrics_config_proto_msgTypes = make([]protoimpl.MessageInfo, 1)
 var file_app_metrics_config_proto_goTypes = []interface{}{
-	(*Config)(nil), // 0: xray.app.metrics.Config
+	(*Config)(nil), // 0: Aiko.app.metrics.Config
 }
 var file_app_metrics_config_proto_depIdxs = []int32{
 	0, // [0:0] is the sub-list for method output_type

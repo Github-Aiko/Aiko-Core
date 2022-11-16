@@ -7,7 +7,7 @@ touch "$COVERAGE_FILE"
 
 function test_package {
   DIR=".$1"
-  DEP=$(go list -f '{{ join .Deps "\n" }}' "$DIR" | grep xray | tr '\n' ',')
+  DEP=$(go list -f '{{ join .Deps "\n" }}' "$DIR" | grep Aiko | tr '\n' ',')
   DEP=${DEP}$DIR
   RND_NAME=$(openssl rand -hex 16)
   COV_PROFILE=${RND_NAME}.out

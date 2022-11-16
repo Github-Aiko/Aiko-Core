@@ -125,7 +125,7 @@ type Config struct {
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 
-	DomainStrategy Config_DomainStrategy `protobuf:"varint,1,opt,name=domain_strategy,json=domainStrategy,proto3,enum=xray.proxy.freedom.Config_DomainStrategy" json:"domain_strategy,omitempty"`
+	DomainStrategy Config_DomainStrategy `protobuf:"varint,1,opt,name=domain_strategy,json=domainStrategy,proto3,enum=Aiko.proxy.freedom.Config_DomainStrategy" json:"domain_strategy,omitempty"`
 	// Deprecated: Do not use.
 	Timeout             uint32               `protobuf:"varint,2,opt,name=timeout,proto3" json:"timeout,omitempty"`
 	DestinationOverride *DestinationOverride `protobuf:"bytes,3,opt,name=destination_override,json=destinationOverride,proto3" json:"destination_override,omitempty"`
@@ -250,15 +250,15 @@ func file_proxy_freedom_config_proto_rawDescGZIP() []byte {
 var file_proxy_freedom_config_proto_enumTypes = make([]protoimpl.EnumInfo, 1)
 var file_proxy_freedom_config_proto_msgTypes = make([]protoimpl.MessageInfo, 2)
 var file_proxy_freedom_config_proto_goTypes = []interface{}{
-	(Config_DomainStrategy)(0),      // 0: xray.proxy.freedom.Config.DomainStrategy
-	(*DestinationOverride)(nil),     // 1: xray.proxy.freedom.DestinationOverride
-	(*Config)(nil),                  // 2: xray.proxy.freedom.Config
-	(*protocol.ServerEndpoint)(nil), // 3: xray.common.protocol.ServerEndpoint
+	(Config_DomainStrategy)(0),      // 0: Aiko.proxy.freedom.Config.DomainStrategy
+	(*DestinationOverride)(nil),     // 1: Aiko.proxy.freedom.DestinationOverride
+	(*Config)(nil),                  // 2: Aiko.proxy.freedom.Config
+	(*protocol.ServerEndpoint)(nil), // 3: Aiko.common.protocol.ServerEndpoint
 }
 var file_proxy_freedom_config_proto_depIdxs = []int32{
-	3, // 0: xray.proxy.freedom.DestinationOverride.server:type_name -> xray.common.protocol.ServerEndpoint
-	0, // 1: xray.proxy.freedom.Config.domain_strategy:type_name -> xray.proxy.freedom.Config.DomainStrategy
-	1, // 2: xray.proxy.freedom.Config.destination_override:type_name -> xray.proxy.freedom.DestinationOverride
+	3, // 0: Aiko.proxy.freedom.DestinationOverride.server:type_name -> Aiko.common.protocol.ServerEndpoint
+	0, // 1: Aiko.proxy.freedom.Config.domain_strategy:type_name -> Aiko.proxy.freedom.Config.DomainStrategy
+	1, // 2: Aiko.proxy.freedom.Config.destination_override:type_name -> Aiko.proxy.freedom.DestinationOverride
 	3, // [3:3] is the sub-list for method output_type
 	3, // [3:3] is the sub-list for method input_type
 	3, // [3:3] is the sub-list for extension type_name

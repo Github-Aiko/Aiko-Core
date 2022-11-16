@@ -75,7 +75,7 @@ func InitializeServerConfigs(configs ...*core.Config) ([]*exec.Cmd, error) {
 }
 
 func InitializeServerConfig(config *core.Config) (*exec.Cmd, error) {
-	err := BuildXray()
+	err := BuildAiko()
 	if err != nil {
 		return nil, err
 	}
@@ -85,7 +85,7 @@ func InitializeServerConfig(config *core.Config) (*exec.Cmd, error) {
 	if err != nil {
 		return nil, err
 	}
-	proc := RunXrayProtobuf(configBytes)
+	proc := RunAikoProtobuf(configBytes)
 
 	if err := proc.Start(); err != nil {
 		return nil, err
@@ -103,14 +103,14 @@ func genTestBinaryPath() {
 	testBinaryPathGen.Do(func() {
 		var tempDir string
 		common.Must(retry.Timed(5, 100).On(func() error {
-			dir, err := os.MkdirTemp("", "xray")
+			dir, err := os.MkdirTemp("", "Aiko")
 			if err != nil {
 				return err
 			}
 			tempDir = dir
 			return nil
 		}))
-		file := filepath.Join(tempDir, "xray.test")
+		file := filepath.Join(tempDir, "Aiko.test")
 		if runtime.GOOS == "windows" {
 			file += ".exe"
 		}
@@ -120,7 +120,7 @@ func genTestBinaryPath() {
 }
 
 func GetSourcePath() string {
-	return filepath.Join("github.com", "xtls", "xray-core", "main")
+	return filepath.Join("github.com", "xtls", "Aiko-core", "main")
 }
 
 func CloseAllServers(servers []*exec.Cmd) {

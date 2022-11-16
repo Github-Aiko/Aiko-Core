@@ -232,12 +232,12 @@ func init() {
 
 	const defaultFlagValue = "NOT_DEFINED_AT_ALL"
 
-	paddingValue := platform.NewEnvFlag("xray.vmess.padding").GetValue(func() string { return defaultFlagValue })
+	paddingValue := platform.NewEnvFlag("Aiko.vmess.padding").GetValue(func() string { return defaultFlagValue })
 	if paddingValue != defaultFlagValue {
 		enablePadding = true
 	}
 
-	isAeadDisabled := platform.NewEnvFlag("xray.vmess.aead.disabled").GetValue(func() string { return defaultFlagValue })
+	isAeadDisabled := platform.NewEnvFlag("Aiko.vmess.aead.disabled").GetValue(func() string { return defaultFlagValue })
 	if isAeadDisabled == "true" {
 		aeadDisabled = true
 	}

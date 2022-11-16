@@ -34,7 +34,7 @@ type Config struct {
 	// Deprecated: Do not use.
 	NetworkList *net.NetworkList `protobuf:"bytes,3,opt,name=network_list,json=networkList,proto3" json:"network_list,omitempty"`
 	// List of networks that the Dokodemo accepts.
-	Networks []net.Network `protobuf:"varint,7,rep,packed,name=networks,proto3,enum=xray.common.net.Network" json:"networks,omitempty"`
+	Networks []net.Network `protobuf:"varint,7,rep,packed,name=networks,proto3,enum=Aiko.common.net.Network" json:"networks,omitempty"`
 	// Deprecated: Do not use.
 	Timeout        uint32 `protobuf:"varint,4,opt,name=timeout,proto3" json:"timeout,omitempty"`
 	FollowRedirect bool   `protobuf:"varint,5,opt,name=follow_redirect,json=followRedirect,proto3" json:"follow_redirect,omitempty"`
@@ -176,15 +176,15 @@ func file_proxy_dokodemo_config_proto_rawDescGZIP() []byte {
 
 var file_proxy_dokodemo_config_proto_msgTypes = make([]protoimpl.MessageInfo, 1)
 var file_proxy_dokodemo_config_proto_goTypes = []interface{}{
-	(*Config)(nil),          // 0: xray.proxy.dokodemo.Config
-	(*net.IPOrDomain)(nil),  // 1: xray.common.net.IPOrDomain
-	(*net.NetworkList)(nil), // 2: xray.common.net.NetworkList
-	(net.Network)(0),        // 3: xray.common.net.Network
+	(*Config)(nil),          // 0: Aiko.proxy.dokodemo.Config
+	(*net.IPOrDomain)(nil),  // 1: Aiko.common.net.IPOrDomain
+	(*net.NetworkList)(nil), // 2: Aiko.common.net.NetworkList
+	(net.Network)(0),        // 3: Aiko.common.net.Network
 }
 var file_proxy_dokodemo_config_proto_depIdxs = []int32{
-	1, // 0: xray.proxy.dokodemo.Config.address:type_name -> xray.common.net.IPOrDomain
-	2, // 1: xray.proxy.dokodemo.Config.network_list:type_name -> xray.common.net.NetworkList
-	3, // 2: xray.proxy.dokodemo.Config.networks:type_name -> xray.common.net.Network
+	1, // 0: Aiko.proxy.dokodemo.Config.address:type_name -> Aiko.common.net.IPOrDomain
+	2, // 1: Aiko.proxy.dokodemo.Config.network_list:type_name -> Aiko.common.net.NetworkList
+	3, // 2: Aiko.proxy.dokodemo.Config.networks:type_name -> Aiko.common.net.Network
 	3, // [3:3] is the sub-list for method output_type
 	3, // [3:3] is the sub-list for method input_type
 	3, // [3:3] is the sub-list for extension type_name

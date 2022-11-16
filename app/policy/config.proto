@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-package xray.app.policy;
-option csharp_namespace = "Xray.App.Policy";
+package Aiko.app.policy;
+option csharp_namespace = "Aiko.App.Policy";
 option go_package = "github.com/Github-Aiko/Aiko-Core/app/policy";
-option java_package = "com.xray.app.policy";
+option java_package = "com.Aiko.app.policy";
 option java_multiple_files = true;
 
 message Second {

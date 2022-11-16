@@ -21,8 +21,8 @@ func TestGenerate(t *testing.T) {
 }
 
 func generate(domainNames []string, isCA bool, jsonOutput bool, fileOutput string) error {
-	commonName := "Xray Root CA"
-	organization := "Xray Inc"
+	commonName := "Aiko Root CA"
+	organization := "Aiko Inc"
 
 	expire := time.Hour * 3
 

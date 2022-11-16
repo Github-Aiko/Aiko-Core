@@ -427,14 +427,14 @@ func file_app_observatory_config_proto_rawDescGZIP() []byte {
 
 var file_app_observatory_config_proto_msgTypes = make([]protoimpl.MessageInfo, 5)
 var file_app_observatory_config_proto_goTypes = []interface{}{
-	(*ObservationResult)(nil), // 0: xray.core.app.observatory.ObservationResult
-	(*OutboundStatus)(nil),    // 1: xray.core.app.observatory.OutboundStatus
-	(*ProbeResult)(nil),       // 2: xray.core.app.observatory.ProbeResult
-	(*Intensity)(nil),         // 3: xray.core.app.observatory.Intensity
-	(*Config)(nil),            // 4: xray.core.app.observatory.Config
+	(*ObservationResult)(nil), // 0: Aiko.core.app.observatory.ObservationResult
+	(*OutboundStatus)(nil),    // 1: Aiko.core.app.observatory.OutboundStatus
+	(*ProbeResult)(nil),       // 2: Aiko.core.app.observatory.ProbeResult
+	(*Intensity)(nil),         // 3: Aiko.core.app.observatory.Intensity
+	(*Config)(nil),            // 4: Aiko.core.app.observatory.Config
 }
 var file_app_observatory_config_proto_depIdxs = []int32{
-	1, // 0: xray.core.app.observatory.ObservationResult.status:type_name -> xray.core.app.observatory.OutboundStatus
+	1, // 0: Aiko.core.app.observatory.ObservationResult.status:type_name -> Aiko.core.app.observatory.OutboundStatus
 	1, // [1:1] is the sub-list for method output_type
 	1, // [1:1] is the sub-list for method input_type
 	1, // [1:1] is the sub-list for extension type_name

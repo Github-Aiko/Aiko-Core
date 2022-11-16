@@ -71,7 +71,7 @@ type Control struct {
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 
-	State  Control_State `protobuf:"varint,1,opt,name=state,proto3,enum=xray.app.reverse.Control_State" json:"state,omitempty"`
+	State  Control_State `protobuf:"varint,1,opt,name=state,proto3,enum=Aiko.app.reverse.Control_State" json:"state,omitempty"`
 	Random []byte        `protobuf:"bytes,99,opt,name=random,proto3" json:"random,omitempty"`
 }
 
@@ -339,16 +339,16 @@ func file_app_reverse_config_proto_rawDescGZIP() []byte {
 var file_app_reverse_config_proto_enumTypes = make([]protoimpl.EnumInfo, 1)
 var file_app_reverse_config_proto_msgTypes = make([]protoimpl.MessageInfo, 4)
 var file_app_reverse_config_proto_goTypes = []interface{}{
-	(Control_State)(0),   // 0: xray.app.reverse.Control.State
-	(*Control)(nil),      // 1: xray.app.reverse.Control
-	(*BridgeConfig)(nil), // 2: xray.app.reverse.BridgeConfig
-	(*PortalConfig)(nil), // 3: xray.app.reverse.PortalConfig
-	(*Config)(nil),       // 4: xray.app.reverse.Config
+	(Control_State)(0),   // 0: Aiko.app.reverse.Control.State
+	(*Control)(nil),      // 1: Aiko.app.reverse.Control
+	(*BridgeConfig)(nil), // 2: Aiko.app.reverse.BridgeConfig
+	(*PortalConfig)(nil), // 3: Aiko.app.reverse.PortalConfig
+	(*Config)(nil),       // 4: Aiko.app.reverse.Config
 }
 var file_app_reverse_config_proto_depIdxs = []int32{
-	0, // 0: xray.app.reverse.Control.state:type_name -> xray.app.reverse.Control.State
-	2, // 1: xray.app.reverse.Config.bridge_config:type_name -> xray.app.reverse.BridgeConfig
-	3, // 2: xray.app.reverse.Config.portal_config:type_name -> xray.app.reverse.PortalConfig
+	0, // 0: Aiko.app.reverse.Control.state:type_name -> Aiko.app.reverse.Control.State
+	2, // 1: Aiko.app.reverse.Config.bridge_config:type_name -> Aiko.app.reverse.BridgeConfig
+	3, // 2: Aiko.app.reverse.Config.portal_config:type_name -> Aiko.app.reverse.PortalConfig
 	3, // [3:3] is the sub-list for method output_type
 	3, // [3:3] is the sub-list for method input_type
 	3, // [3:3] is the sub-list for extension type_name

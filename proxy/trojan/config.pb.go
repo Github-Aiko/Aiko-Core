@@ -322,17 +322,17 @@ func file_proxy_trojan_config_proto_rawDescGZIP() []byte {
 
 var file_proxy_trojan_config_proto_msgTypes = make([]protoimpl.MessageInfo, 4)
 var file_proxy_trojan_config_proto_goTypes = []interface{}{
-	(*Account)(nil),                 // 0: xray.proxy.trojan.Account
-	(*Fallback)(nil),                // 1: xray.proxy.trojan.Fallback
-	(*ClientConfig)(nil),            // 2: xray.proxy.trojan.ClientConfig
-	(*ServerConfig)(nil),            // 3: xray.proxy.trojan.ServerConfig
-	(*protocol.ServerEndpoint)(nil), // 4: xray.common.protocol.ServerEndpoint
-	(*protocol.User)(nil),           // 5: xray.common.protocol.User
+	(*Account)(nil),                 // 0: Aiko.proxy.trojan.Account
+	(*Fallback)(nil),                // 1: Aiko.proxy.trojan.Fallback
+	(*ClientConfig)(nil),            // 2: Aiko.proxy.trojan.ClientConfig
+	(*ServerConfig)(nil),            // 3: Aiko.proxy.trojan.ServerConfig
+	(*protocol.ServerEndpoint)(nil), // 4: Aiko.common.protocol.ServerEndpoint
+	(*protocol.User)(nil),           // 5: Aiko.common.protocol.User
 }
 var file_proxy_trojan_config_proto_depIdxs = []int32{
-	4, // 0: xray.proxy.trojan.ClientConfig.server:type_name -> xray.common.protocol.ServerEndpoint
-	5, // 1: xray.proxy.trojan.ServerConfig.users:type_name -> xray.common.protocol.User
-	1, // 2: xray.proxy.trojan.ServerConfig.fallbacks:type_name -> xray.proxy.trojan.Fallback
+	4, // 0: Aiko.proxy.trojan.ClientConfig.server:type_name -> Aiko.common.protocol.ServerEndpoint
+	5, // 1: Aiko.proxy.trojan.ServerConfig.users:type_name -> Aiko.common.protocol.User
+	1, // 2: Aiko.proxy.trojan.ServerConfig.fallbacks:type_name -> Aiko.proxy.trojan.Fallback
 	3, // [3:3] is the sub-list for method output_type
 	3, // [3:3] is the sub-list for method input_type
 	3, // [3:3] is the sub-list for extension type_name

@@ -21,17 +21,17 @@ func TestStaticHosts(t *testing.T) {
 		},
 		{
 			Type:   DomainMatchingType_Full,
-			Domain: "proxy.xray.com",
+			Domain: "proxy.Aiko.com",
 			Ip: [][]byte{
 				{1, 2, 3, 4},
 				{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1},
 			},
-			ProxiedDomain: "another-proxy.xray.com",
+			ProxiedDomain: "another-proxy.Aiko.com",
 		},
 		{
 			Type:          DomainMatchingType_Full,
-			Domain:        "proxy2.xray.com",
-			ProxiedDomain: "proxy.xray.com",
+			Domain:        "proxy2.Aiko.com",
+			ProxiedDomain: "proxy.Aiko.com",
 		},
 		{
 			Type:   DomainMatchingType_Subdomain,
@@ -67,27 +67,27 @@ func TestStaticHosts(t *testing.T) {
 	}
 
 	{
-		domain := hosts.Lookup("proxy.xray.com", dns.IPOption{
+		domain := hosts.Lookup("proxy.Aiko.com", dns.IPOption{
 			IPv4Enable: true,
 			IPv6Enable: false,
 		})
 		if len(domain) != 1 {
 			t.Error("expect 1 domain, but got ", len(domain))
 		}
-		if diff := cmp.Diff(domain[0].Domain(), "another-proxy.xray.com"); diff != "" {
+		if diff := cmp.Diff(domain[0].Domain(), "another-proxy.Aiko.com"); diff != "" {
 			t.Error(diff)
 		}
 	}
 
 	{
-		domain := hosts.Lookup("proxy2.xray.com", dns.IPOption{
+		domain := hosts.Lookup("proxy2.Aiko.com", dns.IPOption{
 			IPv4Enable: true,
 			IPv6Enable: false,
 		})
 		if len(domain) != 1 {
 			t.Error("expect 1 domain, but got ", len(domain))
 		}
-		if diff := cmp.Diff(domain[0].Domain(), "another-proxy.xray.com"); diff != "" {
+		if diff := cmp.Diff(domain[0].Domain(), "another-proxy.Aiko.com"); diff != "" {
 			t.Error(diff)
 		}
 	}

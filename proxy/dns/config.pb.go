@@ -113,11 +113,11 @@ func file_proxy_dns_config_proto_rawDescGZIP() []byte {
 
 var file_proxy_dns_config_proto_msgTypes = make([]protoimpl.MessageInfo, 1)
 var file_proxy_dns_config_proto_goTypes = []interface{}{
-	(*Config)(nil),       // 0: xray.proxy.dns.Config
-	(*net.Endpoint)(nil), // 1: xray.common.net.Endpoint
+	(*Config)(nil),       // 0: Aiko.proxy.dns.Config
+	(*net.Endpoint)(nil), // 1: Aiko.common.net.Endpoint
 }
 var file_proxy_dns_config_proto_depIdxs = []int32{
-	1, // 0: xray.proxy.dns.Config.server:type_name -> xray.common.net.Endpoint
+	1, // 0: Aiko.proxy.dns.Config.server:type_name -> Aiko.common.net.Endpoint
 	1, // [1:1] is the sub-list for method output_type
 	1, // [1:1] is the sub-list for method input_type
 	1, // [1:1] is the sub-list for extension type_name

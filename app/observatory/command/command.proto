@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-package xray.core.app.observatory.command;
-option csharp_namespace = "Xray.Core.App.Observatory.Command";
+package Aiko.core.app.observatory.command;
+option csharp_namespace = "Aiko.Core.App.Observatory.Command";
 option go_package = "github.com/Github-Aiko/Aiko-Core/app/observatory/command";
-option java_package = "com.xray.core.app.observatory.command";
+option java_package = "com.Aiko.core.app.observatory.command";
 option java_multiple_files = true;
 
 import "app/observatory/config.proto";
@@ -12,7 +12,7 @@ message GetOutboundStatusRequest {
 }
 
 message GetOutboundStatusResponse {
-  xray.core.app.observatory.ObservationResult status = 1;
+  Aiko.core.app.observatory.ObservationResult status = 1;
 }
 
 service ObservatoryService {

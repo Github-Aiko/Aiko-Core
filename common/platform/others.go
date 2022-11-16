@@ -17,21 +17,21 @@ func LineSeparator() string {
 }
 
 func GetToolLocation(file string) string {
-	const name = "xray.location.tool"
+	const name = "Aiko.location.tool"
 	toolPath := EnvFlag{Name: name, AltName: NormalizeEnvName(name)}.GetValue(getExecutableDir)
 	return filepath.Join(toolPath, file)
 }
 
 // GetAssetLocation searches for `file` in certain locations
 func GetAssetLocation(file string) string {
-	const name = "xray.location.asset"
+	const name = "Aiko.location.asset"
 	assetPath := NewEnvFlag(name).GetValue(getExecutableDir)
 	defPath := filepath.Join(assetPath, file)
 	for _, p := range []string{
 		defPath,
-		filepath.Join("/usr/local/share/xray/", file),
-		filepath.Join("/usr/share/xray/", file),
-		filepath.Join("/opt/share/xray/", file),
+		filepath.Join("/usr/local/share/Aiko/", file),
+		filepath.Join("/usr/share/Aiko/", file),
+		filepath.Join("/opt/share/Aiko/", file),
 	} {
 		if _, err := os.Stat(p); os.IsNotExist(err) {
 			continue

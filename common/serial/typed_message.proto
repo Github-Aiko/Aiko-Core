@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-package xray.common.serial;
-option csharp_namespace = "Xray.Common.Serial";
+package Aiko.common.serial;
+option csharp_namespace = "Aiko.Common.Serial";
 option go_package = "github.com/Github-Aiko/Aiko-Core/common/serial";
-option java_package = "com.xray.common.serial";
+option java_package = "com.Aiko.common.serial";
 option java_multiple_files = true;
 
 // TypedMessage is a serialized proto message along with its type name.

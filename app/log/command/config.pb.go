@@ -175,13 +175,13 @@ func file_app_log_command_config_proto_rawDescGZIP() []byte {
 
 var file_app_log_command_config_proto_msgTypes = make([]protoimpl.MessageInfo, 3)
 var file_app_log_command_config_proto_goTypes = []interface{}{
-	(*Config)(nil),                // 0: xray.app.log.command.Config
-	(*RestartLoggerRequest)(nil),  // 1: xray.app.log.command.RestartLoggerRequest
-	(*RestartLoggerResponse)(nil), // 2: xray.app.log.command.RestartLoggerResponse
+	(*Config)(nil),                // 0: Aiko.app.log.command.Config
+	(*RestartLoggerRequest)(nil),  // 1: Aiko.app.log.command.RestartLoggerRequest
+	(*RestartLoggerResponse)(nil), // 2: Aiko.app.log.command.RestartLoggerResponse
 }
 var file_app_log_command_config_proto_depIdxs = []int32{
-	1, // 0: xray.app.log.command.LoggerService.RestartLogger:input_type -> xray.app.log.command.RestartLoggerRequest
-	2, // 1: xray.app.log.command.LoggerService.RestartLogger:output_type -> xray.app.log.command.RestartLoggerResponse
+	1, // 0: Aiko.app.log.command.LoggerService.RestartLogger:input_type -> Aiko.app.log.command.RestartLoggerRequest
+	2, // 1: Aiko.app.log.command.LoggerService.RestartLogger:output_type -> Aiko.app.log.command.RestartLoggerResponse
 	1, // [1:2] is the sub-list for method output_type
 	0, // [0:1] is the sub-list for method input_type
 	0, // [0:0] is the sub-list for extension type_name

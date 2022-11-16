@@ -67,20 +67,20 @@ func getExecutableSubDir(dir string) func() string {
 }
 
 func GetPluginDirectory() string {
-	const name = "xray.location.plugin"
+	const name = "Aiko.location.plugin"
 	pluginDir := NewEnvFlag(name).GetValue(getExecutableSubDir("plugins"))
 	return pluginDir
 }
 
 func GetConfigurationPath() string {
-	const name = "xray.location.config"
+	const name = "Aiko.location.config"
 	configPath := NewEnvFlag(name).GetValue(getExecutableDir)
 	return filepath.Join(configPath, "config.json")
 }
 
-// GetConfDirPath reads "xray.location.confdir"
+// GetConfDirPath reads "Aiko.location.confdir"
 func GetConfDirPath() string {
-	const name = "xray.location.confdir"
+	const name = "Aiko.location.confdir"
 	configPath := NewEnvFlag(name).GetValue(func() string { return "" })
 	return configPath
 }

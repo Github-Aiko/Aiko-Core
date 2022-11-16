@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-package xray.common.protocol;
-option csharp_namespace = "Xray.Common.Protocol";
+package Aiko.common.protocol;
+option csharp_namespace = "Aiko.Common.Protocol";
 option go_package = "github.com/Github-Aiko/Aiko-Core/common/protocol";
-option java_package = "com.xray.common.protocol";
+option java_package = "com.Aiko.common.protocol";
 option java_multiple_files = true;
 
 enum SecurityType {

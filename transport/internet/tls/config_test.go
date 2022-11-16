@@ -22,12 +22,12 @@ func TestCertificateIssuing(t *testing.T) {
 	}
 
 	tlsConfig := c.GetTLSConfig()
-	xrayCert, err := tlsConfig.GetCertificate(&gotls.ClientHelloInfo{
+	AikoCert, err := tlsConfig.GetCertificate(&gotls.ClientHelloInfo{
 		ServerName: "www.example.com",
 	})
 	common.Must(err)
 
-	x509Cert, err := x509.ParseCertificate(xrayCert.Certificate[0])
+	x509Cert, err := x509.ParseCertificate(AikoCert.Certificate[0])
 	common.Must(err)
 	if !x509Cert.NotAfter.After(time.Now()) {
 		t.Error("NotAfter: ", x509Cert.NotAfter)
@@ -51,12 +51,12 @@ func TestExpiredCertificate(t *testing.T) {
 	}
 
 	tlsConfig := c.GetTLSConfig()
-	xrayCert, err := tlsConfig.GetCertificate(&gotls.ClientHelloInfo{
+	AikoCert, err := tlsConfig.GetCertificate(&gotls.ClientHelloInfo{
 		ServerName: "www.example.com",
 	})
 	common.Must(err)
 
-	x509Cert, err := x509.ParseCertificate(xrayCert.Certificate[0])
+	x509Cert, err := x509.ParseCertificate(AikoCert.Certificate[0])
 	common.Must(err)
 	if !x509Cert.NotAfter.After(time.Now()) {
 		t.Error("NotAfter: ", x509Cert.NotAfter)

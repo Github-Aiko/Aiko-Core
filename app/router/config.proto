@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-package xray.app.router;
-option csharp_namespace = "Xray.App.Router";
+package Aiko.app.router;
+option csharp_namespace = "Aiko.App.Router";
 option go_package = "github.com/Github-Aiko/Aiko-Core/app/router";
-option java_package = "com.xray.app.router";
+option java_package = "com.Aiko.app.router";
 option java_multiple_files = true;
 
 import "common/net/port.proto";
@@ -94,16 +94,16 @@ message RoutingRule {
 
   // A range of port [from, to]. If the destination port is in this range, this
   // rule takes effect. Deprecated. Use port_list.
-  xray.common.net.PortRange port_range = 4 [deprecated = true];
+  Aiko.common.net.PortRange port_range = 4 [deprecated = true];
 
   // List of ports.
-  xray.common.net.PortList port_list = 14;
+  Aiko.common.net.PortList port_list = 14;
 
   // List of networks. Deprecated. Use networks.
-  xray.common.net.NetworkList network_list = 5 [deprecated = true];
+  Aiko.common.net.NetworkList network_list = 5 [deprecated = true];
 
   // List of networks for matching.
-  repeated xray.common.net.Network networks = 13;
+  repeated Aiko.common.net.Network networks = 13;
 
   // List of CIDRs for source IP address matching.
   repeated CIDR source_cidr = 6 [deprecated = true];
@@ -113,7 +113,7 @@ message RoutingRule {
   repeated GeoIP source_geoip = 11;
 
   // List of ports for source port matching.
-  xray.common.net.PortList source_port_list = 16;
+  Aiko.common.net.PortList source_port_list = 16;
 
   repeated string user_email = 7;
   repeated string inbound_tag = 8;

@@ -224,13 +224,13 @@ func file_proxy_vless_inbound_config_proto_rawDescGZIP() []byte {
 
 var file_proxy_vless_inbound_config_proto_msgTypes = make([]protoimpl.MessageInfo, 2)
 var file_proxy_vless_inbound_config_proto_goTypes = []interface{}{
-	(*Fallback)(nil),      // 0: xray.proxy.vless.inbound.Fallback
-	(*Config)(nil),        // 1: xray.proxy.vless.inbound.Config
-	(*protocol.User)(nil), // 2: xray.common.protocol.User
+	(*Fallback)(nil),      // 0: Aiko.proxy.vless.inbound.Fallback
+	(*Config)(nil),        // 1: Aiko.proxy.vless.inbound.Config
+	(*protocol.User)(nil), // 2: Aiko.common.protocol.User
 }
 var file_proxy_vless_inbound_config_proto_depIdxs = []int32{
-	2, // 0: xray.proxy.vless.inbound.Config.clients:type_name -> xray.common.protocol.User
-	0, // 1: xray.proxy.vless.inbound.Config.fallbacks:type_name -> xray.proxy.vless.inbound.Fallback
+	2, // 0: Aiko.proxy.vless.inbound.Config.clients:type_name -> Aiko.common.protocol.User
+	0, // 1: Aiko.proxy.vless.inbound.Config.fallbacks:type_name -> Aiko.proxy.vless.inbound.Fallback
 	2, // [2:2] is the sub-list for method output_type
 	2, // [2:2] is the sub-list for method input_type
 	2, // [2:2] is the sub-list for extension type_name

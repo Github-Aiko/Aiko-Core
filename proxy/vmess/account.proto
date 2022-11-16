@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-package xray.proxy.vmess;
-option csharp_namespace = "Xray.Proxy.Vmess";
+package Aiko.proxy.vmess;
+option csharp_namespace = "Aiko.Proxy.Vmess";
 option go_package = "github.com/Github-Aiko/Aiko-Core/proxy/vmess";
-option java_package = "com.xray.proxy.vmess";
+option java_package = "com.Aiko.proxy.vmess";
 option java_multiple_files = true;
 
 import "common/protocol/headers.proto";
@@ -15,7 +15,7 @@ message Account {
   // Number of alternative IDs. Client and server must share the same number.
   uint32 alter_id = 2;
   // Security settings. Only applies to client side.
-  xray.common.protocol.SecurityConfig security_settings = 3;
+  Aiko.common.protocol.SecurityConfig security_settings = 3;
   // Define tests enabled for this account
   string tests_enabled = 4;
 }

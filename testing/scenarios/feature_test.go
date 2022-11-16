@@ -645,7 +645,7 @@ func TestDomainSniffing(t *testing.T) {
 	}
 }
 
-func TestDialXray(t *testing.T) {
+func TestDialAiko(t *testing.T) {
 	tcpServer := tcp.Server{
 		MsgProcessor: xor,
 	}

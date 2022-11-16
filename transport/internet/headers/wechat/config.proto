@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-package xray.transport.internet.headers.wechat;
-option csharp_namespace = "Xray.Transport.Internet.Headers.Wechat";
+package Aiko.transport.internet.headers.wechat;
+option csharp_namespace = "Aiko.Transport.Internet.Headers.Wechat";
 option go_package = "github.com/Github-Aiko/Aiko-Core/transport/internet/headers/wechat";
-option java_package = "com.xray.transport.internet.headers.wechat";
+option java_package = "com.Aiko.transport.internet.headers.wechat";
 option java_multiple_files = true;
 
 message VideoConfig {}

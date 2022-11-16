@@ -78,10 +78,10 @@ type Config struct {
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 
-	ErrorLogType  LogType      `protobuf:"varint,1,opt,name=error_log_type,json=errorLogType,proto3,enum=xray.app.log.LogType" json:"error_log_type,omitempty"`
-	ErrorLogLevel log.Severity `protobuf:"varint,2,opt,name=error_log_level,json=errorLogLevel,proto3,enum=xray.common.log.Severity" json:"error_log_level,omitempty"`
+	ErrorLogType  LogType      `protobuf:"varint,1,opt,name=error_log_type,json=errorLogType,proto3,enum=Aiko.app.log.LogType" json:"error_log_type,omitempty"`
+	ErrorLogLevel log.Severity `protobuf:"varint,2,opt,name=error_log_level,json=errorLogLevel,proto3,enum=Aiko.common.log.Severity" json:"error_log_level,omitempty"`
 	ErrorLogPath  string       `protobuf:"bytes,3,opt,name=error_log_path,json=errorLogPath,proto3" json:"error_log_path,omitempty"`
-	AccessLogType LogType      `protobuf:"varint,4,opt,name=access_log_type,json=accessLogType,proto3,enum=xray.app.log.LogType" json:"access_log_type,omitempty"`
+	AccessLogType LogType      `protobuf:"varint,4,opt,name=access_log_type,json=accessLogType,proto3,enum=Aiko.app.log.LogType" json:"access_log_type,omitempty"`
 	AccessLogPath string       `protobuf:"bytes,5,opt,name=access_log_path,json=accessLogPath,proto3" json:"access_log_path,omitempty"`
 	EnableDnsLog  bool         `protobuf:"varint,6,opt,name=enable_dns_log,json=enableDnsLog,proto3" json:"enable_dns_log,omitempty"`
 }
@@ -212,14 +212,14 @@ func file_app_log_config_proto_rawDescGZIP() []byte {
 var file_app_log_config_proto_enumTypes = make([]protoimpl.EnumInfo, 1)
 var file_app_log_config_proto_msgTypes = make([]protoimpl.MessageInfo, 1)
 var file_app_log_config_proto_goTypes = []interface{}{
-	(LogType)(0),      // 0: xray.app.log.LogType
-	(*Config)(nil),    // 1: xray.app.log.Config
-	(log.Severity)(0), // 2: xray.common.log.Severity
+	(LogType)(0),      // 0: Aiko.app.log.LogType
+	(*Config)(nil),    // 1: Aiko.app.log.Config
+	(log.Severity)(0), // 2: Aiko.common.log.Severity
 }
 var file_app_log_config_proto_depIdxs = []int32{
-	0, // 0: xray.app.log.Config.error_log_type:type_name -> xray.app.log.LogType
-	2, // 1: xray.app.log.Config.error_log_level:type_name -> xray.common.log.Severity
-	0, // 2: xray.app.log.Config.access_log_type:type_name -> xray.app.log.LogType
+	0, // 0: Aiko.app.log.Config.error_log_type:type_name -> Aiko.app.log.LogType
+	2, // 1: Aiko.app.log.Config.error_log_level:type_name -> Aiko.common.log.Severity
+	0, // 2: Aiko.app.log.Config.access_log_type:type_name -> Aiko.app.log.LogType
 	3, // [3:3] is the sub-list for method output_type
 	3, // [3:3] is the sub-list for method input_type
 	3, // [3:3] is the sub-list for extension type_name

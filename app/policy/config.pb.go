@@ -571,28 +571,28 @@ func file_app_policy_config_proto_rawDescGZIP() []byte {
 
 var file_app_policy_config_proto_msgTypes = make([]protoimpl.MessageInfo, 9)
 var file_app_policy_config_proto_goTypes = []interface{}{
-	(*Second)(nil),             // 0: xray.app.policy.Second
-	(*Policy)(nil),             // 1: xray.app.policy.Policy
-	(*SystemPolicy)(nil),       // 2: xray.app.policy.SystemPolicy
-	(*Config)(nil),             // 3: xray.app.policy.Config
-	(*Policy_Timeout)(nil),     // 4: xray.app.policy.Policy.Timeout
-	(*Policy_Stats)(nil),       // 5: xray.app.policy.Policy.Stats
-	(*Policy_Buffer)(nil),      // 6: xray.app.policy.Policy.Buffer
-	(*SystemPolicy_Stats)(nil), // 7: xray.app.policy.SystemPolicy.Stats
-	nil,                        // 8: xray.app.policy.Config.LevelEntry
+	(*Second)(nil),             // 0: Aiko.app.policy.Second
+	(*Policy)(nil),             // 1: Aiko.app.policy.Policy
+	(*SystemPolicy)(nil),       // 2: Aiko.app.policy.SystemPolicy
+	(*Config)(nil),             // 3: Aiko.app.policy.Config
+	(*Policy_Timeout)(nil),     // 4: Aiko.app.policy.Policy.Timeout
+	(*Policy_Stats)(nil),       // 5: Aiko.app.policy.Policy.Stats
+	(*Policy_Buffer)(nil),      // 6: Aiko.app.policy.Policy.Buffer
+	(*SystemPolicy_Stats)(nil), // 7: Aiko.app.policy.SystemPolicy.Stats
+	nil,                        // 8: Aiko.app.policy.Config.LevelEntry
 }
 var file_app_policy_config_proto_depIdxs = []int32{
-	4,  // 0: xray.app.policy.Policy.timeout:type_name -> xray.app.policy.Policy.Timeout
-	5,  // 1: xray.app.policy.Policy.stats:type_name -> xray.app.policy.Policy.Stats
-	6,  // 2: xray.app.policy.Policy.buffer:type_name -> xray.app.policy.Policy.Buffer
-	7,  // 3: xray.app.policy.SystemPolicy.stats:type_name -> xray.app.policy.SystemPolicy.Stats
-	8,  // 4: xray.app.policy.Config.level:type_name -> xray.app.policy.Config.LevelEntry
-	2,  // 5: xray.app.policy.Config.system:type_name -> xray.app.policy.SystemPolicy
-	0,  // 6: xray.app.policy.Policy.Timeout.handshake:type_name -> xray.app.policy.Second
-	0,  // 7: xray.app.policy.Policy.Timeout.connection_idle:type_name -> xray.app.policy.Second
-	0,  // 8: xray.app.policy.Policy.Timeout.uplink_only:type_name -> xray.app.policy.Second
-	0,  // 9: xray.app.policy.Policy.Timeout.downlink_only:type_name -> xray.app.policy.Second
-	1,  // 10: xray.app.policy.Config.LevelEntry.value:type_name -> xray.app.policy.Policy
+	4,  // 0: Aiko.app.policy.Policy.timeout:type_name -> Aiko.app.policy.Policy.Timeout
+	5,  // 1: Aiko.app.policy.Policy.stats:type_name -> Aiko.app.policy.Policy.Stats
+	6,  // 2: Aiko.app.policy.Policy.buffer:type_name -> Aiko.app.policy.Policy.Buffer
+	7,  // 3: Aiko.app.policy.SystemPolicy.stats:type_name -> Aiko.app.policy.SystemPolicy.Stats
+	8,  // 4: Aiko.app.policy.Config.level:type_name -> Aiko.app.policy.Config.LevelEntry
+	2,  // 5: Aiko.app.policy.Config.system:type_name -> Aiko.app.policy.SystemPolicy
+	0,  // 6: Aiko.app.policy.Policy.Timeout.handshake:type_name -> Aiko.app.policy.Second
+	0,  // 7: Aiko.app.policy.Policy.Timeout.connection_idle:type_name -> Aiko.app.policy.Second
+	0,  // 8: Aiko.app.policy.Policy.Timeout.uplink_only:type_name -> Aiko.app.policy.Second
+	0,  // 9: Aiko.app.policy.Policy.Timeout.downlink_only:type_name -> Aiko.app.policy.Second
+	1,  // 10: Aiko.app.policy.Config.LevelEntry.value:type_name -> Aiko.app.policy.Policy
 	11, // [11:11] is the sub-list for method output_type
 	11, // [11:11] is the sub-list for method input_type
 	11, // [11:11] is the sub-list for extension type_name

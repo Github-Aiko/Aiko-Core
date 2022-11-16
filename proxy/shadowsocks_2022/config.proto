@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-package xray.proxy.shadowsocks_2022;
-option csharp_namespace = "Xray.Proxy.Shadowsocks2022";
+package Aiko.proxy.shadowsocks_2022;
+option csharp_namespace = "Aiko.Proxy.Shadowsocks2022";
 option go_package = "github.com/Github-Aiko/Aiko-Core/proxy/shadowsocks_2022";
-option java_package = "com.xray.proxy.shadowsocks_2022";
+option java_package = "com.Aiko.proxy.shadowsocks_2022";
 option java_multiple_files = true;
 
 import "common/net/network.proto";
@@ -14,19 +14,19 @@ message ServerConfig {
   string key = 2;
   string email = 3;
   int32 level = 4;
-  repeated xray.common.net.Network network = 5;
+  repeated Aiko.common.net.Network network = 5;
 }
 
 message MultiUserServerConfig {
   string method = 1;
   string key = 2;
   repeated User users = 3;
-  repeated xray.common.net.Network network = 4;
+  repeated Aiko.common.net.Network network = 4;
 }
 
 message RelayDestination {
   string key = 1;
-  xray.common.net.IPOrDomain address = 2;
+  Aiko.common.net.IPOrDomain address = 2;
   uint32 port = 3;
   string email = 4;
   int32 level = 5;
@@ -36,7 +36,7 @@ message RelayServerConfig {
   string method = 1;
   string key = 2;
   repeated RelayDestination destinations = 3;
-  repeated xray.common.net.Network network = 4;
+  repeated Aiko.common.net.Network network = 4;
 }
 
 message User {
@@ -46,7 +46,7 @@ message User {
 }
 
 message ClientConfig {
-  xray.common.net.IPOrDomain address = 1;
+  Aiko.common.net.IPOrDomain address = 1;
   uint32 port = 2;
   string method = 3;
   string key = 4;

@@ -14,9 +14,9 @@ type IPOption struct {
 	FakeEnable bool
 }
 
-// Client is a Xray feature for querying DNS information.
+// Client is a Aiko feature for querying DNS information.
 //
-// xray:api:stable
+// Aiko:api:stable
 type Client interface {
 	features.Feature
 
@@ -30,7 +30,7 @@ type HostsLookup interface {
 
 // ClientType returns the type of Client interface. Can be used for implementing common.HasType.
 //
-// xray:api:beta
+// Aiko:api:beta
 func ClientType() interface{} {
 	return (*Client)(nil)
 }

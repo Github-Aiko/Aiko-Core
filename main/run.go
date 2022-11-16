@@ -21,19 +21,19 @@ import (
 
 var cmdRun = &base.Command{
 	UsageLine: "{{.Exec}} run [-c config.json] [-confdir dir]",
-	Short:     "Run Xray with config, the default command",
+	Short:     "Run Aiko with config, the default command",
 	Long: `
-Run Xray with config, the default command.
+Run Aiko with config, the default command.
 
 The -config=file, -c=file flags set the config files for 
-Xray. Multiple assign is accepted.
+Aiko. Multiple assign is accepted.
 
 The -confdir=dir flag sets a dir with multiple json config
 
 The -format=json flag sets the format of config files. 
 Default "auto".
 
-The -test flag tells Xray to test config files only, 
+The -test flag tells Aiko to test config files only, 
 without launching the server
 	`,
 }
@@ -43,16 +43,16 @@ func init() {
 }
 
 var (
-	configFiles cmdarg.Arg // "Config file for Xray.", the option is customed type, parse in main
+	configFiles cmdarg.Arg // "Config file for Aiko.", the option is customed type, parse in main
 	configDir   string
-	test        = cmdRun.Flag.Bool("test", false, "Test config file only, without launching Xray server.")
+	test        = cmdRun.Flag.Bool("test", false, "Test config file only, without launching Aiko server.")
 	format      = cmdRun.Flag.String("format", "auto", "Format of input file.")
 
 	/* We have to do this here because Golang's Test will also need to parse flag, before
 	 * main func in this file is run.
 	 */
 	_ = func() bool {
-		cmdRun.Flag.Var(&configFiles, "config", "Config path for Xray.")
+		cmdRun.Flag.Var(&configFiles, "config", "Config path for Aiko.")
 		cmdRun.Flag.Var(&configFiles, "c", "Short alias of -config")
 		cmdRun.Flag.StringVar(&configDir, "confdir", "", "A dir with multiple json config")
 
@@ -62,7 +62,7 @@ var (
 
 func executeRun(cmd *base.Command, args []string) {
 	printVersion()
-	server, err := startXray()
+	server, err := startAiko()
 	if err != nil {
 		fmt.Println("Failed to start:", err)
 		// Configuration error. Exit with a special value to prevent systemd from restarting.
@@ -177,7 +177,7 @@ func getConfigFormat() string {
 	return f
 }
 
-func startXray() (core.Server, error) {
+func startAiko() (core.Server, error) {
 	configFiles := getConfigFilePath()
 
 	// config, err := core.LoadConfig(getConfigFormat(), configFiles[0], configFiles)

@@ -86,7 +86,7 @@ type Account struct {
 	unknownFields protoimpl.UnknownFields
 
 	Password   string     `protobuf:"bytes,1,opt,name=password,proto3" json:"password,omitempty"`
-	CipherType CipherType `protobuf:"varint,2,opt,name=cipher_type,json=cipherType,proto3,enum=xray.proxy.shadowsocks.CipherType" json:"cipher_type,omitempty"`
+	CipherType CipherType `protobuf:"varint,2,opt,name=cipher_type,json=cipherType,proto3,enum=Aiko.proxy.shadowsocks.CipherType" json:"cipher_type,omitempty"`
 	IvCheck    bool       `protobuf:"varint,3,opt,name=iv_check,json=ivCheck,proto3" json:"iv_check,omitempty"`
 }
 
@@ -149,7 +149,7 @@ type ServerConfig struct {
 	unknownFields protoimpl.UnknownFields
 
 	Users   []*protocol.User `protobuf:"bytes,1,rep,name=users,proto3" json:"users,omitempty"`
-	Network []net.Network    `protobuf:"varint,2,rep,packed,name=network,proto3,enum=xray.common.net.Network" json:"network,omitempty"`
+	Network []net.Network    `protobuf:"varint,2,rep,packed,name=network,proto3,enum=Aiko.common.net.Network" json:"network,omitempty"`
 }
 
 func (x *ServerConfig) Reset() {
@@ -310,19 +310,19 @@ func file_proxy_shadowsocks_config_proto_rawDescGZIP() []byte {
 var file_proxy_shadowsocks_config_proto_enumTypes = make([]protoimpl.EnumInfo, 1)
 var file_proxy_shadowsocks_config_proto_msgTypes = make([]protoimpl.MessageInfo, 3)
 var file_proxy_shadowsocks_config_proto_goTypes = []interface{}{
-	(CipherType)(0),                 // 0: xray.proxy.shadowsocks.CipherType
-	(*Account)(nil),                 // 1: xray.proxy.shadowsocks.Account
-	(*ServerConfig)(nil),            // 2: xray.proxy.shadowsocks.ServerConfig
-	(*ClientConfig)(nil),            // 3: xray.proxy.shadowsocks.ClientConfig
-	(*protocol.User)(nil),           // 4: xray.common.protocol.User
-	(net.Network)(0),                // 5: xray.common.net.Network
-	(*protocol.ServerEndpoint)(nil), // 6: xray.common.protocol.ServerEndpoint
+	(CipherType)(0),                 // 0: Aiko.proxy.shadowsocks.CipherType
+	(*Account)(nil),                 // 1: Aiko.proxy.shadowsocks.Account
+	(*ServerConfig)(nil),            // 2: Aiko.proxy.shadowsocks.ServerConfig
+	(*ClientConfig)(nil),            // 3: Aiko.proxy.shadowsocks.ClientConfig
+	(*protocol.User)(nil),           // 4: Aiko.common.protocol.User
+	(net.Network)(0),                // 5: Aiko.common.net.Network
+	(*protocol.ServerEndpoint)(nil), // 6: Aiko.common.protocol.ServerEndpoint
 }
 var file_proxy_shadowsocks_config_proto_depIdxs = []int32{
-	0, // 0: xray.proxy.shadowsocks.Account.cipher_type:type_name -> xray.proxy.shadowsocks.CipherType
-	4, // 1: xray.proxy.shadowsocks.ServerConfig.users:type_name -> xray.common.protocol.User
-	5, // 2: xray.proxy.shadowsocks.ServerConfig.network:type_name -> xray.common.net.Network
-	6, // 3: xray.proxy.shadowsocks.ClientConfig.server:type_name -> xray.common.protocol.ServerEndpoint
+	0, // 0: Aiko.proxy.shadowsocks.Account.cipher_type:type_name -> Aiko.proxy.shadowsocks.CipherType
+	4, // 1: Aiko.proxy.shadowsocks.ServerConfig.users:type_name -> Aiko.common.protocol.User
+	5, // 2: Aiko.proxy.shadowsocks.ServerConfig.network:type_name -> Aiko.common.net.Network
+	6, // 3: Aiko.proxy.shadowsocks.ClientConfig.server:type_name -> Aiko.common.protocol.ServerEndpoint
 	4, // [4:4] is the sub-list for method output_type
 	4, // [4:4] is the sub-list for method input_type
 	4, // [4:4] is the sub-list for extension type_name

@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-package xray.app.stats.command;
-option csharp_namespace = "Xray.App.Stats.Command";
+package Aiko.app.stats.command;
+option csharp_namespace = "Aiko.App.Stats.Command";
 option go_package = "github.com/Github-Aiko/Aiko-Core/app/stats/command";
-option java_package = "com.xray.app.stats.command";
+option java_package = "com.Aiko.app.stats.command";
 option java_multiple_files = true;
 
 message GetStatsRequest {

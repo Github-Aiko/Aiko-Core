@@ -11,7 +11,7 @@ import (
 
 // Counter is the interface for stats counters.
 //
-// xray:api:stable
+// Aiko:api:stable
 type Counter interface {
 	// Value is the current value of the counter.
 	Value() int64
@@ -23,7 +23,7 @@ type Counter interface {
 
 // Channel is the interface for stats channel.
 //
-// xray:api:stable
+// Aiko:api:stable
 type Channel interface {
 	// Runnable implies that Channel is a runnable unit.
 	common.Runnable
@@ -60,7 +60,7 @@ func UnsubscribeClosableChannel(c Channel, sub chan interface{}) error {
 
 // Manager is the interface for stats manager.
 //
-// xray:api:stable
+// Aiko:api:stable
 type Manager interface {
 	features.Feature
 
@@ -101,7 +101,7 @@ func GetOrRegisterChannel(m Manager, name string) (Channel, error) {
 
 // ManagerType returns the type of Manager interface. Can be used to implement common.HasType.
 //
-// xray:api:stable
+// Aiko:api:stable
 func ManagerType() interface{} {
 	return (*Manager)(nil)
 }

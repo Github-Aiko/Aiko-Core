@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-package xray.transport.internet.headers.srtp;
-option csharp_namespace = "Xray.Transport.Internet.Headers.Srtp";
+package Aiko.transport.internet.headers.srtp;
+option csharp_namespace = "Aiko.Transport.Internet.Headers.Srtp";
 option go_package = "github.com/Github-Aiko/Aiko-Core/transport/internet/headers/srtp";
-option java_package = "com.xray.transport.internet.headers.srtp";
+option java_package = "com.Aiko.transport.internet.headers.srtp";
 option java_multiple_files = true;
 
 message Config {

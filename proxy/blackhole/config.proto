@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-package xray.proxy.blackhole;
-option csharp_namespace = "Xray.Proxy.Blackhole";
+package Aiko.proxy.blackhole;
+option csharp_namespace = "Aiko.Proxy.Blackhole";
 option go_package = "github.com/Github-Aiko/Aiko-Core/proxy/blackhole";
-option java_package = "com.xray.proxy.blackhole";
+option java_package = "com.Aiko.proxy.blackhole";
 option java_multiple_files = true;
 
 import "common/serial/typed_message.proto";
@@ -13,5 +13,5 @@ message NoneResponse {}
 message HTTPResponse {}
 
 message Config {
-  xray.common.serial.TypedMessage response = 1;
+  Aiko.common.serial.TypedMessage response = 1;
 }

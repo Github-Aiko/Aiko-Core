@@ -132,8 +132,8 @@ func file_transport_internet_headers_noop_config_proto_rawDescGZIP() []byte {
 
 var file_transport_internet_headers_noop_config_proto_msgTypes = make([]protoimpl.MessageInfo, 2)
 var file_transport_internet_headers_noop_config_proto_goTypes = []interface{}{
-	(*Config)(nil),           // 0: xray.transport.internet.headers.noop.Config
-	(*ConnectionConfig)(nil), // 1: xray.transport.internet.headers.noop.ConnectionConfig
+	(*Config)(nil),           // 0: Aiko.transport.internet.headers.noop.Config
+	(*ConnectionConfig)(nil), // 1: Aiko.transport.internet.headers.noop.ConnectionConfig
 }
 var file_transport_internet_headers_noop_config_proto_depIdxs = []int32{
 	0, // [0:0] is the sub-list for method output_type

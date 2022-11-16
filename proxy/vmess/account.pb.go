@@ -138,11 +138,11 @@ func file_proxy_vmess_account_proto_rawDescGZIP() []byte {
 
 var file_proxy_vmess_account_proto_msgTypes = make([]protoimpl.MessageInfo, 1)
 var file_proxy_vmess_account_proto_goTypes = []interface{}{
-	(*Account)(nil),                 // 0: xray.proxy.vmess.Account
-	(*protocol.SecurityConfig)(nil), // 1: xray.common.protocol.SecurityConfig
+	(*Account)(nil),                 // 0: Aiko.proxy.vmess.Account
+	(*protocol.SecurityConfig)(nil), // 1: Aiko.common.protocol.SecurityConfig
 }
 var file_proxy_vmess_account_proto_depIdxs = []int32{
-	1, // 0: xray.proxy.vmess.Account.security_settings:type_name -> xray.common.protocol.SecurityConfig
+	1, // 0: Aiko.proxy.vmess.Account.security_settings:type_name -> Aiko.common.protocol.SecurityConfig
 	1, // [1:1] is the sub-list for method output_type
 	1, // [1:1] is the sub-list for method input_type
 	1, // [1:1] is the sub-list for extension type_name

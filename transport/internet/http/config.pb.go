@@ -157,11 +157,11 @@ func file_transport_internet_http_config_proto_rawDescGZIP() []byte {
 
 var file_transport_internet_http_config_proto_msgTypes = make([]protoimpl.MessageInfo, 1)
 var file_transport_internet_http_config_proto_goTypes = []interface{}{
-	(*Config)(nil),      // 0: xray.transport.internet.http.Config
-	(*http.Header)(nil), // 1: xray.transport.internet.headers.http.Header
+	(*Config)(nil),      // 0: Aiko.transport.internet.http.Config
+	(*http.Header)(nil), // 1: Aiko.transport.internet.headers.http.Header
 }
 var file_transport_internet_http_config_proto_depIdxs = []int32{
-	1, // 0: xray.transport.internet.http.Config.header:type_name -> xray.transport.internet.headers.http.Header
+	1, // 0: Aiko.transport.internet.http.Config.header:type_name -> Aiko.transport.internet.headers.http.Header
 	1, // [1:1] is the sub-list for method output_type
 	1, // [1:1] is the sub-list for method input_type
 	1, // [1:1] is the sub-list for extension type_name

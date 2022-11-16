@@ -26,7 +26,7 @@ var webpage []byte
 var conns chan *websocket.Conn
 
 func init() {
-	if addr := os.Getenv("XRAY_BROWSER_DIALER"); addr != "" {
+	if addr := os.Getenv("Aiko_BROWSER_DIALER"); addr != "" {
 		conns = make(chan *websocket.Conn, 256)
 		go http.ListenAndServe(addr, http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 			if r.URL.Path == "/websocket" {
@@ -143,7 +143,7 @@ func dialWebSocket(ctx context.Context, dest net.Destination, streamSettings *in
 
 	header := wsSettings.GetRequestHeader()
 	if ed != nil {
-		// RawURLEncoding is support by both V2Ray/V2Fly and XRay.
+		// RawURLEncoding is support by both V2Ray/V2Fly and Aiko.
 		header.Set("Sec-WebSocket-Protocol", base64.RawURLEncoding.EncodeToString(ed))
 	}
 

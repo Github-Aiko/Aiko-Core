@@ -59,5 +59,5 @@ func toNetIP(addrs []net.Address) ([]net.IP, error) {
 
 func generateRandomTag() string {
 	id := uuid.New()
-	return "xray.system." + id.String()
+	return "Aiko.system." + id.String()
 }

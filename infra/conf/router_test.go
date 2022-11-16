@@ -24,11 +24,11 @@ func init() {
 		common.Must(filesystem.CopyFile(platform.GetAssetLocation("geoip.dat"), filepath.Join(wd, "..", "..", "resources", "geoip.dat")))
 	}
 
-	os.Setenv("xray.location.asset", wd)
+	os.Setenv("Aiko.location.asset", wd)
 }
 
 func TestToCidrList(t *testing.T) {
-	t.Log(os.Getenv("xray.location.asset"))
+	t.Log(os.Getenv("Aiko.location.asset"))
 
 	common.Must(filesystem.CopyFile(platform.GetAssetLocation("geoiptestrouter.dat"), "geoip.dat"))
 

@@ -162,14 +162,14 @@ func file_transport_internet_grpc_encoding_stream_proto_rawDescGZIP() []byte {
 
 var file_transport_internet_grpc_encoding_stream_proto_msgTypes = make([]protoimpl.MessageInfo, 2)
 var file_transport_internet_grpc_encoding_stream_proto_goTypes = []interface{}{
-	(*Hunk)(nil),      // 0: xray.transport.internet.grpc.encoding.Hunk
-	(*MultiHunk)(nil), // 1: xray.transport.internet.grpc.encoding.MultiHunk
+	(*Hunk)(nil),      // 0: Aiko.transport.internet.grpc.encoding.Hunk
+	(*MultiHunk)(nil), // 1: Aiko.transport.internet.grpc.encoding.MultiHunk
 }
 var file_transport_internet_grpc_encoding_stream_proto_depIdxs = []int32{
-	0, // 0: xray.transport.internet.grpc.encoding.GRPCService.Tun:input_type -> xray.transport.internet.grpc.encoding.Hunk
-	1, // 1: xray.transport.internet.grpc.encoding.GRPCService.TunMulti:input_type -> xray.transport.internet.grpc.encoding.MultiHunk
-	0, // 2: xray.transport.internet.grpc.encoding.GRPCService.Tun:output_type -> xray.transport.internet.grpc.encoding.Hunk
-	1, // 3: xray.transport.internet.grpc.encoding.GRPCService.TunMulti:output_type -> xray.transport.internet.grpc.encoding.MultiHunk
+	0, // 0: Aiko.transport.internet.grpc.encoding.GRPCService.Tun:input_type -> Aiko.transport.internet.grpc.encoding.Hunk
+	1, // 1: Aiko.transport.internet.grpc.encoding.GRPCService.TunMulti:input_type -> Aiko.transport.internet.grpc.encoding.MultiHunk
+	0, // 2: Aiko.transport.internet.grpc.encoding.GRPCService.Tun:output_type -> Aiko.transport.internet.grpc.encoding.Hunk
+	1, // 3: Aiko.transport.internet.grpc.encoding.GRPCService.TunMulti:output_type -> Aiko.transport.internet.grpc.encoding.MultiHunk
 	2, // [2:4] is the sub-list for method output_type
 	0, // [0:2] is the sub-list for method input_type
 	0, // [0:0] is the sub-list for extension type_name

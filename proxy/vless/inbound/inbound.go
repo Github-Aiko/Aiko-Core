@@ -50,7 +50,7 @@ func init() {
 
 	const defaultFlagValue = "NOT_DEFINED_AT_ALL"
 
-	xtlsShow := platform.NewEnvFlag("xray.vless.xtls.show").GetValue(func() string { return defaultFlagValue })
+	xtlsShow := platform.NewEnvFlag("Aiko.vless.xtls.show").GetValue(func() string { return defaultFlagValue })
 	if xtlsShow == "true" {
 		xtls_show = true
 	}

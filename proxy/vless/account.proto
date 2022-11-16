@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-package xray.proxy.vless;
-option csharp_namespace = "Xray.Proxy.Vless";
+package Aiko.proxy.vless;
+option csharp_namespace = "Aiko.Proxy.Vless";
 option go_package = "github.com/Github-Aiko/Aiko-Core/proxy/vless";
-option java_package = "com.xray.proxy.vless";
+option java_package = "com.Aiko.proxy.vless";
 option java_multiple_files = true;
 
 message Account {

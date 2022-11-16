@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-package xray.proxy.http;
-option csharp_namespace = "Xray.Proxy.Http";
+package Aiko.proxy.http;
+option csharp_namespace = "Aiko.Proxy.Http";
 option go_package = "github.com/Github-Aiko/Aiko-Core/proxy/http";
-option java_package = "com.xray.proxy.http";
+option java_package = "com.Aiko.proxy.http";
 option java_multiple_files = true;
 
 import "common/protocol/server_spec.proto";
@@ -24,5 +24,5 @@ message ServerConfig {
 // ClientConfig is the protobuf config for HTTP proxy client.
 message ClientConfig {
   // Sever is a list of HTTP server addresses.
-  repeated xray.common.protocol.ServerEndpoint server = 1;
+  repeated Aiko.common.protocol.ServerEndpoint server = 1;
 }

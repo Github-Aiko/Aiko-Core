@@ -125,11 +125,11 @@ func file_common_protocol_user_proto_rawDescGZIP() []byte {
 
 var file_common_protocol_user_proto_msgTypes = make([]protoimpl.MessageInfo, 1)
 var file_common_protocol_user_proto_goTypes = []interface{}{
-	(*User)(nil),                // 0: xray.common.protocol.User
-	(*serial.TypedMessage)(nil), // 1: xray.common.serial.TypedMessage
+	(*User)(nil),                // 0: Aiko.common.protocol.User
+	(*serial.TypedMessage)(nil), // 1: Aiko.common.serial.TypedMessage
 }
 var file_common_protocol_user_proto_depIdxs = []int32{
-	1, // 0: xray.common.protocol.User.account:type_name -> xray.common.serial.TypedMessage
+	1, // 0: Aiko.common.protocol.User.account:type_name -> Aiko.common.serial.TypedMessage
 	1, // [1:1] is the sub-list for method output_type
 	1, // [1:1] is the sub-list for method input_type
 	1, // [1:1] is the sub-list for extension type_name

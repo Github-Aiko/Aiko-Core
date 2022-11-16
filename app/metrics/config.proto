@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-package xray.app.metrics;
-option csharp_namespace = "Xray.App.Metrics";
+package Aiko.app.metrics;
+option csharp_namespace = "Aiko.App.Metrics";
 option go_package = "github.com/Github-Aiko/Aiko-Core/app/metrics";
-option java_package = "com.xray.app.metrics";
+option java_package = "com.Aiko.app.metrics";
 option java_multiple_files = true;
 
 // Config is the settings for metrics.

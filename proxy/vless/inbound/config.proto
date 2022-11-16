@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-package xray.proxy.vless.inbound;
-option csharp_namespace = "Xray.Proxy.Vless.Inbound";
+package Aiko.proxy.vless.inbound;
+option csharp_namespace = "Aiko.Proxy.Vless.Inbound";
 option go_package = "github.com/Github-Aiko/Aiko-Core/proxy/vless/inbound";
-option java_package = "com.xray.proxy.vless.inbound";
+option java_package = "com.Aiko.proxy.vless.inbound";
 option java_multiple_files = true;
 
 import "common/protocol/user.proto";
@@ -18,7 +18,7 @@ message Fallback {
 }
 
 message Config {
-  repeated xray.common.protocol.User clients = 1;
+  repeated Aiko.common.protocol.User clients = 1;
   // Decryption settings. Only applies to server side, and only accepts "none"
   // for now.
   string decryption = 2;

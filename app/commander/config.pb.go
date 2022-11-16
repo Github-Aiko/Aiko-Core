@@ -157,12 +157,12 @@ func file_app_commander_config_proto_rawDescGZIP() []byte {
 
 var file_app_commander_config_proto_msgTypes = make([]protoimpl.MessageInfo, 2)
 var file_app_commander_config_proto_goTypes = []interface{}{
-	(*Config)(nil),              // 0: xray.app.commander.Config
-	(*ReflectionConfig)(nil),    // 1: xray.app.commander.ReflectionConfig
-	(*serial.TypedMessage)(nil), // 2: xray.common.serial.TypedMessage
+	(*Config)(nil),              // 0: Aiko.app.commander.Config
+	(*ReflectionConfig)(nil),    // 1: Aiko.app.commander.ReflectionConfig
+	(*serial.TypedMessage)(nil), // 2: Aiko.common.serial.TypedMessage
 }
 var file_app_commander_config_proto_depIdxs = []int32{
-	2, // 0: xray.app.commander.Config.service:type_name -> xray.common.serial.TypedMessage
+	2, // 0: Aiko.app.commander.Config.service:type_name -> Aiko.common.serial.TypedMessage
 	1, // [1:1] is the sub-list for method output_type
 	1, // [1:1] is the sub-list for method input_type
 	1, // [1:1] is the sub-list for extension type_name

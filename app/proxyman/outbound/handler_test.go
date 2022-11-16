@@ -20,7 +20,7 @@ func TestInterfaces(t *testing.T) {
 	_ = (outbound.Manager)(new(Manager))
 }
 
-const xrayKey core.XrayKey = 1
+const AikoKey core.AikoKey = 1
 
 func TestOutboundWithoutStatCounter(t *testing.T) {
 	config := &core.Config{
@@ -38,7 +38,7 @@ func TestOutboundWithoutStatCounter(t *testing.T) {
 
 	v, _ := core.New(config)
 	v.AddFeature((outbound.Manager)(new(Manager)))
-	ctx := context.WithValue(context.Background(), xrayKey, v)
+	ctx := context.WithValue(context.Background(), AikoKey, v)
 	h, _ := NewHandler(ctx, &core.OutboundHandlerConfig{
 		Tag:           "tag",
 		ProxySettings: serial.ToTypedMessage(&freedom.Config{}),
@@ -67,7 +67,7 @@ func TestOutboundWithStatCounter(t *testing.T) {
 
 	v, _ := core.New(config)
 	v.AddFeature((outbound.Manager)(new(Manager)))
-	ctx := context.WithValue(context.Background(), xrayKey, v)
+	ctx := context.WithValue(context.Background(), AikoKey, v)
 	h, _ := NewHandler(ctx, &core.OutboundHandlerConfig{
 		Tag:           "tag",
 		ProxySettings: serial.ToTypedMessage(&freedom.Config{}),

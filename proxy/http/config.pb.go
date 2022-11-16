@@ -254,15 +254,15 @@ func file_proxy_http_config_proto_rawDescGZIP() []byte {
 
 var file_proxy_http_config_proto_msgTypes = make([]protoimpl.MessageInfo, 4)
 var file_proxy_http_config_proto_goTypes = []interface{}{
-	(*Account)(nil),                 // 0: xray.proxy.http.Account
-	(*ServerConfig)(nil),            // 1: xray.proxy.http.ServerConfig
-	(*ClientConfig)(nil),            // 2: xray.proxy.http.ClientConfig
-	nil,                             // 3: xray.proxy.http.ServerConfig.AccountsEntry
-	(*protocol.ServerEndpoint)(nil), // 4: xray.common.protocol.ServerEndpoint
+	(*Account)(nil),                 // 0: Aiko.proxy.http.Account
+	(*ServerConfig)(nil),            // 1: Aiko.proxy.http.ServerConfig
+	(*ClientConfig)(nil),            // 2: Aiko.proxy.http.ClientConfig
+	nil,                             // 3: Aiko.proxy.http.ServerConfig.AccountsEntry
+	(*protocol.ServerEndpoint)(nil), // 4: Aiko.common.protocol.ServerEndpoint
 }
 var file_proxy_http_config_proto_depIdxs = []int32{
-	3, // 0: xray.proxy.http.ServerConfig.accounts:type_name -> xray.proxy.http.ServerConfig.AccountsEntry
-	4, // 1: xray.proxy.http.ClientConfig.server:type_name -> xray.common.protocol.ServerEndpoint
+	3, // 0: Aiko.proxy.http.ServerConfig.accounts:type_name -> Aiko.proxy.http.ServerConfig.AccountsEntry
+	4, // 1: Aiko.proxy.http.ClientConfig.server:type_name -> Aiko.common.protocol.ServerEndpoint
 	2, // [2:2] is the sub-list for method output_type
 	2, // [2:2] is the sub-list for method input_type
 	2, // [2:2] is the sub-list for extension type_name

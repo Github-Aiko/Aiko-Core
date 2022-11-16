@@ -35,7 +35,7 @@ func NewRoutingServiceClient(cc grpc.ClientConnInterface) RoutingServiceClient {
 }
 
 func (c *routingServiceClient) SubscribeRoutingStats(ctx context.Context, in *SubscribeRoutingStatsRequest, opts ...grpc.CallOption) (RoutingService_SubscribeRoutingStatsClient, error) {
-	stream, err := c.cc.NewStream(ctx, &RoutingService_ServiceDesc.Streams[0], "/xray.app.router.command.RoutingService/SubscribeRoutingStats", opts...)
+	stream, err := c.cc.NewStream(ctx, &RoutingService_ServiceDesc.Streams[0], "/Aiko.app.router.command.RoutingService/SubscribeRoutingStats", opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -68,7 +68,7 @@ func (x *routingServiceSubscribeRoutingStatsClient) Recv() (*RoutingContext, err
 
 func (c *routingServiceClient) TestRoute(ctx context.Context, in *TestRouteRequest, opts ...grpc.CallOption) (*RoutingContext, error) {
 	out := new(RoutingContext)
-	err := c.cc.Invoke(ctx, "/xray.app.router.command.RoutingService/TestRoute", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/Aiko.app.router.command.RoutingService/TestRoute", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -138,7 +138,7 @@ func _RoutingService_TestRoute_Handler(srv interface{}, ctx context.Context, dec
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/xray.app.router.command.RoutingService/TestRoute",
+		FullMethod: "/Aiko.app.router.command.RoutingService/TestRoute",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(RoutingServiceServer).TestRoute(ctx, req.(*TestRouteRequest))
@@ -150,7 +150,7 @@ func _RoutingService_TestRoute_Handler(srv interface{}, ctx context.Context, dec
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
 var RoutingService_ServiceDesc = grpc.ServiceDesc{
-	ServiceName: "xray.app.router.command.RoutingService",
+	ServiceName: "Aiko.app.router.command.RoutingService",
 	HandlerType: (*RoutingServiceServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{

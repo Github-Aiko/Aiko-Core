@@ -194,11 +194,11 @@ func file_transport_internet_websocket_config_proto_rawDescGZIP() []byte {
 
 var file_transport_internet_websocket_config_proto_msgTypes = make([]protoimpl.MessageInfo, 2)
 var file_transport_internet_websocket_config_proto_goTypes = []interface{}{
-	(*Header)(nil), // 0: xray.transport.internet.websocket.Header
-	(*Config)(nil), // 1: xray.transport.internet.websocket.Config
+	(*Header)(nil), // 0: Aiko.transport.internet.websocket.Header
+	(*Config)(nil), // 1: Aiko.transport.internet.websocket.Config
 }
 var file_transport_internet_websocket_config_proto_depIdxs = []int32{
-	0, // 0: xray.transport.internet.websocket.Config.header:type_name -> xray.transport.internet.websocket.Header
+	0, // 0: Aiko.transport.internet.websocket.Config.header:type_name -> Aiko.transport.internet.websocket.Header
 	1, // [1:1] is the sub-list for method output_type
 	1, // [1:1] is the sub-list for method input_type
 	1, // [1:1] is the sub-list for extension type_name

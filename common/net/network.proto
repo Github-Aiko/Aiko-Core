@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-package xray.common.net;
-option csharp_namespace = "Xray.Common.Net";
+package Aiko.common.net;
+option csharp_namespace = "Aiko.Common.Net";
 option go_package = "github.com/Github-Aiko/Aiko-Core/common/net";
-option java_package = "com.xray.common.net";
+option java_package = "com.Aiko.common.net";
 option java_multiple_files = true;
 
 enum Network {

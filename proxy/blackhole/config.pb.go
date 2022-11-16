@@ -182,13 +182,13 @@ func file_proxy_blackhole_config_proto_rawDescGZIP() []byte {
 
 var file_proxy_blackhole_config_proto_msgTypes = make([]protoimpl.MessageInfo, 3)
 var file_proxy_blackhole_config_proto_goTypes = []interface{}{
-	(*NoneResponse)(nil),        // 0: xray.proxy.blackhole.NoneResponse
-	(*HTTPResponse)(nil),        // 1: xray.proxy.blackhole.HTTPResponse
-	(*Config)(nil),              // 2: xray.proxy.blackhole.Config
-	(*serial.TypedMessage)(nil), // 3: xray.common.serial.TypedMessage
+	(*NoneResponse)(nil),        // 0: Aiko.proxy.blackhole.NoneResponse
+	(*HTTPResponse)(nil),        // 1: Aiko.proxy.blackhole.HTTPResponse
+	(*Config)(nil),              // 2: Aiko.proxy.blackhole.Config
+	(*serial.TypedMessage)(nil), // 3: Aiko.common.serial.TypedMessage
 }
 var file_proxy_blackhole_config_proto_depIdxs = []int32{
-	3, // 0: xray.proxy.blackhole.Config.response:type_name -> xray.common.serial.TypedMessage
+	3, // 0: Aiko.proxy.blackhole.Config.response:type_name -> Aiko.common.serial.TypedMessage
 	1, // [1:1] is the sub-list for method output_type
 	1, // [1:1] is the sub-list for method input_type
 	1, // [1:1] is the sub-list for extension type_name
